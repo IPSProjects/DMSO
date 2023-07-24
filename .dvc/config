@@ -1,0 +1,5 @@
+[core]
+    remote = origin
+['remote "origin"']
+    url = s3://dvc/IPS-DMSO
+    endpointurl = https://minio.pythonf.net

@@ -1,0 +1,5 @@
+outs:
+- md5: 39f14f5181cb73cf1f7aec6d838f3fe5
+  size: 108689
+  path: GTH_POTENTIALS
+  hash: md5
