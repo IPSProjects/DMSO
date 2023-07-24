@@ -161,3 +161,4 @@ cython_debug/
 /BASIS_MOLOPT
 /dftd3.dat
 /GTH_POTENTIALS
+slurm-*
