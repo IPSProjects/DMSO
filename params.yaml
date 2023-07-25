@@ -223,6 +223,51 @@ AL_4_MLModel_1:
     use_energy: true
     use_forces: true
     use_stresses: false
+AL_5_ASEMD:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    init_velocity: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 1
+    steps: 50000
+AL_5_ASEMD_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+AL_5_ASEMD_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+AL_5_ConfigurationSelection_1:
+    key: energy_uncertainty
+    min_distance: 10
+    n_configurations: 10
+    reference: energy
+    threshold: null
+AL_5_ConfigurationSelection_2:
+    n_configurations: 5
+    seed: 1234
+AL_5_EnergyUncertaintyHistogram:
+    bins: null
+AL_5_ForcesUncertaintyHistogram:
+    bins: null
+AL_5_MLModel:
+    jax_enable_x64: true
+    use_energy: true
+    use_forces: true
+    use_stresses: false
+AL_5_MLModel_1:
+    jax_enable_x64: true
+    use_energy: true
+    use_forces: true
+    use_stresses: false
 ASEGeoOpt:
     data_id: 0
     dump_rate: 1000
