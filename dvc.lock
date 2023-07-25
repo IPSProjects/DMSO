@@ -8461,3 +8461,135 @@ stages:
       md5: f4093ba155a085cc4899301b21db414a.dir
       size: 35111
       nfiles: 1
+  bootstrap_0_RotateMolecules_5:
+    cmd: zntrack run ipsuite.nodes.RotateMolecules --name bootstrap_0_RotateMolecules_5
+    deps:
+    - path: nodes/ASEGeoOpt/model_outs
+      hash: md5
+      md5: 55a17d4cf10898236beac4f2d757f2b4.dir
+      size: 89601466
+      nfiles: 7
+    - path: nodes/ASEGeoOpt/node-meta.json
+      hash: md5
+      md5: 336193404ed866dfebe5a4c56f8ef2f8
+      size: 48
+    - path: nodes/ASEGeoOpt/trajectory.h5
+      hash: md5
+      md5: ea5b960f96c3f1f8cd9328fb1ea918f5
+      size: 1410008
+    params:
+      params.yaml:
+        bootstrap_0_RotateMolecules_5:
+          data_id: -1
+          include_original: false
+          maximum: 0.34905555555555556
+          n_configurations: 10
+          seed: 1
+    outs:
+    - path: nodes/bootstrap_0/RotateMolecules/atoms.h5
+      hash: md5
+      md5: c2fdad6e7524e82c92ff09f795e53070
+      size: 204288
+    - path: nodes/bootstrap_0/RotateMolecules/node-meta.json
+      hash: md5
+      md5: 4a63f5e4867c96903140029ba80f86e5
+      size: 48
+  bootstrap_0_TranslateMolecules_5:
+    cmd: zntrack run ipsuite.nodes.TranslateMolecules --name bootstrap_0_TranslateMolecules_5
+    deps:
+    - path: nodes/ASEGeoOpt/model_outs
+      hash: md5
+      md5: 55a17d4cf10898236beac4f2d757f2b4.dir
+      size: 89601466
+      nfiles: 7
+    - path: nodes/ASEGeoOpt/node-meta.json
+      hash: md5
+      md5: 336193404ed866dfebe5a4c56f8ef2f8
+      size: 48
+    - path: nodes/ASEGeoOpt/trajectory.h5
+      hash: md5
+      md5: ea5b960f96c3f1f8cd9328fb1ea918f5
+      size: 1410008
+    params:
+      params.yaml:
+        bootstrap_0_TranslateMolecules_5:
+          data_id: -1
+          include_original: false
+          maximum: 0.35
+          n_configurations: 10
+          seed: 1
+    outs:
+    - path: nodes/bootstrap_0/TranslateMolecules/atoms.h5
+      hash: md5
+      md5: ff942c32a775b0c74e46c6bb5f5c7656
+      size: 204288
+    - path: nodes/bootstrap_0/TranslateMolecules/node-meta.json
+      hash: md5
+      md5: 79a8692962602701d6cb252f0304d965
+      size: 48
+  bootstrap_0_RotateMolecules_test_5:
+    cmd: zntrack run ipsuite.nodes.RotateMolecules --name bootstrap_0_RotateMolecules_test_5
+    deps:
+    - path: nodes/ASEGeoOpt/model_outs
+      hash: md5
+      md5: 55a17d4cf10898236beac4f2d757f2b4.dir
+      size: 89601466
+      nfiles: 7
+    - path: nodes/ASEGeoOpt/node-meta.json
+      hash: md5
+      md5: 336193404ed866dfebe5a4c56f8ef2f8
+      size: 48
+    - path: nodes/ASEGeoOpt/trajectory.h5
+      hash: md5
+      md5: ea5b960f96c3f1f8cd9328fb1ea918f5
+      size: 1410008
+    params:
+      params.yaml:
+        bootstrap_0_RotateMolecules_test_5:
+          data_id: -1
+          include_original: false
+          maximum: 0.34905555555555556
+          n_configurations: 5
+          seed: 2
+    outs:
+    - path: nodes/bootstrap_0/RotateMolecules_test/atoms.h5
+      hash: md5
+      md5: 1ecbbff8cb9b324c91a700f2c3493d80
+      size: 119168
+    - path: nodes/bootstrap_0/RotateMolecules_test/node-meta.json
+      hash: md5
+      md5: fb03a152c0a70b1f0a0b0788a16d1e07
+      size: 48
+  bootstrap_0_TranslateMolecules_test_5:
+    cmd: zntrack run ipsuite.nodes.TranslateMolecules --name bootstrap_0_TranslateMolecules_test_5
+    deps:
+    - path: nodes/ASEGeoOpt/model_outs
+      hash: md5
+      md5: 55a17d4cf10898236beac4f2d757f2b4.dir
+      size: 89601466
+      nfiles: 7
+    - path: nodes/ASEGeoOpt/node-meta.json
+      hash: md5
+      md5: 336193404ed866dfebe5a4c56f8ef2f8
+      size: 48
+    - path: nodes/ASEGeoOpt/trajectory.h5
+      hash: md5
+      md5: ea5b960f96c3f1f8cd9328fb1ea918f5
+      size: 1410008
+    params:
+      params.yaml:
+        bootstrap_0_TranslateMolecules_test_5:
+          data_id: -1
+          include_original: false
+          maximum: 0.35
+          n_configurations: 5
+          seed: 2
+    outs:
+    - path: nodes/bootstrap_0/TranslateMolecules_test/atoms.h5
+      hash: md5
+      md5: 2b61c38616f8b687a93a60856770101f
+      size: 119168
+    - path: nodes/bootstrap_0/TranslateMolecules_test/node-meta.json
+      hash: md5
+      md5: 34af43122e2600db02fd2faaac885626
+      size: 48
