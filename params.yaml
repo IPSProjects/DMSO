@@ -20,6 +20,13 @@ AL_0_ASEMD_thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
+AL_0_BoxScale:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+AL_0_BoxScale_mapping:
+    frozen: false
 AL_0_ConfigurationSelection_1:
     key: energy_uncertainty
     min_distance: 10
@@ -65,6 +72,13 @@ AL_1_ASEMD_thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
+AL_1_BoxScale:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+AL_1_BoxScale_mapping:
+    frozen: false
 AL_1_ConfigurationSelection_1:
     key: energy_uncertainty
     min_distance: 10
@@ -110,6 +124,13 @@ AL_2_ASEMD_thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
+AL_2_BoxScale:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+AL_2_BoxScale_mapping:
+    frozen: false
 AL_2_ConfigurationSelection_1:
     key: energy_uncertainty
     min_distance: 10
@@ -155,6 +176,13 @@ AL_3_ASEMD_thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
+AL_3_BoxScale:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+AL_3_BoxScale_mapping:
+    frozen: false
 AL_3_ConfigurationSelection_1:
     key: energy_uncertainty
     min_distance: 10
@@ -200,6 +228,13 @@ AL_4_ASEMD_thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
+AL_4_BoxScale:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+AL_4_BoxScale_mapping:
+    frozen: false
 AL_4_ConfigurationSelection_1:
     key: energy_uncertainty
     min_distance: 10
@@ -245,6 +280,13 @@ AL_5_ASEMD_thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
+AL_5_BoxScale:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+AL_5_BoxScale_mapping:
+    frozen: false
 AL_5_ConfigurationSelection_1:
     key: energy_uncertainty
     min_distance: 10

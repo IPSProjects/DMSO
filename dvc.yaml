@@ -87,6 +87,38 @@ plots:
     y: val_loss
     y_label: validation loss
 - nodes/AL_5/ASEMD/metrics_dict.csv: {}
+- nodes/AL_5/BoxScale/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/AL_0/BoxScale/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/AL_1/BoxScale/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/AL_2/BoxScale/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/AL_3/BoxScale/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/AL_4/BoxScale/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/AL_5/EnergyUncertaintyHistogram/labels_df.csv: {}
+- nodes/AL_5/ForcesUncertaintyHistogram/labels_df.csv: {}
 stages:
   AL_0_ASEMD:
     cmd: zntrack run ipsuite.nodes.ASEMD --name AL_0_ASEMD
@@ -130,6 +162,35 @@ stages:
     - AL_0_ASEMD_thermostat
     - zntrack.json:
       - AL_0_ASEMD.thermostat
+  AL_0_BoxScale:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name AL_0_BoxScale
+    deps:
+    - nodes/AL_0/BoxScale_mapping/node-meta.json
+    - nodes/AL_0/EnsembleModel/node-meta.json
+    - nodes/AL_0/EnsembleModel/uuid.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    metrics:
+    - nodes/AL_0/BoxScale/node-meta.json:
+        cache: false
+    outs:
+    - nodes/AL_0/BoxScale/atoms.h5
+    - nodes/AL_0/BoxScale/energies.csv
+    - nodes/AL_0/BoxScale/energy.png
+    - nodes/AL_0/BoxScale/model
+    params:
+    - AL_0_BoxScale
+  AL_0_BoxScale_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name AL_0_BoxScale_mapping
+      --meta-only
+    metrics:
+    - nodes/AL_0/BoxScale_mapping/node-meta.json:
+        cache: false
+    params:
+    - AL_0_BoxScale_mapping
+    - zntrack.json:
+      - AL_0_BoxScale.mapping
   AL_0_CP2KSinglePoint_1:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_0_CP2KSinglePoint_1
     deps:
@@ -150,7 +211,7 @@ stages:
     - nodes/AL_0/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_0/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_0_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_0_CP2KSinglePoint_2
     deps:
@@ -170,7 +231,7 @@ stages:
     - nodes/AL_0/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_0/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_0_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_0_ConfigurationSelection_1
     deps:
@@ -289,7 +350,7 @@ stages:
     - nodes/AL_0/MLModel/val_atoms.extxyz
     params:
     - AL_0_MLModel
-    - config/apax_1.yaml:
+    - config/apax_1.yaml: null
   AL_0_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_0_MLModel_1
     deps:
@@ -309,13 +370,10 @@ stages:
     - nodes/AL_0/MLModel_1/val_atoms.extxyz
     params:
     - AL_0_MLModel_1
-    - config/apax_2.yaml:
+    - config/apax_2.yaml: null
   AL_0_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_0_Prediction
     deps:
-    - nodes/AL_0/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_0/CP2KSinglePoint_2/cp2k
-    - nodes/AL_0/CP2KSinglePoint_2/node-meta.json
     - nodes/AL_0/EnsembleModel/node-meta.json
     - nodes/AL_0/EnsembleModel/uuid.json
     - nodes/ConfigurationSelection/_hash.json
@@ -393,6 +451,35 @@ stages:
     - AL_1_ASEMD_thermostat
     - zntrack.json:
       - AL_1_ASEMD.thermostat
+  AL_1_BoxScale:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name AL_1_BoxScale
+    deps:
+    - nodes/AL_1/BoxScale_mapping/node-meta.json
+    - nodes/AL_1/EnsembleModel/node-meta.json
+    - nodes/AL_1/EnsembleModel/uuid.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    metrics:
+    - nodes/AL_1/BoxScale/node-meta.json:
+        cache: false
+    outs:
+    - nodes/AL_1/BoxScale/atoms.h5
+    - nodes/AL_1/BoxScale/energies.csv
+    - nodes/AL_1/BoxScale/energy.png
+    - nodes/AL_1/BoxScale/model
+    params:
+    - AL_1_BoxScale
+  AL_1_BoxScale_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name AL_1_BoxScale_mapping
+      --meta-only
+    metrics:
+    - nodes/AL_1/BoxScale_mapping/node-meta.json:
+        cache: false
+    params:
+    - AL_1_BoxScale_mapping
+    - zntrack.json:
+      - AL_1_BoxScale.mapping
   AL_1_CP2KSinglePoint_1:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_1_CP2KSinglePoint_1
     deps:
@@ -413,7 +500,7 @@ stages:
     - nodes/AL_1/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_1/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_1_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_1_CP2KSinglePoint_2
     deps:
@@ -433,7 +520,7 @@ stages:
     - nodes/AL_1/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_1/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_1_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_1_ConfigurationSelection_1
     deps:
@@ -558,7 +645,7 @@ stages:
     - nodes/AL_1/MLModel/val_atoms.extxyz
     params:
     - AL_1_MLModel
-    - config/apax_1.yaml:
+    - config/apax_1.yaml: null
   AL_1_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_1_MLModel_1
     deps:
@@ -584,16 +671,13 @@ stages:
     - nodes/AL_1/MLModel_1/val_atoms.extxyz
     params:
     - AL_1_MLModel_1
-    - config/apax_2.yaml:
+    - config/apax_2.yaml: null
   AL_1_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_1_Prediction
     deps:
     - nodes/AL_0/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_0/CP2KSinglePoint_2/cp2k
     - nodes/AL_0/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_1/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_1/CP2KSinglePoint_2/cp2k
-    - nodes/AL_1/CP2KSinglePoint_2/node-meta.json
     - nodes/AL_1/EnsembleModel/node-meta.json
     - nodes/AL_1/EnsembleModel/uuid.json
     - nodes/ConfigurationSelection/_hash.json
@@ -671,6 +755,35 @@ stages:
     - AL_2_ASEMD_thermostat
     - zntrack.json:
       - AL_2_ASEMD.thermostat
+  AL_2_BoxScale:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name AL_2_BoxScale
+    deps:
+    - nodes/AL_2/BoxScale_mapping/node-meta.json
+    - nodes/AL_2/EnsembleModel/node-meta.json
+    - nodes/AL_2/EnsembleModel/uuid.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    metrics:
+    - nodes/AL_2/BoxScale/node-meta.json:
+        cache: false
+    outs:
+    - nodes/AL_2/BoxScale/atoms.h5
+    - nodes/AL_2/BoxScale/energies.csv
+    - nodes/AL_2/BoxScale/energy.png
+    - nodes/AL_2/BoxScale/model
+    params:
+    - AL_2_BoxScale
+  AL_2_BoxScale_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name AL_2_BoxScale_mapping
+      --meta-only
+    metrics:
+    - nodes/AL_2/BoxScale_mapping/node-meta.json:
+        cache: false
+    params:
+    - AL_2_BoxScale_mapping
+    - zntrack.json:
+      - AL_2_BoxScale.mapping
   AL_2_CP2KSinglePoint_1:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_2_CP2KSinglePoint_1
     deps:
@@ -691,7 +804,7 @@ stages:
     - nodes/AL_2/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_2/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_2_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_2_CP2KSinglePoint_2
     deps:
@@ -711,7 +824,7 @@ stages:
     - nodes/AL_2/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_2/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_2_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_2_ConfigurationSelection_1
     deps:
@@ -842,7 +955,7 @@ stages:
     - nodes/AL_2/MLModel/val_atoms.extxyz
     params:
     - AL_2_MLModel
-    - config/apax_1.yaml:
+    - config/apax_1.yaml: null
   AL_2_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_2_MLModel_1
     deps:
@@ -874,7 +987,7 @@ stages:
     - nodes/AL_2/MLModel_1/val_atoms.extxyz
     params:
     - AL_2_MLModel_1
-    - config/apax_2.yaml:
+    - config/apax_2.yaml: null
   AL_2_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_2_Prediction
     deps:
@@ -884,9 +997,6 @@ stages:
     - nodes/AL_1/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_1/CP2KSinglePoint_2/cp2k
     - nodes/AL_1/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_2/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_2/CP2KSinglePoint_2/cp2k
-    - nodes/AL_2/CP2KSinglePoint_2/node-meta.json
     - nodes/AL_2/EnsembleModel/node-meta.json
     - nodes/AL_2/EnsembleModel/uuid.json
     - nodes/ConfigurationSelection/_hash.json
@@ -964,6 +1074,35 @@ stages:
     - AL_3_ASEMD_thermostat
     - zntrack.json:
       - AL_3_ASEMD.thermostat
+  AL_3_BoxScale:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name AL_3_BoxScale
+    deps:
+    - nodes/AL_3/BoxScale_mapping/node-meta.json
+    - nodes/AL_3/EnsembleModel/node-meta.json
+    - nodes/AL_3/EnsembleModel/uuid.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    metrics:
+    - nodes/AL_3/BoxScale/node-meta.json:
+        cache: false
+    outs:
+    - nodes/AL_3/BoxScale/atoms.h5
+    - nodes/AL_3/BoxScale/energies.csv
+    - nodes/AL_3/BoxScale/energy.png
+    - nodes/AL_3/BoxScale/model
+    params:
+    - AL_3_BoxScale
+  AL_3_BoxScale_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name AL_3_BoxScale_mapping
+      --meta-only
+    metrics:
+    - nodes/AL_3/BoxScale_mapping/node-meta.json:
+        cache: false
+    params:
+    - AL_3_BoxScale_mapping
+    - zntrack.json:
+      - AL_3_BoxScale.mapping
   AL_3_CP2KSinglePoint_1:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_3_CP2KSinglePoint_1
     deps:
@@ -984,7 +1123,7 @@ stages:
     - nodes/AL_3/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_3/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_3_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_3_CP2KSinglePoint_2
     deps:
@@ -1004,7 +1143,7 @@ stages:
     - nodes/AL_3/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_3/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_3_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_3_ConfigurationSelection_1
     deps:
@@ -1141,7 +1280,7 @@ stages:
     - nodes/AL_3/MLModel/val_atoms.extxyz
     params:
     - AL_3_MLModel
-    - config/apax_1.yaml:
+    - config/apax_1.yaml: null
   AL_3_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_3_MLModel_1
     deps:
@@ -1179,7 +1318,7 @@ stages:
     - nodes/AL_3/MLModel_1/val_atoms.extxyz
     params:
     - AL_3_MLModel_1
-    - config/apax_2.yaml:
+    - config/apax_2.yaml: null
   AL_3_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_3_Prediction
     deps:
@@ -1192,9 +1331,6 @@ stages:
     - nodes/AL_2/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_2/CP2KSinglePoint_2/cp2k
     - nodes/AL_2/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_3/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_3/CP2KSinglePoint_2/cp2k
-    - nodes/AL_3/CP2KSinglePoint_2/node-meta.json
     - nodes/AL_3/EnsembleModel/node-meta.json
     - nodes/AL_3/EnsembleModel/uuid.json
     - nodes/ConfigurationSelection/_hash.json
@@ -1272,6 +1408,35 @@ stages:
     - AL_4_ASEMD_thermostat
     - zntrack.json:
       - AL_4_ASEMD.thermostat
+  AL_4_BoxScale:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name AL_4_BoxScale
+    deps:
+    - nodes/AL_4/BoxScale_mapping/node-meta.json
+    - nodes/AL_4/EnsembleModel/node-meta.json
+    - nodes/AL_4/EnsembleModel/uuid.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    metrics:
+    - nodes/AL_4/BoxScale/node-meta.json:
+        cache: false
+    outs:
+    - nodes/AL_4/BoxScale/atoms.h5
+    - nodes/AL_4/BoxScale/energies.csv
+    - nodes/AL_4/BoxScale/energy.png
+    - nodes/AL_4/BoxScale/model
+    params:
+    - AL_4_BoxScale
+  AL_4_BoxScale_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name AL_4_BoxScale_mapping
+      --meta-only
+    metrics:
+    - nodes/AL_4/BoxScale_mapping/node-meta.json:
+        cache: false
+    params:
+    - AL_4_BoxScale_mapping
+    - zntrack.json:
+      - AL_4_BoxScale.mapping
   AL_4_CP2KSinglePoint_1:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_4_CP2KSinglePoint_1
     deps:
@@ -1292,7 +1457,7 @@ stages:
     - nodes/AL_4/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_4/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_4_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_4_CP2KSinglePoint_2
     deps:
@@ -1312,7 +1477,7 @@ stages:
     - nodes/AL_4/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_4/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_4_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_4_ConfigurationSelection_1
     deps:
@@ -1455,7 +1620,7 @@ stages:
     - nodes/AL_4/MLModel/val_atoms.extxyz
     params:
     - AL_4_MLModel
-    - config/apax_1.yaml:
+    - config/apax_1.yaml: null
   AL_4_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_4_MLModel_1
     deps:
@@ -1499,7 +1664,7 @@ stages:
     - nodes/AL_4/MLModel_1/val_atoms.extxyz
     params:
     - AL_4_MLModel_1
-    - config/apax_2.yaml:
+    - config/apax_2.yaml: null
   AL_4_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_4_Prediction
     deps:
@@ -1515,9 +1680,6 @@ stages:
     - nodes/AL_3/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_3/CP2KSinglePoint_2/cp2k
     - nodes/AL_3/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_4/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_4/CP2KSinglePoint_2/cp2k
-    - nodes/AL_4/CP2KSinglePoint_2/node-meta.json
     - nodes/AL_4/EnsembleModel/node-meta.json
     - nodes/AL_4/EnsembleModel/uuid.json
     - nodes/ConfigurationSelection/_hash.json
@@ -1595,6 +1757,35 @@ stages:
     - AL_5_ASEMD_thermostat
     - zntrack.json:
       - AL_5_ASEMD.thermostat
+  AL_5_BoxScale:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name AL_5_BoxScale
+    deps:
+    - nodes/AL_5/BoxScale_mapping/node-meta.json
+    - nodes/AL_5/EnsembleModel/node-meta.json
+    - nodes/AL_5/EnsembleModel/uuid.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    metrics:
+    - nodes/AL_5/BoxScale/node-meta.json:
+        cache: false
+    outs:
+    - nodes/AL_5/BoxScale/atoms.h5
+    - nodes/AL_5/BoxScale/energies.csv
+    - nodes/AL_5/BoxScale/energy.png
+    - nodes/AL_5/BoxScale/model
+    params:
+    - AL_5_BoxScale
+  AL_5_BoxScale_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name AL_5_BoxScale_mapping
+      --meta-only
+    metrics:
+    - nodes/AL_5/BoxScale_mapping/node-meta.json:
+        cache: false
+    params:
+    - AL_5_BoxScale_mapping
+    - zntrack.json:
+      - AL_5_BoxScale.mapping
   AL_5_CP2KSinglePoint_1:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_5_CP2KSinglePoint_1
     deps:
@@ -1615,7 +1806,7 @@ stages:
     - nodes/AL_5/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_5/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_5_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_5_CP2KSinglePoint_2
     deps:
@@ -1635,7 +1826,7 @@ stages:
     - nodes/AL_5/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_5/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_5_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_5_ConfigurationSelection_1
     deps:
@@ -1784,7 +1975,7 @@ stages:
     - nodes/AL_5/MLModel/val_atoms.extxyz
     params:
     - AL_5_MLModel
-    - config/apax_1.yaml:
+    - config/apax_3.yaml: null
   AL_5_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_5_MLModel_1
     deps:
@@ -1834,7 +2025,7 @@ stages:
     - nodes/AL_5/MLModel_1/val_atoms.extxyz
     params:
     - AL_5_MLModel_1
-    - config/apax_2.yaml:
+    - config/apax_4.yaml: null
   AL_5_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_5_Prediction
     deps:
@@ -1853,9 +2044,6 @@ stages:
     - nodes/AL_4/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_4/CP2KSinglePoint_2/cp2k
     - nodes/AL_4/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_5/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_5/CP2KSinglePoint_2/cp2k
-    - nodes/AL_5/CP2KSinglePoint_2/node-meta.json
     - nodes/AL_5/EnsembleModel/node-meta.json
     - nodes/AL_5/EnsembleModel/uuid.json
     - nodes/ConfigurationSelection/_hash.json
@@ -1924,7 +2112,7 @@ stages:
     - nodes/CP2KSinglePoint/atoms.h5
     - nodes/CP2KSinglePoint/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   ConfigurationSelection:
     cmd: zntrack run ipsuite.nodes.RandomSelection --name ConfigurationSelection
     deps:

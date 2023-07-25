@@ -481,6 +481,94 @@
             "value": "nodes/AL_0/ConfigurationSelection_2"
         }
     },
+    "AL_0_Prediction": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "RandomSelection",
+                        "name": "ConfigurationSelection",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "data_file": null,
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "AL_0_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_0/Prediction"
+        }
+    },
+    "AL_0_PredictionMetrics": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "AL_0_Prediction",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "energy_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy_df.csv"
+        },
+        "forces_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/forces_df.csv"
+        },
+        "plots_dir": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/plots"
+        },
+        "stress_deviatoric_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_deviatoric_df.csv"
+        },
+        "stress_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_df.csv"
+        },
+        "stress_hydrostatic_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_hydrostatic_df.csv"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_0/PredictionMetrics"
+        }
+    },
     "AL_0_CP2KSinglePoint_1": {
         "cp2k_directory": {
             "_type": "pathlib.Path",
@@ -595,113 +683,6 @@
             "value": "nodes/AL_0/CP2KSinglePoint_2"
         }
     },
-    "AL_0_Prediction": {
-        "data": {
-            "_type": "znflow.CombinedConnections",
-            "value": {
-                "connections": [
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "ConfigurationSelection",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_0_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    }
-                ],
-                "item": null
-            }
-        },
-        "data_file": null,
-        "model": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "EnsembleModel",
-                        "name": "AL_0_EnsembleModel",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": null,
-                "item": null
-            }
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_0/Prediction"
-        }
-    },
-    "AL_0_PredictionMetrics": {
-        "data": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "Prediction",
-                        "name": "AL_0_Prediction",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": null,
-                "item": null
-            }
-        },
-        "energy_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/energy_df.csv"
-        },
-        "forces_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/forces_df.csv"
-        },
-        "plots_dir": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/plots"
-        },
-        "stress_deviatoric_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_deviatoric_df.csv"
-        },
-        "stress_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_df.csv"
-        },
-        "stress_hydrostatic_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_hydrostatic_df.csv"
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_0/PredictionMetrics"
-        }
-    },
     "AL_0_ForcesUncertaintyHistogram": {
         "data": {
             "_type": "znflow.Connection",
@@ -727,6 +708,100 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/AL_0/ForcesUncertaintyHistogram"
+        }
+    },
+    "AL_0_EnergyUncertaintyHistogram": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ASEMD",
+                        "name": "AL_0_ASEMD",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "plots_dir": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/plots"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_0/EnergyUncertaintyHistogram"
+        }
+    },
+    "AL_0_BoxScale": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ASEGeoOpt",
+                        "name": "ASEGeoOpt",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "data_file": null,
+        "mapping": {
+            "_type": "zntrack.Node",
+            "value": {
+                "module": "ipsuite.nodes",
+                "cls": "BarycenterMapping",
+                "name": "AL_0_BoxScale_mapping",
+                "remote": null,
+                "rev": null
+            }
+        },
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "AL_0_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "model_outs": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/model"
+        },
+        "plot": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_0/BoxScale"
+        }
+    },
+    "AL_0_BoxScale_mapping": {
+        "data": null,
+        "data_file": null,
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_0/BoxScale_mapping"
         }
     },
     "AL_1_MLModel": {
@@ -1129,6 +1204,113 @@
             "value": "nodes/AL_1/ConfigurationSelection_2"
         }
     },
+    "AL_1_Prediction": {
+        "data": {
+            "_type": "znflow.CombinedConnections",
+            "value": {
+                "connections": [
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "RandomSelection",
+                                "name": "ConfigurationSelection",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_0_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    }
+                ],
+                "item": null
+            }
+        },
+        "data_file": null,
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "AL_1_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_1/Prediction"
+        }
+    },
+    "AL_1_PredictionMetrics": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "AL_1_Prediction",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "energy_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy_df.csv"
+        },
+        "forces_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/forces_df.csv"
+        },
+        "plots_dir": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/plots"
+        },
+        "stress_deviatoric_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_deviatoric_df.csv"
+        },
+        "stress_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_df.csv"
+        },
+        "stress_hydrostatic_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_hydrostatic_df.csv"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_1/PredictionMetrics"
+        }
+    },
     "AL_1_CP2KSinglePoint_1": {
         "cp2k_directory": {
             "_type": "pathlib.Path",
@@ -1243,127 +1425,6 @@
             "value": "nodes/AL_1/CP2KSinglePoint_2"
         }
     },
-    "AL_1_Prediction": {
-        "data": {
-            "_type": "znflow.CombinedConnections",
-            "value": {
-                "connections": [
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "ConfigurationSelection",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_0_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_1_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    }
-                ],
-                "item": null
-            }
-        },
-        "data_file": null,
-        "model": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "EnsembleModel",
-                        "name": "AL_1_EnsembleModel",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": null,
-                "item": null
-            }
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_1/Prediction"
-        }
-    },
-    "AL_1_PredictionMetrics": {
-        "data": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "Prediction",
-                        "name": "AL_1_Prediction",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": null,
-                "item": null
-            }
-        },
-        "energy_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/energy_df.csv"
-        },
-        "forces_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/forces_df.csv"
-        },
-        "plots_dir": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/plots"
-        },
-        "stress_deviatoric_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_deviatoric_df.csv"
-        },
-        "stress_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_df.csv"
-        },
-        "stress_hydrostatic_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_hydrostatic_df.csv"
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_1/PredictionMetrics"
-        }
-    },
     "AL_1_ForcesUncertaintyHistogram": {
         "data": {
             "_type": "znflow.Connection",
@@ -1389,6 +1450,100 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/AL_1/ForcesUncertaintyHistogram"
+        }
+    },
+    "AL_1_EnergyUncertaintyHistogram": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ASEMD",
+                        "name": "AL_1_ASEMD",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "plots_dir": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/plots"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_1/EnergyUncertaintyHistogram"
+        }
+    },
+    "AL_1_BoxScale": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ASEGeoOpt",
+                        "name": "ASEGeoOpt",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "data_file": null,
+        "mapping": {
+            "_type": "zntrack.Node",
+            "value": {
+                "module": "ipsuite.nodes",
+                "cls": "BarycenterMapping",
+                "name": "AL_1_BoxScale_mapping",
+                "remote": null,
+                "rev": null
+            }
+        },
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "AL_1_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "model_outs": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/model"
+        },
+        "plot": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_1/BoxScale"
+        }
+    },
+    "AL_1_BoxScale_mapping": {
+        "data": null,
+        "data_file": null,
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_1/BoxScale_mapping"
         }
     },
     "AL_2_MLModel": {
@@ -1847,6 +2002,127 @@
             "value": "nodes/AL_2/ConfigurationSelection_2"
         }
     },
+    "AL_2_Prediction": {
+        "data": {
+            "_type": "znflow.CombinedConnections",
+            "value": {
+                "connections": [
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "RandomSelection",
+                                "name": "ConfigurationSelection",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_0_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_1_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    }
+                ],
+                "item": null
+            }
+        },
+        "data_file": null,
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "AL_2_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_2/Prediction"
+        }
+    },
+    "AL_2_PredictionMetrics": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "AL_2_Prediction",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "energy_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy_df.csv"
+        },
+        "forces_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/forces_df.csv"
+        },
+        "plots_dir": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/plots"
+        },
+        "stress_deviatoric_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_deviatoric_df.csv"
+        },
+        "stress_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_df.csv"
+        },
+        "stress_hydrostatic_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_hydrostatic_df.csv"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_2/PredictionMetrics"
+        }
+    },
     "AL_2_CP2KSinglePoint_1": {
         "cp2k_directory": {
             "_type": "pathlib.Path",
@@ -1961,141 +2237,6 @@
             "value": "nodes/AL_2/CP2KSinglePoint_2"
         }
     },
-    "AL_2_Prediction": {
-        "data": {
-            "_type": "znflow.CombinedConnections",
-            "value": {
-                "connections": [
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "ConfigurationSelection",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_0_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_1_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_2_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    }
-                ],
-                "item": null
-            }
-        },
-        "data_file": null,
-        "model": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "EnsembleModel",
-                        "name": "AL_2_EnsembleModel",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": null,
-                "item": null
-            }
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_2/Prediction"
-        }
-    },
-    "AL_2_PredictionMetrics": {
-        "data": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "Prediction",
-                        "name": "AL_2_Prediction",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": null,
-                "item": null
-            }
-        },
-        "energy_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/energy_df.csv"
-        },
-        "forces_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/forces_df.csv"
-        },
-        "plots_dir": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/plots"
-        },
-        "stress_deviatoric_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_deviatoric_df.csv"
-        },
-        "stress_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_df.csv"
-        },
-        "stress_hydrostatic_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_hydrostatic_df.csv"
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_2/PredictionMetrics"
-        }
-    },
     "AL_2_ForcesUncertaintyHistogram": {
         "data": {
             "_type": "znflow.Connection",
@@ -2121,6 +2262,100 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/AL_2/ForcesUncertaintyHistogram"
+        }
+    },
+    "AL_2_EnergyUncertaintyHistogram": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ASEMD",
+                        "name": "AL_2_ASEMD",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "plots_dir": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/plots"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_2/EnergyUncertaintyHistogram"
+        }
+    },
+    "AL_2_BoxScale": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ASEGeoOpt",
+                        "name": "ASEGeoOpt",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "data_file": null,
+        "mapping": {
+            "_type": "zntrack.Node",
+            "value": {
+                "module": "ipsuite.nodes",
+                "cls": "BarycenterMapping",
+                "name": "AL_2_BoxScale_mapping",
+                "remote": null,
+                "rev": null
+            }
+        },
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "AL_2_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "model_outs": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/model"
+        },
+        "plot": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_2/BoxScale"
+        }
+    },
+    "AL_2_BoxScale_mapping": {
+        "data": null,
+        "data_file": null,
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_2/BoxScale_mapping"
         }
     },
     "AL_3_MLModel": {
@@ -2635,6 +2870,141 @@
             "value": "nodes/AL_3/ConfigurationSelection_2"
         }
     },
+    "AL_3_Prediction": {
+        "data": {
+            "_type": "znflow.CombinedConnections",
+            "value": {
+                "connections": [
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "RandomSelection",
+                                "name": "ConfigurationSelection",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_0_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_1_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_2_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    }
+                ],
+                "item": null
+            }
+        },
+        "data_file": null,
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "AL_3_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_3/Prediction"
+        }
+    },
+    "AL_3_PredictionMetrics": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "AL_3_Prediction",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "energy_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy_df.csv"
+        },
+        "forces_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/forces_df.csv"
+        },
+        "plots_dir": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/plots"
+        },
+        "stress_deviatoric_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_deviatoric_df.csv"
+        },
+        "stress_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_df.csv"
+        },
+        "stress_hydrostatic_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_hydrostatic_df.csv"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_3/PredictionMetrics"
+        }
+    },
     "AL_3_CP2KSinglePoint_1": {
         "cp2k_directory": {
             "_type": "pathlib.Path",
@@ -2749,155 +3119,6 @@
             "value": "nodes/AL_3/CP2KSinglePoint_2"
         }
     },
-    "AL_3_Prediction": {
-        "data": {
-            "_type": "znflow.CombinedConnections",
-            "value": {
-                "connections": [
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "ConfigurationSelection",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_0_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_1_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_2_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_3_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    }
-                ],
-                "item": null
-            }
-        },
-        "data_file": null,
-        "model": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "EnsembleModel",
-                        "name": "AL_3_EnsembleModel",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": null,
-                "item": null
-            }
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_3/Prediction"
-        }
-    },
-    "AL_3_PredictionMetrics": {
-        "data": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "Prediction",
-                        "name": "AL_3_Prediction",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": null,
-                "item": null
-            }
-        },
-        "energy_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/energy_df.csv"
-        },
-        "forces_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/forces_df.csv"
-        },
-        "plots_dir": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/plots"
-        },
-        "stress_deviatoric_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_deviatoric_df.csv"
-        },
-        "stress_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_df.csv"
-        },
-        "stress_hydrostatic_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_hydrostatic_df.csv"
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_3/PredictionMetrics"
-        }
-    },
     "AL_3_ForcesUncertaintyHistogram": {
         "data": {
             "_type": "znflow.Connection",
@@ -2923,6 +3144,100 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/AL_3/ForcesUncertaintyHistogram"
+        }
+    },
+    "AL_3_EnergyUncertaintyHistogram": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ASEMD",
+                        "name": "AL_3_ASEMD",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "plots_dir": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/plots"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_3/EnergyUncertaintyHistogram"
+        }
+    },
+    "AL_3_BoxScale": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ASEGeoOpt",
+                        "name": "ASEGeoOpt",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "data_file": null,
+        "mapping": {
+            "_type": "zntrack.Node",
+            "value": {
+                "module": "ipsuite.nodes",
+                "cls": "BarycenterMapping",
+                "name": "AL_3_BoxScale_mapping",
+                "remote": null,
+                "rev": null
+            }
+        },
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "AL_3_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "model_outs": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/model"
+        },
+        "plot": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_3/BoxScale"
+        }
+    },
+    "AL_3_BoxScale_mapping": {
+        "data": null,
+        "data_file": null,
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_3/BoxScale_mapping"
         }
     },
     "AL_4_MLModel": {
@@ -3493,6 +3808,155 @@
             "value": "nodes/AL_4/ConfigurationSelection_2"
         }
     },
+    "AL_4_Prediction": {
+        "data": {
+            "_type": "znflow.CombinedConnections",
+            "value": {
+                "connections": [
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "RandomSelection",
+                                "name": "ConfigurationSelection",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_0_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_1_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_2_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_3_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    }
+                ],
+                "item": null
+            }
+        },
+        "data_file": null,
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "AL_4_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_4/Prediction"
+        }
+    },
+    "AL_4_PredictionMetrics": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "AL_4_Prediction",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "energy_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy_df.csv"
+        },
+        "forces_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/forces_df.csv"
+        },
+        "plots_dir": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/plots"
+        },
+        "stress_deviatoric_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_deviatoric_df.csv"
+        },
+        "stress_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_df.csv"
+        },
+        "stress_hydrostatic_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_hydrostatic_df.csv"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_4/PredictionMetrics"
+        }
+    },
     "AL_4_CP2KSinglePoint_1": {
         "cp2k_directory": {
             "_type": "pathlib.Path",
@@ -3607,169 +4071,6 @@
             "value": "nodes/AL_4/CP2KSinglePoint_2"
         }
     },
-    "AL_4_Prediction": {
-        "data": {
-            "_type": "znflow.CombinedConnections",
-            "value": {
-                "connections": [
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "ConfigurationSelection",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_0_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_1_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_2_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_3_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_4_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    }
-                ],
-                "item": null
-            }
-        },
-        "data_file": null,
-        "model": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "EnsembleModel",
-                        "name": "AL_4_EnsembleModel",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": null,
-                "item": null
-            }
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_4/Prediction"
-        }
-    },
-    "AL_4_PredictionMetrics": {
-        "data": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "Prediction",
-                        "name": "AL_4_Prediction",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": null,
-                "item": null
-            }
-        },
-        "energy_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/energy_df.csv"
-        },
-        "forces_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/forces_df.csv"
-        },
-        "plots_dir": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/plots"
-        },
-        "stress_deviatoric_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_deviatoric_df.csv"
-        },
-        "stress_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_df.csv"
-        },
-        "stress_hydrostatic_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_hydrostatic_df.csv"
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_4/PredictionMetrics"
-        }
-    },
     "AL_4_ForcesUncertaintyHistogram": {
         "data": {
             "_type": "znflow.Connection",
@@ -3795,114 +4096,6 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/AL_4/ForcesUncertaintyHistogram"
-        }
-    },
-    "AL_0_EnergyUncertaintyHistogram": {
-        "data": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "ASEMD",
-                        "name": "AL_0_ASEMD",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": "atoms",
-                "item": null
-            }
-        },
-        "plots_dir": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/plots"
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_0/EnergyUncertaintyHistogram"
-        }
-    },
-    "AL_1_EnergyUncertaintyHistogram": {
-        "data": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "ASEMD",
-                        "name": "AL_1_ASEMD",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": "atoms",
-                "item": null
-            }
-        },
-        "plots_dir": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/plots"
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_1/EnergyUncertaintyHistogram"
-        }
-    },
-    "AL_2_EnergyUncertaintyHistogram": {
-        "data": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "ASEMD",
-                        "name": "AL_2_ASEMD",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": "atoms",
-                "item": null
-            }
-        },
-        "plots_dir": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/plots"
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_2/EnergyUncertaintyHistogram"
-        }
-    },
-    "AL_3_EnergyUncertaintyHistogram": {
-        "data": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "ASEMD",
-                        "name": "AL_3_ASEMD",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": "atoms",
-                "item": null
-            }
-        },
-        "plots_dir": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/plots"
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_3/EnergyUncertaintyHistogram"
         }
     },
     "AL_4_EnergyUncertaintyHistogram": {
@@ -3932,8 +4125,75 @@
             "value": "nodes/AL_4/EnergyUncertaintyHistogram"
         }
     },
+    "AL_4_BoxScale": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ASEGeoOpt",
+                        "name": "ASEGeoOpt",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "data_file": null,
+        "mapping": {
+            "_type": "zntrack.Node",
+            "value": {
+                "module": "ipsuite.nodes",
+                "cls": "BarycenterMapping",
+                "name": "AL_4_BoxScale_mapping",
+                "remote": null,
+                "rev": null
+            }
+        },
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "AL_4_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "model_outs": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/model"
+        },
+        "plot": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_4/BoxScale"
+        }
+    },
+    "AL_4_BoxScale_mapping": {
+        "data": null,
+        "data_file": null,
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_4/BoxScale_mapping"
+        }
+    },
     "AL_5_MLModel": {
-        "config": "config/apax_1.yaml",
+        "config": "config/apax_3.yaml",
         "data": {
             "_type": "znflow.CombinedConnections",
             "value": {
@@ -4144,7 +4404,7 @@
         }
     },
     "AL_5_MLModel_1": {
-        "config": "config/apax_2.yaml",
+        "config": "config/apax_4.yaml",
         "data": {
             "_type": "znflow.CombinedConnections",
             "value": {
@@ -4556,6 +4816,169 @@
             "value": "nodes/AL_5/ConfigurationSelection_2"
         }
     },
+    "AL_5_Prediction": {
+        "data": {
+            "_type": "znflow.CombinedConnections",
+            "value": {
+                "connections": [
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "RandomSelection",
+                                "name": "ConfigurationSelection",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_0_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_1_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_2_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_3_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL_4_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    }
+                ],
+                "item": null
+            }
+        },
+        "data_file": null,
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "AL_5_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_5/Prediction"
+        }
+    },
+    "AL_5_PredictionMetrics": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "AL_5_Prediction",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "energy_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy_df.csv"
+        },
+        "forces_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/forces_df.csv"
+        },
+        "plots_dir": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/plots"
+        },
+        "stress_deviatoric_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_deviatoric_df.csv"
+        },
+        "stress_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_df.csv"
+        },
+        "stress_hydrostatic_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_hydrostatic_df.csv"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_5/PredictionMetrics"
+        }
+    },
     "AL_5_CP2KSinglePoint_1": {
         "cp2k_directory": {
             "_type": "pathlib.Path",
@@ -4670,183 +5093,6 @@
             "value": "nodes/AL_5/CP2KSinglePoint_2"
         }
     },
-    "AL_5_Prediction": {
-        "data": {
-            "_type": "znflow.CombinedConnections",
-            "value": {
-                "connections": [
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "ConfigurationSelection",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_0_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_1_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_2_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_3_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_4_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "CP2KSinglePoint",
-                                "name": "AL_5_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    }
-                ],
-                "item": null
-            }
-        },
-        "data_file": null,
-        "model": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "EnsembleModel",
-                        "name": "AL_5_EnsembleModel",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": null,
-                "item": null
-            }
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_5/Prediction"
-        }
-    },
-    "AL_5_PredictionMetrics": {
-        "data": {
-            "_type": "znflow.Connection",
-            "value": {
-                "instance": {
-                    "_type": "zntrack.Node",
-                    "value": {
-                        "module": "ipsuite.nodes",
-                        "cls": "Prediction",
-                        "name": "AL_5_Prediction",
-                        "remote": null,
-                        "rev": null
-                    }
-                },
-                "attribute": null,
-                "item": null
-            }
-        },
-        "energy_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/energy_df.csv"
-        },
-        "forces_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/forces_df.csv"
-        },
-        "plots_dir": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/plots"
-        },
-        "stress_deviatoric_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_deviatoric_df.csv"
-        },
-        "stress_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_df.csv"
-        },
-        "stress_hydrostatic_df_file": {
-            "_type": "pathlib.Path",
-            "value": "$nwd$/stress_hydrostatic_df.csv"
-        },
-        "nwd": {
-            "_type": "pathlib.Path",
-            "value": "nodes/AL_5/PredictionMetrics"
-        }
-    },
     "AL_5_ForcesUncertaintyHistogram": {
         "data": {
             "_type": "znflow.Connection",
@@ -4899,6 +5145,73 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/AL_5/EnergyUncertaintyHistogram"
+        }
+    },
+    "AL_5_BoxScale": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ASEGeoOpt",
+                        "name": "ASEGeoOpt",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "data_file": null,
+        "mapping": {
+            "_type": "zntrack.Node",
+            "value": {
+                "module": "ipsuite.nodes",
+                "cls": "BarycenterMapping",
+                "name": "AL_5_BoxScale_mapping",
+                "remote": null,
+                "rev": null
+            }
+        },
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "AL_5_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "model_outs": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/model"
+        },
+        "plot": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_5/BoxScale"
+        }
+    },
+    "AL_5_BoxScale_mapping": {
+        "data": null,
+        "data_file": null,
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/AL_5/BoxScale_mapping"
         }
     }
 }
