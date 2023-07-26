@@ -345,7 +345,7 @@ bootstrap_0_ASEMD:
     - 1
     - 1
     - 1
-    sampling_rate: 1
+    sampling_rate: 100
     steps: 50000
 bootstrap_0_ASEMD_checker_list_0:
     larger_only: true
@@ -378,24 +378,24 @@ bootstrap_0_MLModel_1:
 bootstrap_0_RotateMolecules:
     data_id: -1
     include_original: false
-    maximum: 0.34905555555555556
+    maximum: 0.17452777777777778
     n_configurations: 10
     seed: 1
 bootstrap_0_RotateMolecules_test:
     data_id: -1
     include_original: false
-    maximum: 0.34905555555555556
+    maximum: 0.17452777777777778
     n_configurations: 5
     seed: 2
 bootstrap_0_TranslateMolecules:
     data_id: -1
     include_original: false
-    maximum: 0.35
+    maximum: 0.2
     n_configurations: 10
     seed: 1
 bootstrap_0_TranslateMolecules_test:
     data_id: -1
     include_original: false
-    maximum: 0.35
+    maximum: 0.2
     n_configurations: 5
     seed: 2

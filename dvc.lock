@@ -8883,17 +8883,17 @@ stages:
         bootstrap_0_RotateMolecules:
           data_id: -1
           include_original: false
-          maximum: 0.34905555555555556
+          maximum: 0.17452777777777778
           n_configurations: 10
           seed: 1
     outs:
     - path: nodes/bootstrap_0/RotateMolecules/atoms.h5
       hash: md5
-      md5: c2fdad6e7524e82c92ff09f795e53070
+      md5: 895c6d18bf1c9af782798dcccc6d7d98
       size: 204288
     - path: nodes/bootstrap_0/RotateMolecules/node-meta.json
       hash: md5
-      md5: 4a63f5e4867c96903140029ba80f86e5
+      md5: aa109177cb62a754874dc00151dd9fbf
       size: 48
   bootstrap_0_TranslateMolecules:
     cmd: zntrack run ipsuite.nodes.TranslateMolecules --name bootstrap_0_TranslateMolecules
@@ -8916,17 +8916,17 @@ stages:
         bootstrap_0_TranslateMolecules:
           data_id: -1
           include_original: false
-          maximum: 0.35
+          maximum: 0.2
           n_configurations: 10
           seed: 1
     outs:
     - path: nodes/bootstrap_0/TranslateMolecules/atoms.h5
       hash: md5
-      md5: ff942c32a775b0c74e46c6bb5f5c7656
+      md5: a6a1f6b58c2b30228ded5b331903cda9
       size: 204288
     - path: nodes/bootstrap_0/TranslateMolecules/node-meta.json
       hash: md5
-      md5: 79a8692962602701d6cb252f0304d965
+      md5: c2b76b6e4d33fe5ef9cc798bc02616af
       size: 48
   bootstrap_0_RotateMolecules_test:
     cmd: zntrack run ipsuite.nodes.RotateMolecules --name bootstrap_0_RotateMolecules_test
@@ -8949,17 +8949,17 @@ stages:
         bootstrap_0_RotateMolecules_test:
           data_id: -1
           include_original: false
-          maximum: 0.34905555555555556
+          maximum: 0.17452777777777778
           n_configurations: 5
           seed: 2
     outs:
     - path: nodes/bootstrap_0/RotateMolecules_test/atoms.h5
       hash: md5
-      md5: 1ecbbff8cb9b324c91a700f2c3493d80
+      md5: 9a6a4dbe8287d80439b814daf2bfcd3b
       size: 119168
     - path: nodes/bootstrap_0/RotateMolecules_test/node-meta.json
       hash: md5
-      md5: fb03a152c0a70b1f0a0b0788a16d1e07
+      md5: 9f17b30bfde16f6f69e16f18ee3f79c0
       size: 48
   bootstrap_0_TranslateMolecules_test:
     cmd: zntrack run ipsuite.nodes.TranslateMolecules --name bootstrap_0_TranslateMolecules_test
@@ -8982,17 +8982,17 @@ stages:
         bootstrap_0_TranslateMolecules_test:
           data_id: -1
           include_original: false
-          maximum: 0.35
+          maximum: 0.2
           n_configurations: 5
           seed: 2
     outs:
     - path: nodes/bootstrap_0/TranslateMolecules_test/atoms.h5
       hash: md5
-      md5: 2b61c38616f8b687a93a60856770101f
+      md5: 9ed13d2b40b47d1e15e499696dbb6ff0
       size: 119168
     - path: nodes/bootstrap_0/TranslateMolecules_test/node-meta.json
       hash: md5
-      md5: 34af43122e2600db02fd2faaac885626
+      md5: c40ef611c7f738dd539638a7dff6e489
       size: 48
   bootstrap_0_CP2KSinglePoint_1:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name bootstrap_0_CP2KSinglePoint_1
