@@ -336,7 +336,7 @@ SmilesToAtoms:
     optimizer: UFF
     seed: 1234
     smiles: CS(=O)C
-bootstrap_0_ASEMD_5:
+bootstrap_0_ASEMD:
     data_id: -1
     dump_rate: 1000
     init_temperature: null
@@ -347,46 +347,53 @@ bootstrap_0_ASEMD_5:
     - 1
     sampling_rate: 1
     steps: 50000
-bootstrap_0_ASEMD_5_checker_list_0:
+bootstrap_0_ASEMD_checker_list_0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-bootstrap_0_ASEMD_5_thermostat:
+bootstrap_0_ASEMD_thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-bootstrap_0_MLModel_1_5:
+bootstrap_0_BoxScale:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+bootstrap_0_BoxScale_mapping:
+    frozen: false
+bootstrap_0_MLModel:
     jax_enable_x64: true
     use_energy: true
     use_forces: true
     use_stresses: false
-bootstrap_0_MLModel_6:
+bootstrap_0_MLModel_1:
     jax_enable_x64: true
     use_energy: true
     use_forces: true
     use_stresses: false
-bootstrap_0_RotateMolecules_5:
+bootstrap_0_RotateMolecules:
     data_id: -1
     include_original: false
     maximum: 0.34905555555555556
     n_configurations: 10
     seed: 1
-bootstrap_0_RotateMolecules_test_5:
+bootstrap_0_RotateMolecules_test:
     data_id: -1
     include_original: false
     maximum: 0.34905555555555556
     n_configurations: 5
     seed: 2
-bootstrap_0_TranslateMolecules_5:
+bootstrap_0_TranslateMolecules:
     data_id: -1
     include_original: false
     maximum: 0.35
     n_configurations: 10
     seed: 1
-bootstrap_0_TranslateMolecules_test_5:
+bootstrap_0_TranslateMolecules_test:
     data_id: -1
     include_original: false
     maximum: 0.35

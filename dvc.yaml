@@ -1,124 +1,4 @@
 plots:
-- nodes/AL_0/MLModel/log.csv:
-    template: dvc_plots/templates/y_log.json
-    x: epoch
-    x_label: epochs
-    y: val_loss
-    y_label: validation loss
-- nodes/AL_0/MLModel_1/log.csv:
-    template: dvc_plots/templates/y_log.json
-    x: epoch
-    x_label: epochs
-    y: val_loss
-    y_label: validation loss
-- nodes/AL_0/ASEMD/metrics_dict.csv: {}
-- nodes/AL_1/MLModel/log.csv:
-    template: dvc_plots/templates/y_log.json
-    x: epoch
-    x_label: epochs
-    y: val_loss
-    y_label: validation loss
-- nodes/AL_1/MLModel_1/log.csv:
-    template: dvc_plots/templates/y_log.json
-    x: epoch
-    x_label: epochs
-    y: val_loss
-    y_label: validation loss
-- nodes/AL_1/ASEMD/metrics_dict.csv: {}
-- nodes/AL_2/MLModel/log.csv:
-    template: dvc_plots/templates/y_log.json
-    x: epoch
-    x_label: epochs
-    y: val_loss
-    y_label: validation loss
-- nodes/AL_2/MLModel_1/log.csv:
-    template: dvc_plots/templates/y_log.json
-    x: epoch
-    x_label: epochs
-    y: val_loss
-    y_label: validation loss
-- nodes/AL_2/ASEMD/metrics_dict.csv: {}
-- nodes/AL_3/MLModel/log.csv:
-    template: dvc_plots/templates/y_log.json
-    x: epoch
-    x_label: epochs
-    y: val_loss
-    y_label: validation loss
-- nodes/AL_3/MLModel_1/log.csv:
-    template: dvc_plots/templates/y_log.json
-    x: epoch
-    x_label: epochs
-    y: val_loss
-    y_label: validation loss
-- nodes/AL_3/ASEMD/metrics_dict.csv: {}
-- nodes/AL_3/ForcesUncertaintyHistogram/labels_df.csv: {}
-- nodes/AL_1/ForcesUncertaintyHistogram/labels_df.csv: {}
-- nodes/AL_0/ForcesUncertaintyHistogram/labels_df.csv: {}
-- nodes/AL_2/ForcesUncertaintyHistogram/labels_df.csv: {}
-- nodes/AL_4/MLModel/log.csv:
-    template: dvc_plots/templates/y_log.json
-    x: epoch
-    x_label: epochs
-    y: val_loss
-    y_label: validation loss
-- nodes/AL_4/MLModel_1/log.csv:
-    template: dvc_plots/templates/y_log.json
-    x: epoch
-    x_label: epochs
-    y: val_loss
-    y_label: validation loss
-- nodes/AL_4/ASEMD/metrics_dict.csv: {}
-- nodes/AL_4/ForcesUncertaintyHistogram/labels_df.csv: {}
-- nodes/AL_0/EnergyUncertaintyHistogram/labels_df.csv: {}
-- nodes/AL_1/EnergyUncertaintyHistogram/labels_df.csv: {}
-- nodes/AL_2/EnergyUncertaintyHistogram/labels_df.csv: {}
-- nodes/AL_3/EnergyUncertaintyHistogram/labels_df.csv: {}
-- nodes/AL_4/EnergyUncertaintyHistogram/labels_df.csv: {}
-- nodes/AL_5/MLModel/log.csv:
-    template: dvc_plots/templates/y_log.json
-    x: epoch
-    x_label: epochs
-    y: val_loss
-    y_label: validation loss
-- nodes/AL_5/MLModel_1/log.csv:
-    template: dvc_plots/templates/y_log.json
-    x: epoch
-    x_label: epochs
-    y: val_loss
-    y_label: validation loss
-- nodes/AL_5/ASEMD/metrics_dict.csv: {}
-- nodes/AL_5/BoxScale/energies.csv:
-    x: x
-    x_label: Scale factor of the initial cell
-    y: y
-    y_label: predicted energy
-- nodes/AL_0/BoxScale/energies.csv:
-    x: x
-    x_label: Scale factor of the initial cell
-    y: y
-    y_label: predicted energy
-- nodes/AL_1/BoxScale/energies.csv:
-    x: x
-    x_label: Scale factor of the initial cell
-    y: y
-    y_label: predicted energy
-- nodes/AL_2/BoxScale/energies.csv:
-    x: x
-    x_label: Scale factor of the initial cell
-    y: y
-    y_label: predicted energy
-- nodes/AL_3/BoxScale/energies.csv:
-    x: x
-    x_label: Scale factor of the initial cell
-    y: y
-    y_label: predicted energy
-- nodes/AL_4/BoxScale/energies.csv:
-    x: x
-    x_label: Scale factor of the initial cell
-    y: y
-    y_label: predicted energy
-- nodes/AL_5/EnergyUncertaintyHistogram/labels_df.csv: {}
-- nodes/AL_5/ForcesUncertaintyHistogram/labels_df.csv: {}
 - nodes/bootstrap_0/MLModel/log.csv:
     template: dvc_plots/templates/y_log.json
     x: epoch
@@ -131,6 +11,83 @@ plots:
     x_label: epochs
     y: val_loss
     y_label: validation loss
+- nodes/AL_0/MLModel/log.csv:
+    template: dvc_plots/templates/y_log.json
+    x: epoch
+    x_label: epochs
+    y: val_loss
+    y_label: validation loss
+- nodes/AL_0/MLModel_1/log.csv:
+    template: dvc_plots/templates/y_log.json
+    x: epoch
+    x_label: epochs
+    y: val_loss
+    y_label: validation loss
+- nodes/AL_1/MLModel/log.csv:
+    template: dvc_plots/templates/y_log.json
+    x: epoch
+    x_label: epochs
+    y: val_loss
+    y_label: validation loss
+- nodes/AL_1/MLModel_1/log.csv:
+    template: dvc_plots/templates/y_log.json
+    x: epoch
+    x_label: epochs
+    y: val_loss
+    y_label: validation loss
+- nodes/AL_2/MLModel/log.csv:
+    template: dvc_plots/templates/y_log.json
+    x: epoch
+    x_label: epochs
+    y: val_loss
+    y_label: validation loss
+- nodes/AL_2/MLModel_1/log.csv:
+    template: dvc_plots/templates/y_log.json
+    x: epoch
+    x_label: epochs
+    y: val_loss
+    y_label: validation loss
+- nodes/AL_3/MLModel/log.csv:
+    template: dvc_plots/templates/y_log.json
+    x: epoch
+    x_label: epochs
+    y: val_loss
+    y_label: validation loss
+- nodes/AL_3/MLModel_1/log.csv:
+    template: dvc_plots/templates/y_log.json
+    x: epoch
+    x_label: epochs
+    y: val_loss
+    y_label: validation loss
+- nodes/AL_4/MLModel/log.csv:
+    template: dvc_plots/templates/y_log.json
+    x: epoch
+    x_label: epochs
+    y: val_loss
+    y_label: validation loss
+- nodes/AL_4/MLModel_1/log.csv:
+    template: dvc_plots/templates/y_log.json
+    x: epoch
+    x_label: epochs
+    y: val_loss
+    y_label: validation loss
+- nodes/AL_5/MLModel/log.csv:
+    template: dvc_plots/templates/y_log.json
+    x: epoch
+    x_label: epochs
+    y: val_loss
+    y_label: validation loss
+- nodes/AL_5/MLModel_1/log.csv:
+    template: dvc_plots/templates/y_log.json
+    x: epoch
+    x_label: epochs
+    y: val_loss
+    y_label: validation loss
+- nodes/bootstrap_0/BoxScale/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
 stages:
   AL_0_ASEMD:
     cmd: zntrack run ipsuite.nodes.ASEMD --name AL_0_ASEMD
@@ -223,7 +180,7 @@ stages:
     - nodes/AL_0/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_0/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_0_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_0_CP2KSinglePoint_2
     deps:
@@ -243,7 +200,7 @@ stages:
     - nodes/AL_0/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_0/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_0_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_0_ConfigurationSelection_1
     deps:
@@ -324,6 +281,27 @@ stages:
         cache: false
     outs:
     - nodes/AL_0/EnsembleModel/uuid.json
+  AL_0_ForceDecomposition:
+    cmd: zntrack run ipsuite.nodes.ForceDecomposition --name AL_0_ForceDecomposition
+    deps:
+    - nodes/AL_0/Prediction/atoms.h5
+    - nodes/AL_0/Prediction/node-meta.json
+    metrics:
+    - nodes/AL_0/ForceDecomposition/node-meta.json:
+        cache: false
+    - nodes/AL_0/ForceDecomposition/rot_forces.json:
+        cache: false
+    - nodes/AL_0/ForceDecomposition/trans_forces.json:
+        cache: false
+    - nodes/AL_0/ForceDecomposition/vib_forces.json:
+        cache: false
+    - nodes/AL_0/ForceDecomposition/wasserstein_distance.json:
+        cache: false
+    outs:
+    - nodes/AL_0/ForceDecomposition/histogram.png
+    - nodes/AL_0/ForceDecomposition/rot_force.png
+    - nodes/AL_0/ForceDecomposition/trans_force.png
+    - nodes/AL_0/ForceDecomposition/vib_force.png
   AL_0_ForcesUncertaintyHistogram:
     cmd: zntrack run ipsuite.nodes.ForcesUncertaintyHistogram --name AL_0_ForcesUncertaintyHistogram
     deps:
@@ -362,7 +340,7 @@ stages:
     - nodes/AL_0/MLModel/val_atoms.extxyz
     params:
     - AL_0_MLModel
-    - config/apax_1.yaml:
+    - config/apax_1.yaml: null
   AL_0_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_0_MLModel_1
     deps:
@@ -382,7 +360,7 @@ stages:
     - nodes/AL_0/MLModel_1/val_atoms.extxyz
     params:
     - AL_0_MLModel_1
-    - config/apax_2.yaml:
+    - config/apax_2.yaml: null
   AL_0_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_0_Prediction
     deps:
@@ -512,7 +490,7 @@ stages:
     - nodes/AL_1/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_1/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_1_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_1_CP2KSinglePoint_2
     deps:
@@ -532,7 +510,7 @@ stages:
     - nodes/AL_1/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_1/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_1_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_1_ConfigurationSelection_1
     deps:
@@ -613,6 +591,27 @@ stages:
         cache: false
     outs:
     - nodes/AL_1/EnsembleModel/uuid.json
+  AL_1_ForceDecomposition:
+    cmd: zntrack run ipsuite.nodes.ForceDecomposition --name AL_1_ForceDecomposition
+    deps:
+    - nodes/AL_1/Prediction/atoms.h5
+    - nodes/AL_1/Prediction/node-meta.json
+    metrics:
+    - nodes/AL_1/ForceDecomposition/node-meta.json:
+        cache: false
+    - nodes/AL_1/ForceDecomposition/rot_forces.json:
+        cache: false
+    - nodes/AL_1/ForceDecomposition/trans_forces.json:
+        cache: false
+    - nodes/AL_1/ForceDecomposition/vib_forces.json:
+        cache: false
+    - nodes/AL_1/ForceDecomposition/wasserstein_distance.json:
+        cache: false
+    outs:
+    - nodes/AL_1/ForceDecomposition/histogram.png
+    - nodes/AL_1/ForceDecomposition/rot_force.png
+    - nodes/AL_1/ForceDecomposition/trans_force.png
+    - nodes/AL_1/ForceDecomposition/vib_force.png
   AL_1_ForcesUncertaintyHistogram:
     cmd: zntrack run ipsuite.nodes.ForcesUncertaintyHistogram --name AL_1_ForcesUncertaintyHistogram
     deps:
@@ -657,7 +656,7 @@ stages:
     - nodes/AL_1/MLModel/val_atoms.extxyz
     params:
     - AL_1_MLModel
-    - config/apax_1.yaml:
+    - config/apax_1.yaml: null
   AL_1_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_1_MLModel_1
     deps:
@@ -683,7 +682,7 @@ stages:
     - nodes/AL_1/MLModel_1/val_atoms.extxyz
     params:
     - AL_1_MLModel_1
-    - config/apax_2.yaml:
+    - config/apax_2.yaml: null
   AL_1_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_1_Prediction
     deps:
@@ -816,7 +815,7 @@ stages:
     - nodes/AL_2/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_2/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_2_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_2_CP2KSinglePoint_2
     deps:
@@ -836,7 +835,7 @@ stages:
     - nodes/AL_2/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_2/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_2_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_2_ConfigurationSelection_1
     deps:
@@ -917,6 +916,27 @@ stages:
         cache: false
     outs:
     - nodes/AL_2/EnsembleModel/uuid.json
+  AL_2_ForceDecomposition:
+    cmd: zntrack run ipsuite.nodes.ForceDecomposition --name AL_2_ForceDecomposition
+    deps:
+    - nodes/AL_2/Prediction/atoms.h5
+    - nodes/AL_2/Prediction/node-meta.json
+    metrics:
+    - nodes/AL_2/ForceDecomposition/node-meta.json:
+        cache: false
+    - nodes/AL_2/ForceDecomposition/rot_forces.json:
+        cache: false
+    - nodes/AL_2/ForceDecomposition/trans_forces.json:
+        cache: false
+    - nodes/AL_2/ForceDecomposition/vib_forces.json:
+        cache: false
+    - nodes/AL_2/ForceDecomposition/wasserstein_distance.json:
+        cache: false
+    outs:
+    - nodes/AL_2/ForceDecomposition/histogram.png
+    - nodes/AL_2/ForceDecomposition/rot_force.png
+    - nodes/AL_2/ForceDecomposition/trans_force.png
+    - nodes/AL_2/ForceDecomposition/vib_force.png
   AL_2_ForcesUncertaintyHistogram:
     cmd: zntrack run ipsuite.nodes.ForcesUncertaintyHistogram --name AL_2_ForcesUncertaintyHistogram
     deps:
@@ -967,7 +987,7 @@ stages:
     - nodes/AL_2/MLModel/val_atoms.extxyz
     params:
     - AL_2_MLModel
-    - config/apax_1.yaml:
+    - config/apax_1.yaml: null
   AL_2_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_2_MLModel_1
     deps:
@@ -999,7 +1019,7 @@ stages:
     - nodes/AL_2/MLModel_1/val_atoms.extxyz
     params:
     - AL_2_MLModel_1
-    - config/apax_2.yaml:
+    - config/apax_2.yaml: null
   AL_2_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_2_Prediction
     deps:
@@ -1135,7 +1155,7 @@ stages:
     - nodes/AL_3/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_3/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_3_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_3_CP2KSinglePoint_2
     deps:
@@ -1155,7 +1175,7 @@ stages:
     - nodes/AL_3/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_3/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_3_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_3_ConfigurationSelection_1
     deps:
@@ -1236,6 +1256,27 @@ stages:
         cache: false
     outs:
     - nodes/AL_3/EnsembleModel/uuid.json
+  AL_3_ForceDecomposition:
+    cmd: zntrack run ipsuite.nodes.ForceDecomposition --name AL_3_ForceDecomposition
+    deps:
+    - nodes/AL_3/Prediction/atoms.h5
+    - nodes/AL_3/Prediction/node-meta.json
+    metrics:
+    - nodes/AL_3/ForceDecomposition/node-meta.json:
+        cache: false
+    - nodes/AL_3/ForceDecomposition/rot_forces.json:
+        cache: false
+    - nodes/AL_3/ForceDecomposition/trans_forces.json:
+        cache: false
+    - nodes/AL_3/ForceDecomposition/vib_forces.json:
+        cache: false
+    - nodes/AL_3/ForceDecomposition/wasserstein_distance.json:
+        cache: false
+    outs:
+    - nodes/AL_3/ForceDecomposition/histogram.png
+    - nodes/AL_3/ForceDecomposition/rot_force.png
+    - nodes/AL_3/ForceDecomposition/trans_force.png
+    - nodes/AL_3/ForceDecomposition/vib_force.png
   AL_3_ForcesUncertaintyHistogram:
     cmd: zntrack run ipsuite.nodes.ForcesUncertaintyHistogram --name AL_3_ForcesUncertaintyHistogram
     deps:
@@ -1292,7 +1333,7 @@ stages:
     - nodes/AL_3/MLModel/val_atoms.extxyz
     params:
     - AL_3_MLModel
-    - config/apax_1.yaml:
+    - config/apax_1.yaml: null
   AL_3_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_3_MLModel_1
     deps:
@@ -1330,7 +1371,7 @@ stages:
     - nodes/AL_3/MLModel_1/val_atoms.extxyz
     params:
     - AL_3_MLModel_1
-    - config/apax_2.yaml:
+    - config/apax_2.yaml: null
   AL_3_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_3_Prediction
     deps:
@@ -1469,7 +1510,7 @@ stages:
     - nodes/AL_4/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_4/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_4_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_4_CP2KSinglePoint_2
     deps:
@@ -1489,7 +1530,7 @@ stages:
     - nodes/AL_4/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_4/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_4_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_4_ConfigurationSelection_1
     deps:
@@ -1570,6 +1611,27 @@ stages:
         cache: false
     outs:
     - nodes/AL_4/EnsembleModel/uuid.json
+  AL_4_ForceDecomposition:
+    cmd: zntrack run ipsuite.nodes.ForceDecomposition --name AL_4_ForceDecomposition
+    deps:
+    - nodes/AL_4/Prediction/atoms.h5
+    - nodes/AL_4/Prediction/node-meta.json
+    metrics:
+    - nodes/AL_4/ForceDecomposition/node-meta.json:
+        cache: false
+    - nodes/AL_4/ForceDecomposition/rot_forces.json:
+        cache: false
+    - nodes/AL_4/ForceDecomposition/trans_forces.json:
+        cache: false
+    - nodes/AL_4/ForceDecomposition/vib_forces.json:
+        cache: false
+    - nodes/AL_4/ForceDecomposition/wasserstein_distance.json:
+        cache: false
+    outs:
+    - nodes/AL_4/ForceDecomposition/histogram.png
+    - nodes/AL_4/ForceDecomposition/rot_force.png
+    - nodes/AL_4/ForceDecomposition/trans_force.png
+    - nodes/AL_4/ForceDecomposition/vib_force.png
   AL_4_ForcesUncertaintyHistogram:
     cmd: zntrack run ipsuite.nodes.ForcesUncertaintyHistogram --name AL_4_ForcesUncertaintyHistogram
     deps:
@@ -1632,7 +1694,7 @@ stages:
     - nodes/AL_4/MLModel/val_atoms.extxyz
     params:
     - AL_4_MLModel
-    - config/apax_1.yaml:
+    - config/apax_1.yaml: null
   AL_4_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_4_MLModel_1
     deps:
@@ -1676,7 +1738,7 @@ stages:
     - nodes/AL_4/MLModel_1/val_atoms.extxyz
     params:
     - AL_4_MLModel_1
-    - config/apax_2.yaml:
+    - config/apax_2.yaml: null
   AL_4_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_4_Prediction
     deps:
@@ -1818,7 +1880,7 @@ stages:
     - nodes/AL_5/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_5/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_5_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_5_CP2KSinglePoint_2
     deps:
@@ -1838,7 +1900,7 @@ stages:
     - nodes/AL_5/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_5/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   AL_5_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_5_ConfigurationSelection_1
     deps:
@@ -1919,6 +1981,27 @@ stages:
         cache: false
     outs:
     - nodes/AL_5/EnsembleModel/uuid.json
+  AL_5_ForceDecomposition:
+    cmd: zntrack run ipsuite.nodes.ForceDecomposition --name AL_5_ForceDecomposition
+    deps:
+    - nodes/AL_5/Prediction/atoms.h5
+    - nodes/AL_5/Prediction/node-meta.json
+    metrics:
+    - nodes/AL_5/ForceDecomposition/node-meta.json:
+        cache: false
+    - nodes/AL_5/ForceDecomposition/rot_forces.json:
+        cache: false
+    - nodes/AL_5/ForceDecomposition/trans_forces.json:
+        cache: false
+    - nodes/AL_5/ForceDecomposition/vib_forces.json:
+        cache: false
+    - nodes/AL_5/ForceDecomposition/wasserstein_distance.json:
+        cache: false
+    outs:
+    - nodes/AL_5/ForceDecomposition/histogram.png
+    - nodes/AL_5/ForceDecomposition/rot_force.png
+    - nodes/AL_5/ForceDecomposition/trans_force.png
+    - nodes/AL_5/ForceDecomposition/vib_force.png
   AL_5_ForcesUncertaintyHistogram:
     cmd: zntrack run ipsuite.nodes.ForcesUncertaintyHistogram --name AL_5_ForcesUncertaintyHistogram
     deps:
@@ -1987,7 +2070,7 @@ stages:
     - nodes/AL_5/MLModel/val_atoms.extxyz
     params:
     - AL_5_MLModel
-    - config/apax_3.yaml:
+    - config/apax_3.yaml: null
   AL_5_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_5_MLModel_1
     deps:
@@ -2037,7 +2120,7 @@ stages:
     - nodes/AL_5/MLModel_1/val_atoms.extxyz
     params:
     - AL_5_MLModel_1
-    - config/apax_4.yaml:
+    - config/apax_4.yaml: null
   AL_5_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_5_Prediction
     deps:
@@ -2124,7 +2207,7 @@ stages:
     - nodes/CP2KSinglePoint/atoms.h5
     - nodes/CP2KSinglePoint/cp2k
     params:
-    - cp2k.yaml:
+    - cp2k.yaml: null
   ConfigurationSelection:
     cmd: zntrack run ipsuite.nodes.RandomSelection --name ConfigurationSelection
     deps:
@@ -2163,8 +2246,79 @@ stages:
     - nodes/SmilesToAtoms/molecule.png
     params:
     - SmilesToAtoms
-  bootstrap_0_CP2KSinglePoint_1_5:
-    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name bootstrap_0_CP2KSinglePoint_1_5
+  bootstrap_0_ASEMD:
+    cmd: zntrack run ipsuite.nodes.ASEMD --name bootstrap_0_ASEMD
+    deps:
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/bootstrap_0/ASEMD_checker_list_0/node-meta.json
+    - nodes/bootstrap_0/ASEMD_thermostat/node-meta.json
+    - nodes/bootstrap_0/EnsembleModel/node-meta.json
+    - nodes/bootstrap_0/EnsembleModel/uuid.json
+    metrics:
+    - nodes/bootstrap_0/ASEMD/node-meta.json:
+        cache: false
+    - nodes/bootstrap_0/ASEMD/steps_before_stopping.json:
+        cache: false
+    outs:
+    - nodes/bootstrap_0/ASEMD/metrics_dict.csv
+    - nodes/bootstrap_0/ASEMD/model
+    - nodes/bootstrap_0/ASEMD/trajectory.h5
+    - nodes/bootstrap_0/ASEMD/velocity_cache.json
+    params:
+    - bootstrap_0_ASEMD
+  bootstrap_0_ASEMD_checker_list_0:
+    cmd: zntrack run ipsuite.nodes.ThresholdCheck --name bootstrap_0_ASEMD_checker_list_0
+      --meta-only
+    metrics:
+    - nodes/bootstrap_0/ASEMD_checker_list_0/node-meta.json:
+        cache: false
+    params:
+    - bootstrap_0_ASEMD_checker_list_0
+    - zntrack.json:
+      - bootstrap_0_ASEMD.checker_list
+  bootstrap_0_ASEMD_thermostat:
+    cmd: zntrack run ipsuite.nodes.LangevinThermostat --name bootstrap_0_ASEMD_thermostat
+      --meta-only
+    metrics:
+    - nodes/bootstrap_0/ASEMD_thermostat/node-meta.json:
+        cache: false
+    params:
+    - bootstrap_0_ASEMD_thermostat
+    - zntrack.json:
+      - bootstrap_0_ASEMD.thermostat
+  bootstrap_0_BoxScale:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name bootstrap_0_BoxScale
+    deps:
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/bootstrap_0/BoxScale_mapping/node-meta.json
+    - nodes/bootstrap_0/EnsembleModel/node-meta.json
+    - nodes/bootstrap_0/EnsembleModel/uuid.json
+    metrics:
+    - nodes/bootstrap_0/BoxScale/node-meta.json:
+        cache: false
+    outs:
+    - nodes/bootstrap_0/BoxScale/atoms.h5
+    - nodes/bootstrap_0/BoxScale/energies.csv
+    - nodes/bootstrap_0/BoxScale/energy.png
+    - nodes/bootstrap_0/BoxScale/model
+    params:
+    - bootstrap_0_BoxScale
+  bootstrap_0_BoxScale_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name bootstrap_0_BoxScale_mapping
+      --meta-only
+    metrics:
+    - nodes/bootstrap_0/BoxScale_mapping/node-meta.json:
+        cache: false
+    params:
+    - bootstrap_0_BoxScale_mapping
+    - zntrack.json:
+      - bootstrap_0_BoxScale.mapping
+  bootstrap_0_CP2KSinglePoint_1:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name bootstrap_0_CP2KSinglePoint_1
     deps:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
@@ -2183,9 +2337,9 @@ stages:
     - nodes/bootstrap_0/CP2KSinglePoint_1/atoms.h5
     - nodes/bootstrap_0/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml:
-  bootstrap_0_CP2KSinglePoint_2_5:
-    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name bootstrap_0_CP2KSinglePoint_2_5
+    - cp2k.yaml: null
+  bootstrap_0_CP2KSinglePoint_2:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name bootstrap_0_CP2KSinglePoint_2
     deps:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
@@ -2204,71 +2358,52 @@ stages:
     - nodes/bootstrap_0/CP2KSinglePoint_2/atoms.h5
     - nodes/bootstrap_0/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml:
-  bootstrap_0_MLModel_1_5:
-    cmd: zntrack run ipsuite.nodes.Apax --name bootstrap_0_MLModel_1_5
+    - cp2k.yaml: null
+  bootstrap_0_EnsembleModel:
+    cmd: zntrack run ipsuite.nodes.EnsembleModel --name bootstrap_0_EnsembleModel
     deps:
-    - nodes/AL_0/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL_0/CP2KSinglePoint_1/cp2k
-    - nodes/AL_0/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL_0/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_0/CP2KSinglePoint_2/cp2k
-    - nodes/AL_0/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_1/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL_1/CP2KSinglePoint_1/cp2k
-    - nodes/AL_1/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL_1/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_1/CP2KSinglePoint_2/cp2k
-    - nodes/AL_1/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_2/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL_2/CP2KSinglePoint_1/cp2k
-    - nodes/AL_2/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL_2/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_2/CP2KSinglePoint_2/cp2k
-    - nodes/AL_2/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_3/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL_3/CP2KSinglePoint_1/cp2k
-    - nodes/AL_3/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL_3/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_3/CP2KSinglePoint_2/cp2k
-    - nodes/AL_3/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_4/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL_4/CP2KSinglePoint_1/cp2k
-    - nodes/AL_4/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL_4/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_4/CP2KSinglePoint_2/cp2k
-    - nodes/AL_4/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_5/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL_5/CP2KSinglePoint_1/cp2k
-    - nodes/AL_5/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL_5/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_5/CP2KSinglePoint_2/cp2k
-    - nodes/AL_5/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
-    - nodes/ConfigurationSelection/node-meta.json
-    - nodes/ConfigurationSelection/selected_configurations.json
-    - nodes/bootstrap_0/CP2KSinglePoint_1/atoms.h5
-    - nodes/bootstrap_0/CP2KSinglePoint_1/cp2k
-    - nodes/bootstrap_0/CP2KSinglePoint_1/node-meta.json
-    - nodes/bootstrap_0/CP2KSinglePoint_2/atoms.h5
-    - nodes/bootstrap_0/CP2KSinglePoint_2/cp2k
-    - nodes/bootstrap_0/CP2KSinglePoint_2/node-meta.json
-    metrics:
-    - nodes/bootstrap_0/MLModel_1/metrics.json:
-        cache: false
-    - nodes/bootstrap_0/MLModel_1/node-meta.json:
-        cache: false
-    outs:
+    - nodes/bootstrap_0/MLModel/apax_model
+    - nodes/bootstrap_0/MLModel/log.csv
+    - nodes/bootstrap_0/MLModel/metrics.json
+    - nodes/bootstrap_0/MLModel/node-meta.json
+    - nodes/bootstrap_0/MLModel/train.log
+    - nodes/bootstrap_0/MLModel/train_atoms.extxyz
+    - nodes/bootstrap_0/MLModel/val_atoms.extxyz
     - nodes/bootstrap_0/MLModel_1/apax_model
     - nodes/bootstrap_0/MLModel_1/log.csv
+    - nodes/bootstrap_0/MLModel_1/metrics.json
+    - nodes/bootstrap_0/MLModel_1/node-meta.json
     - nodes/bootstrap_0/MLModel_1/train.log
     - nodes/bootstrap_0/MLModel_1/train_atoms.extxyz
     - nodes/bootstrap_0/MLModel_1/val_atoms.extxyz
-    params:
-    - bootstrap_0_MLModel_1_5
-    - config/apax_4.yaml:
-  bootstrap_0_MLModel_6:
-    cmd: zntrack run ipsuite.nodes.Apax --name bootstrap_0_MLModel_6
+    metrics:
+    - nodes/bootstrap_0/EnsembleModel/node-meta.json:
+        cache: false
+    outs:
+    - nodes/bootstrap_0/EnsembleModel/uuid.json
+  bootstrap_0_ForceDecomposition:
+    cmd: zntrack run ipsuite.nodes.ForceDecomposition --name bootstrap_0_ForceDecomposition
+    deps:
+    - nodes/bootstrap_0/Prediction/atoms.h5
+    - nodes/bootstrap_0/Prediction/node-meta.json
+    metrics:
+    - nodes/bootstrap_0/ForceDecomposition/node-meta.json:
+        cache: false
+    - nodes/bootstrap_0/ForceDecomposition/rot_forces.json:
+        cache: false
+    - nodes/bootstrap_0/ForceDecomposition/trans_forces.json:
+        cache: false
+    - nodes/bootstrap_0/ForceDecomposition/vib_forces.json:
+        cache: false
+    - nodes/bootstrap_0/ForceDecomposition/wasserstein_distance.json:
+        cache: false
+    outs:
+    - nodes/bootstrap_0/ForceDecomposition/histogram.png
+    - nodes/bootstrap_0/ForceDecomposition/rot_force.png
+    - nodes/bootstrap_0/ForceDecomposition/trans_force.png
+    - nodes/bootstrap_0/ForceDecomposition/vib_force.png
+  bootstrap_0_MLModel:
+    cmd: zntrack run ipsuite.nodes.Apax --name bootstrap_0_MLModel
     deps:
     - nodes/AL_0/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_0/CP2KSinglePoint_1/cp2k
@@ -2327,126 +2462,72 @@ stages:
     - nodes/bootstrap_0/MLModel/train_atoms.extxyz
     - nodes/bootstrap_0/MLModel/val_atoms.extxyz
     params:
-    - bootstrap_0_MLModel_6
-    - config/apax_3.yaml:
-  bootstrap_0_RotateMolecules_5:
-    cmd: zntrack run ipsuite.nodes.RotateMolecules --name bootstrap_0_RotateMolecules_5
+    - bootstrap_0_MLModel
+    - config/apax_3.yaml: null
+  bootstrap_0_MLModel_1:
+    cmd: zntrack run ipsuite.nodes.Apax --name bootstrap_0_MLModel_1
     deps:
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/AL_0/CP2KSinglePoint_1/atoms.h5
+    - nodes/AL_0/CP2KSinglePoint_1/cp2k
+    - nodes/AL_0/CP2KSinglePoint_1/node-meta.json
+    - nodes/AL_0/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL_0/CP2KSinglePoint_2/cp2k
+    - nodes/AL_0/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL_1/CP2KSinglePoint_1/atoms.h5
+    - nodes/AL_1/CP2KSinglePoint_1/cp2k
+    - nodes/AL_1/CP2KSinglePoint_1/node-meta.json
+    - nodes/AL_1/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL_1/CP2KSinglePoint_2/cp2k
+    - nodes/AL_1/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL_2/CP2KSinglePoint_1/atoms.h5
+    - nodes/AL_2/CP2KSinglePoint_1/cp2k
+    - nodes/AL_2/CP2KSinglePoint_1/node-meta.json
+    - nodes/AL_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL_3/CP2KSinglePoint_1/atoms.h5
+    - nodes/AL_3/CP2KSinglePoint_1/cp2k
+    - nodes/AL_3/CP2KSinglePoint_1/node-meta.json
+    - nodes/AL_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL_3/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL_4/CP2KSinglePoint_1/atoms.h5
+    - nodes/AL_4/CP2KSinglePoint_1/cp2k
+    - nodes/AL_4/CP2KSinglePoint_1/node-meta.json
+    - nodes/AL_4/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL_4/CP2KSinglePoint_2/cp2k
+    - nodes/AL_4/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL_5/CP2KSinglePoint_1/atoms.h5
+    - nodes/AL_5/CP2KSinglePoint_1/cp2k
+    - nodes/AL_5/CP2KSinglePoint_1/node-meta.json
+    - nodes/AL_5/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL_5/CP2KSinglePoint_2/cp2k
+    - nodes/AL_5/CP2KSinglePoint_2/node-meta.json
+    - nodes/ConfigurationSelection/_hash.json
+    - nodes/ConfigurationSelection/node-meta.json
+    - nodes/ConfigurationSelection/selected_configurations.json
+    - nodes/bootstrap_0/CP2KSinglePoint_1/atoms.h5
+    - nodes/bootstrap_0/CP2KSinglePoint_1/cp2k
+    - nodes/bootstrap_0/CP2KSinglePoint_1/node-meta.json
+    - nodes/bootstrap_0/CP2KSinglePoint_2/atoms.h5
+    - nodes/bootstrap_0/CP2KSinglePoint_2/cp2k
+    - nodes/bootstrap_0/CP2KSinglePoint_2/node-meta.json
     metrics:
-    - nodes/bootstrap_0/RotateMolecules/node-meta.json:
+    - nodes/bootstrap_0/MLModel_1/metrics.json:
+        cache: false
+    - nodes/bootstrap_0/MLModel_1/node-meta.json:
         cache: false
     outs:
-    - nodes/bootstrap_0/RotateMolecules/atoms.h5
-    params:
-    - bootstrap_0_RotateMolecules_5
-  bootstrap_0_RotateMolecules_test_5:
-    cmd: zntrack run ipsuite.nodes.RotateMolecules --name bootstrap_0_RotateMolecules_test_5
-    deps:
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
-    metrics:
-    - nodes/bootstrap_0/RotateMolecules_test/node-meta.json:
-        cache: false
-    outs:
-    - nodes/bootstrap_0/RotateMolecules_test/atoms.h5
-    params:
-    - bootstrap_0_RotateMolecules_test_5
-  bootstrap_0_TranslateMolecules_5:
-    cmd: zntrack run ipsuite.nodes.TranslateMolecules --name bootstrap_0_TranslateMolecules_5
-    deps:
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
-    metrics:
-    - nodes/bootstrap_0/TranslateMolecules/node-meta.json:
-        cache: false
-    outs:
-    - nodes/bootstrap_0/TranslateMolecules/atoms.h5
-    params:
-    - bootstrap_0_TranslateMolecules_5
-  bootstrap_0_TranslateMolecules_test_5:
-    cmd: zntrack run ipsuite.nodes.TranslateMolecules --name bootstrap_0_TranslateMolecules_test_5
-    deps:
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
-    metrics:
-    - nodes/bootstrap_0/TranslateMolecules_test/node-meta.json:
-        cache: false
-    outs:
-    - nodes/bootstrap_0/TranslateMolecules_test/atoms.h5
-    params:
-    - bootstrap_0_TranslateMolecules_test_5
-  bootstrap_0_EnsembleModel_5:
-    cmd: zntrack run ipsuite.nodes.EnsembleModel --name bootstrap_0_EnsembleModel_5
-    deps:
-    - nodes/bootstrap_0/MLModel/apax_model
-    - nodes/bootstrap_0/MLModel/log.csv
-    - nodes/bootstrap_0/MLModel/metrics.json
-    - nodes/bootstrap_0/MLModel/node-meta.json
-    - nodes/bootstrap_0/MLModel/train.log
-    - nodes/bootstrap_0/MLModel/train_atoms.extxyz
-    - nodes/bootstrap_0/MLModel/val_atoms.extxyz
     - nodes/bootstrap_0/MLModel_1/apax_model
     - nodes/bootstrap_0/MLModel_1/log.csv
-    - nodes/bootstrap_0/MLModel_1/metrics.json
-    - nodes/bootstrap_0/MLModel_1/node-meta.json
     - nodes/bootstrap_0/MLModel_1/train.log
     - nodes/bootstrap_0/MLModel_1/train_atoms.extxyz
     - nodes/bootstrap_0/MLModel_1/val_atoms.extxyz
-    outs:
-    - nodes/bootstrap_0/EnsembleModel/uuid.json
-    metrics:
-    - nodes/bootstrap_0/EnsembleModel/node-meta.json:
-        cache: false
-  bootstrap_0_ASEMD_5:
-    cmd: zntrack run ipsuite.nodes.ASEMD --name bootstrap_0_ASEMD_5
-    deps:
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
-    - nodes/bootstrap_0/ASEMD_5_checker_list_0/node-meta.json
-    - nodes/bootstrap_0/ASEMD_5_thermostat/node-meta.json
-    - nodes/bootstrap_0/EnsembleModel/node-meta.json
-    - nodes/bootstrap_0/EnsembleModel/uuid.json
     params:
-    - bootstrap_0_ASEMD_5
-    outs:
-    - nodes/bootstrap_0/ASEMD/metrics_dict.csv
-    - nodes/bootstrap_0/ASEMD/model
-    - nodes/bootstrap_0/ASEMD/trajectory.h5
-    - nodes/bootstrap_0/ASEMD/velocity_cache.json
-    metrics:
-    - nodes/bootstrap_0/ASEMD/node-meta.json:
-        cache: false
-    - nodes/bootstrap_0/ASEMD/steps_before_stopping.json:
-        cache: false
-  bootstrap_0_ASEMD_5_checker_list_0:
-    cmd: zntrack run ipsuite.nodes.ThresholdCheck --name bootstrap_0_ASEMD_5_checker_list_0
-      --meta-only
-    params:
-    - bootstrap_0_ASEMD_5_checker_list_0
-    - zntrack.json:
-      - bootstrap_0_ASEMD_5.checker_list
-    metrics:
-    - nodes/bootstrap_0/ASEMD_5_checker_list_0/node-meta.json:
-        cache: false
-  bootstrap_0_ASEMD_5_thermostat:
-    cmd: zntrack run ipsuite.nodes.LangevinThermostat --name bootstrap_0_ASEMD_5_thermostat
-      --meta-only
-    params:
-    - bootstrap_0_ASEMD_5_thermostat
-    - zntrack.json:
-      - bootstrap_0_ASEMD_5.thermostat
-    metrics:
-    - nodes/bootstrap_0/ASEMD_5_thermostat/node-meta.json:
-        cache: false
-  bootstrap_0_Prediction_5:
-    cmd: zntrack run ipsuite.nodes.Prediction --name bootstrap_0_Prediction_5
+    - bootstrap_0_MLModel_1
+    - config/apax_4.yaml: null
+  bootstrap_0_Prediction:
+    cmd: zntrack run ipsuite.nodes.Prediction --name bootstrap_0_Prediction
     deps:
     - nodes/AL_0/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_0/CP2KSinglePoint_2/cp2k
@@ -2474,23 +2555,16 @@ stages:
     - nodes/bootstrap_0/CP2KSinglePoint_2/node-meta.json
     - nodes/bootstrap_0/EnsembleModel/node-meta.json
     - nodes/bootstrap_0/EnsembleModel/uuid.json
-    outs:
-    - nodes/bootstrap_0/Prediction/atoms.h5
     metrics:
     - nodes/bootstrap_0/Prediction/node-meta.json:
         cache: false
-  bootstrap_0_PredictionMetrics_5:
-    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name bootstrap_0_PredictionMetrics_5
+    outs:
+    - nodes/bootstrap_0/Prediction/atoms.h5
+  bootstrap_0_PredictionMetrics:
+    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name bootstrap_0_PredictionMetrics
     deps:
     - nodes/bootstrap_0/Prediction/atoms.h5
     - nodes/bootstrap_0/Prediction/node-meta.json
-    outs:
-    - nodes/bootstrap_0/PredictionMetrics/energy_df.csv
-    - nodes/bootstrap_0/PredictionMetrics/forces_df.csv
-    - nodes/bootstrap_0/PredictionMetrics/plots
-    - nodes/bootstrap_0/PredictionMetrics/stress_deviatoric_df.csv
-    - nodes/bootstrap_0/PredictionMetrics/stress_df.csv
-    - nodes/bootstrap_0/PredictionMetrics/stress_hydrostatic_df.csv
     metrics:
     - nodes/bootstrap_0/PredictionMetrics/deviat_stress.json:
         cache: false
@@ -2504,3 +2578,62 @@ stages:
         cache: false
     - nodes/bootstrap_0/PredictionMetrics/stress.json:
         cache: false
+    outs:
+    - nodes/bootstrap_0/PredictionMetrics/energy_df.csv
+    - nodes/bootstrap_0/PredictionMetrics/forces_df.csv
+    - nodes/bootstrap_0/PredictionMetrics/plots
+    - nodes/bootstrap_0/PredictionMetrics/stress_deviatoric_df.csv
+    - nodes/bootstrap_0/PredictionMetrics/stress_df.csv
+    - nodes/bootstrap_0/PredictionMetrics/stress_hydrostatic_df.csv
+  bootstrap_0_RotateMolecules:
+    cmd: zntrack run ipsuite.nodes.RotateMolecules --name bootstrap_0_RotateMolecules
+    deps:
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    metrics:
+    - nodes/bootstrap_0/RotateMolecules/node-meta.json:
+        cache: false
+    outs:
+    - nodes/bootstrap_0/RotateMolecules/atoms.h5
+    params:
+    - bootstrap_0_RotateMolecules
+  bootstrap_0_RotateMolecules_test:
+    cmd: zntrack run ipsuite.nodes.RotateMolecules --name bootstrap_0_RotateMolecules_test
+    deps:
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    metrics:
+    - nodes/bootstrap_0/RotateMolecules_test/node-meta.json:
+        cache: false
+    outs:
+    - nodes/bootstrap_0/RotateMolecules_test/atoms.h5
+    params:
+    - bootstrap_0_RotateMolecules_test
+  bootstrap_0_TranslateMolecules:
+    cmd: zntrack run ipsuite.nodes.TranslateMolecules --name bootstrap_0_TranslateMolecules
+    deps:
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    metrics:
+    - nodes/bootstrap_0/TranslateMolecules/node-meta.json:
+        cache: false
+    outs:
+    - nodes/bootstrap_0/TranslateMolecules/atoms.h5
+    params:
+    - bootstrap_0_TranslateMolecules
+  bootstrap_0_TranslateMolecules_test:
+    cmd: zntrack run ipsuite.nodes.TranslateMolecules --name bootstrap_0_TranslateMolecules_test
+    deps:
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    metrics:
+    - nodes/bootstrap_0/TranslateMolecules_test/node-meta.json:
+        cache: false
+    outs:
+    - nodes/bootstrap_0/TranslateMolecules_test/atoms.h5
+    params:
+    - bootstrap_0_TranslateMolecules_test
