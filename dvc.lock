@@ -8593,3 +8593,223 @@ stages:
       hash: md5
       md5: 34af43122e2600db02fd2faaac885626
       size: 48
+  bootstrap_0_CP2KSinglePoint_1_5:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name bootstrap_0_CP2KSinglePoint_1_5
+    deps:
+    - path: BASIS_MOLOPT
+      hash: md5
+      md5: 4e877f2fa6a2b401ae1516a48f977f2b
+      size: 126074
+    - path: GTH_POTENTIALS
+      hash: md5
+      md5: 39f14f5181cb73cf1f7aec6d838f3fe5
+      size: 108689
+    - path: dftd3.dat
+      hash: md5
+      md5: 88745bcc951a4bcdccc4d6bcfa78d105
+      size: 1959318
+    - path: nodes/CP2KSinglePoint/atoms.h5
+      hash: md5
+      md5: 9697c746c6f69d428bd2f5a5b7979666
+      size: 61928
+    - path: nodes/CP2KSinglePoint/cp2k
+      hash: md5
+      md5: fb7bfe3b3264befe3419725f830a8775.dir
+      size: 21603140
+      nfiles: 3
+    - path: nodes/CP2KSinglePoint/node-meta.json
+      hash: md5
+      md5: 63df96639d4fa5cd5d2b3bf3d4671e3a
+      size: 48
+    - path: nodes/bootstrap_0/RotateMolecules/atoms.h5
+      hash: md5
+      md5: c2fdad6e7524e82c92ff09f795e53070
+      size: 204288
+    - path: nodes/bootstrap_0/RotateMolecules/node-meta.json
+      hash: md5
+      md5: 4a63f5e4867c96903140029ba80f86e5
+      size: 48
+    - path: nodes/bootstrap_0/TranslateMolecules/atoms.h5
+      hash: md5
+      md5: ff942c32a775b0c74e46c6bb5f5c7656
+      size: 204288
+    - path: nodes/bootstrap_0/TranslateMolecules/node-meta.json
+      hash: md5
+      md5: 79a8692962602701d6cb252f0304d965
+      size: 48
+    params:
+      cp2k.yaml:
+        force_eval:
+          method: quickstep
+          DFT:
+            mgrid:
+              cutoff: 600.0
+              rel_cutoff: 80.0
+              ngrids: 5
+            QS:
+              eps_filter_matrix: 0.0
+              eps_pgf_orb: 0.0001
+            SCF:
+              scf_guess: restart
+              max_scf: 100
+              eps_scf: 1e-06
+              OT:
+                minimizer: diis
+                preconditioner: full_single_inverse
+              outer_scf:
+                max_scf: 100
+                eps_scf: 1e-06
+              print:
+                restart:
+                  each:
+                    QS_SCF: 0
+            XC:
+              xc_functional:
+                _: BLYP
+              vdw_potential:
+                pair_potential:
+                  type: DFTD3
+                  parameter_file_name: dftd3.dat
+                  reference_functional: BLYP
+                  r_cutoff: 18
+                potential_type: pair_potential
+            basis_set_file_name: BASIS_MOLOPT
+            potential_file_name: GTH_POTENTIALS
+          subsys:
+            kind:
+              O:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+              C:
+                basis_set: TZV2P-MOLOPT-GTH-q4
+                potential: GTH-BLYP-q4
+              H:
+                basis_set: TZV2P-MOLOPT-GTH-q1
+                potential: GTH-BLYP-q1
+              S:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+    outs:
+    - path: nodes/bootstrap_0/CP2KSinglePoint_1/atoms.h5
+      hash: md5
+      md5: aa17eb146e3dd77eae7320b4ed487918
+      size: 468832
+    - path: nodes/bootstrap_0/CP2KSinglePoint_1/cp2k
+      hash: md5
+      md5: f4e92ba162f6e4d5d0912467ac5a7fa8.dir
+      size: 22849301
+      nfiles: 3
+    - path: nodes/bootstrap_0/CP2KSinglePoint_1/node-meta.json
+      hash: md5
+      md5: 7ec0901c9fa897954bb9dd777f079fe7
+      size: 48
+  bootstrap_0_CP2KSinglePoint_2_5:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name bootstrap_0_CP2KSinglePoint_2_5
+    deps:
+    - path: BASIS_MOLOPT
+      hash: md5
+      md5: 4e877f2fa6a2b401ae1516a48f977f2b
+      size: 126074
+    - path: GTH_POTENTIALS
+      hash: md5
+      md5: 39f14f5181cb73cf1f7aec6d838f3fe5
+      size: 108689
+    - path: dftd3.dat
+      hash: md5
+      md5: 88745bcc951a4bcdccc4d6bcfa78d105
+      size: 1959318
+    - path: nodes/CP2KSinglePoint/atoms.h5
+      hash: md5
+      md5: 9697c746c6f69d428bd2f5a5b7979666
+      size: 61928
+    - path: nodes/CP2KSinglePoint/cp2k
+      hash: md5
+      md5: fb7bfe3b3264befe3419725f830a8775.dir
+      size: 21603140
+      nfiles: 3
+    - path: nodes/CP2KSinglePoint/node-meta.json
+      hash: md5
+      md5: 63df96639d4fa5cd5d2b3bf3d4671e3a
+      size: 48
+    - path: nodes/bootstrap_0/RotateMolecules_test/atoms.h5
+      hash: md5
+      md5: 1ecbbff8cb9b324c91a700f2c3493d80
+      size: 119168
+    - path: nodes/bootstrap_0/RotateMolecules_test/node-meta.json
+      hash: md5
+      md5: fb03a152c0a70b1f0a0b0788a16d1e07
+      size: 48
+    - path: nodes/bootstrap_0/TranslateMolecules_test/atoms.h5
+      hash: md5
+      md5: 2b61c38616f8b687a93a60856770101f
+      size: 119168
+    - path: nodes/bootstrap_0/TranslateMolecules_test/node-meta.json
+      hash: md5
+      md5: 34af43122e2600db02fd2faaac885626
+      size: 48
+    params:
+      cp2k.yaml:
+        force_eval:
+          method: quickstep
+          DFT:
+            mgrid:
+              cutoff: 600.0
+              rel_cutoff: 80.0
+              ngrids: 5
+            QS:
+              eps_filter_matrix: 0.0
+              eps_pgf_orb: 0.0001
+            SCF:
+              scf_guess: restart
+              max_scf: 100
+              eps_scf: 1e-06
+              OT:
+                minimizer: diis
+                preconditioner: full_single_inverse
+              outer_scf:
+                max_scf: 100
+                eps_scf: 1e-06
+              print:
+                restart:
+                  each:
+                    QS_SCF: 0
+            XC:
+              xc_functional:
+                _: BLYP
+              vdw_potential:
+                pair_potential:
+                  type: DFTD3
+                  parameter_file_name: dftd3.dat
+                  reference_functional: BLYP
+                  r_cutoff: 18
+                potential_type: pair_potential
+            basis_set_file_name: BASIS_MOLOPT
+            potential_file_name: GTH_POTENTIALS
+          subsys:
+            kind:
+              O:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+              C:
+                basis_set: TZV2P-MOLOPT-GTH-q4
+                potential: GTH-BLYP-q4
+              H:
+                basis_set: TZV2P-MOLOPT-GTH-q1
+                potential: GTH-BLYP-q1
+              S:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+    outs:
+    - path: nodes/bootstrap_0/CP2KSinglePoint_2/atoms.h5
+      hash: md5
+      md5: 8f2da83d4b57ccc527709d6df0cf46c0
+      size: 254672
+    - path: nodes/bootstrap_0/CP2KSinglePoint_2/cp2k
+      hash: md5
+      md5: 14e87c6fe56b23264f14bb649522d647.dir
+      size: 22183734
+      nfiles: 3
+    - path: nodes/bootstrap_0/CP2KSinglePoint_2/node-meta.json
+      hash: md5
+      md5: 8261c2c0096c8b3688cdf99411fca468
+      size: 48
