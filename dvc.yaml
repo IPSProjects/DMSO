@@ -99,6 +99,7 @@ plots:
     x_label: Scale factor of the initial cell
     y: y
     y_label: predicted energy
+- nodes/bootstrap_1/ASEMD/metrics_dict.csv: {}
 stages:
   AL_0_ASEMD:
     cmd: zntrack run ipsuite.nodes.ASEMD --name AL_0_ASEMD
@@ -191,7 +192,7 @@ stages:
     - nodes/AL_0/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_0/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   AL_0_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_0_CP2KSinglePoint_2
     deps:
@@ -211,7 +212,7 @@ stages:
     - nodes/AL_0/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_0/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   AL_0_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_0_ConfigurationSelection_1
     deps:
@@ -351,7 +352,7 @@ stages:
     - nodes/AL_0/MLModel/val_atoms.extxyz
     params:
     - AL_0_MLModel
-    - config/apax_1.yaml: null
+    - config/apax_1.yaml:
   AL_0_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_0_MLModel_1
     deps:
@@ -371,7 +372,7 @@ stages:
     - nodes/AL_0/MLModel_1/val_atoms.extxyz
     params:
     - AL_0_MLModel_1
-    - config/apax_2.yaml: null
+    - config/apax_2.yaml:
   AL_0_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_0_Prediction
     deps:
@@ -501,7 +502,7 @@ stages:
     - nodes/AL_1/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_1/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   AL_1_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_1_CP2KSinglePoint_2
     deps:
@@ -521,7 +522,7 @@ stages:
     - nodes/AL_1/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_1/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   AL_1_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_1_ConfigurationSelection_1
     deps:
@@ -667,7 +668,7 @@ stages:
     - nodes/AL_1/MLModel/val_atoms.extxyz
     params:
     - AL_1_MLModel
-    - config/apax_1.yaml: null
+    - config/apax_1.yaml:
   AL_1_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_1_MLModel_1
     deps:
@@ -693,7 +694,7 @@ stages:
     - nodes/AL_1/MLModel_1/val_atoms.extxyz
     params:
     - AL_1_MLModel_1
-    - config/apax_2.yaml: null
+    - config/apax_2.yaml:
   AL_1_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_1_Prediction
     deps:
@@ -826,7 +827,7 @@ stages:
     - nodes/AL_2/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_2/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   AL_2_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_2_CP2KSinglePoint_2
     deps:
@@ -846,7 +847,7 @@ stages:
     - nodes/AL_2/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_2/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   AL_2_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_2_ConfigurationSelection_1
     deps:
@@ -998,7 +999,7 @@ stages:
     - nodes/AL_2/MLModel/val_atoms.extxyz
     params:
     - AL_2_MLModel
-    - config/apax_1.yaml: null
+    - config/apax_1.yaml:
   AL_2_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_2_MLModel_1
     deps:
@@ -1030,7 +1031,7 @@ stages:
     - nodes/AL_2/MLModel_1/val_atoms.extxyz
     params:
     - AL_2_MLModel_1
-    - config/apax_2.yaml: null
+    - config/apax_2.yaml:
   AL_2_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_2_Prediction
     deps:
@@ -1166,7 +1167,7 @@ stages:
     - nodes/AL_3/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_3/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   AL_3_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_3_CP2KSinglePoint_2
     deps:
@@ -1186,7 +1187,7 @@ stages:
     - nodes/AL_3/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_3/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   AL_3_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_3_ConfigurationSelection_1
     deps:
@@ -1344,7 +1345,7 @@ stages:
     - nodes/AL_3/MLModel/val_atoms.extxyz
     params:
     - AL_3_MLModel
-    - config/apax_1.yaml: null
+    - config/apax_1.yaml:
   AL_3_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_3_MLModel_1
     deps:
@@ -1382,7 +1383,7 @@ stages:
     - nodes/AL_3/MLModel_1/val_atoms.extxyz
     params:
     - AL_3_MLModel_1
-    - config/apax_2.yaml: null
+    - config/apax_2.yaml:
   AL_3_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_3_Prediction
     deps:
@@ -1521,7 +1522,7 @@ stages:
     - nodes/AL_4/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_4/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   AL_4_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_4_CP2KSinglePoint_2
     deps:
@@ -1541,7 +1542,7 @@ stages:
     - nodes/AL_4/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_4/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   AL_4_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_4_ConfigurationSelection_1
     deps:
@@ -1705,7 +1706,7 @@ stages:
     - nodes/AL_4/MLModel/val_atoms.extxyz
     params:
     - AL_4_MLModel
-    - config/apax_1.yaml: null
+    - config/apax_1.yaml:
   AL_4_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_4_MLModel_1
     deps:
@@ -1749,7 +1750,7 @@ stages:
     - nodes/AL_4/MLModel_1/val_atoms.extxyz
     params:
     - AL_4_MLModel_1
-    - config/apax_2.yaml: null
+    - config/apax_2.yaml:
   AL_4_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_4_Prediction
     deps:
@@ -1891,7 +1892,7 @@ stages:
     - nodes/AL_5/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_5/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   AL_5_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL_5_CP2KSinglePoint_2
     deps:
@@ -1911,7 +1912,7 @@ stages:
     - nodes/AL_5/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_5/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   AL_5_ConfigurationSelection_1:
     cmd: zntrack run ipsuite.nodes.ThresholdSelection --name AL_5_ConfigurationSelection_1
     deps:
@@ -2081,7 +2082,7 @@ stages:
     - nodes/AL_5/MLModel/val_atoms.extxyz
     params:
     - AL_5_MLModel
-    - config/apax_3.yaml: null
+    - config/apax_3.yaml:
   AL_5_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_5_MLModel_1
     deps:
@@ -2131,7 +2132,7 @@ stages:
     - nodes/AL_5/MLModel_1/val_atoms.extxyz
     params:
     - AL_5_MLModel_1
-    - config/apax_4.yaml: null
+    - config/apax_4.yaml:
   AL_5_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name AL_5_Prediction
     deps:
@@ -2218,7 +2219,7 @@ stages:
     - nodes/CP2KSinglePoint/atoms.h5
     - nodes/CP2KSinglePoint/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   ConfigurationSelection:
     cmd: zntrack run ipsuite.nodes.RandomSelection --name ConfigurationSelection
     deps:
@@ -2306,7 +2307,7 @@ stages:
     - nodes/bootstrap_0/CP2KSinglePoint_1/atoms.h5
     - nodes/bootstrap_0/CP2KSinglePoint_1/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   bootstrap_0_CP2KSinglePoint_2:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name bootstrap_0_CP2KSinglePoint_2
     deps:
@@ -2327,7 +2328,7 @@ stages:
     - nodes/bootstrap_0/CP2KSinglePoint_2/atoms.h5
     - nodes/bootstrap_0/CP2KSinglePoint_2/cp2k
     params:
-    - cp2k.yaml: null
+    - cp2k.yaml:
   bootstrap_0_EnsembleModel:
     cmd: zntrack run ipsuite.nodes.EnsembleModel --name bootstrap_0_EnsembleModel
     deps:
@@ -2432,7 +2433,7 @@ stages:
     - nodes/bootstrap_0/MLModel/val_atoms.extxyz
     params:
     - bootstrap_0_MLModel
-    - config/apax_3.yaml: null
+    - config/apax_3.yaml:
   bootstrap_0_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name bootstrap_0_MLModel_1
     deps:
@@ -2494,7 +2495,7 @@ stages:
     - nodes/bootstrap_0/MLModel_1/val_atoms.extxyz
     params:
     - bootstrap_0_MLModel_1
-    - config/apax_4.yaml: null
+    - config/apax_4.yaml:
   bootstrap_0_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name bootstrap_0_Prediction
     deps:
@@ -2606,6 +2607,70 @@ stages:
     - nodes/bootstrap_0/TranslateMolecules_test/atoms.h5
     params:
     - bootstrap_0_TranslateMolecules_test
+  bootstrap_1_ASEMD:
+    cmd: zntrack run ipsuite.nodes.ASEMD --name bootstrap_1_ASEMD
+    deps:
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/bootstrap_0/EnsembleModel/node-meta.json
+    - nodes/bootstrap_0/EnsembleModel/uuid.json
+    - nodes/bootstrap_1/ASEMD_checker_list_0/node-meta.json
+    - nodes/bootstrap_1/ASEMD_modifier_0/node-meta.json
+    - nodes/bootstrap_1/ASEMD_modifier_1/node-meta.json
+    - nodes/bootstrap_1/ASEMD_thermostat/node-meta.json
+    metrics:
+    - nodes/bootstrap_1/ASEMD/node-meta.json:
+        cache: false
+    - nodes/bootstrap_1/ASEMD/steps_before_stopping.json:
+        cache: false
+    outs:
+    - nodes/bootstrap_1/ASEMD/metrics_dict.csv
+    - nodes/bootstrap_1/ASEMD/model
+    - nodes/bootstrap_1/ASEMD/trajectory.h5
+    - nodes/bootstrap_1/ASEMD/velocity_cache.json
+    params:
+    - bootstrap_1_ASEMD
+  bootstrap_1_ASEMD_checker_list_0:
+    cmd: zntrack run ipsuite.nodes.ThresholdCheck --name bootstrap_1_ASEMD_checker_list_0
+      --meta-only
+    metrics:
+    - nodes/bootstrap_1/ASEMD_checker_list_0/node-meta.json:
+        cache: false
+    params:
+    - bootstrap_1_ASEMD_checker_list_0
+    - zntrack.json:
+      - bootstrap_1_ASEMD.checker_list
+  bootstrap_1_ASEMD_modifier_0:
+    cmd: zntrack run ipsuite.nodes.TemperatureOscillatingRampModifier --name bootstrap_1_ASEMD_modifier_0
+      --meta-only
+    metrics:
+    - nodes/bootstrap_1/ASEMD_modifier_0/node-meta.json:
+        cache: false
+    params:
+    - bootstrap_1_ASEMD_modifier_0
+    - zntrack.json:
+      - bootstrap_1_ASEMD.modifier
+  bootstrap_1_ASEMD_modifier_1:
+    cmd: zntrack run ipsuite.nodes.BoxOscillatingRampModifier --name bootstrap_1_ASEMD_modifier_1
+      --meta-only
+    metrics:
+    - nodes/bootstrap_1/ASEMD_modifier_1/node-meta.json:
+        cache: false
+    params:
+    - bootstrap_1_ASEMD_modifier_1
+    - zntrack.json:
+      - bootstrap_1_ASEMD.modifier
+  bootstrap_1_ASEMD_thermostat:
+    cmd: zntrack run ipsuite.nodes.LangevinThermostat --name bootstrap_1_ASEMD_thermostat
+      --meta-only
+    metrics:
+    - nodes/bootstrap_1/ASEMD_thermostat/node-meta.json:
+        cache: false
+    params:
+    - bootstrap_1_ASEMD_thermostat
+    - zntrack.json:
+      - bootstrap_1_ASEMD.thermostat
   final_BoxScale:
     cmd: zntrack run ipsuite.nodes.BoxScale --name final_BoxScale
     deps:
@@ -2722,7 +2787,7 @@ stages:
     - nodes/final/MLModel/val_atoms.extxyz
     params:
     - final_MLModel
-    - config/apax_final.yaml: null
+    - config/apax_final.yaml:
   final_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name final_Prediction
     deps:
@@ -2787,3 +2852,94 @@ stages:
     - nodes/final/PredictionMetrics/stress_deviatoric_df.csv
     - nodes/final/PredictionMetrics/stress_df.csv
     - nodes/final/PredictionMetrics/stress_hydrostatic_df.csv
+  bootstrap_1_ConfigurationSelection_1:
+    cmd: zntrack run ipsuite.nodes.ThresholdSelection --name bootstrap_1_ConfigurationSelection_1
+    deps:
+    - nodes/bootstrap_1/ASEMD/metrics_dict.csv
+    - nodes/bootstrap_1/ASEMD/model
+    - nodes/bootstrap_1/ASEMD/node-meta.json
+    - nodes/bootstrap_1/ASEMD/steps_before_stopping.json
+    - nodes/bootstrap_1/ASEMD/trajectory.h5
+    - nodes/bootstrap_1/ASEMD/velocity_cache.json
+    params:
+    - bootstrap_1_ConfigurationSelection_1
+    outs:
+    - nodes/bootstrap_1/ConfigurationSelection_1/_hash.json
+    - nodes/bootstrap_1/ConfigurationSelection_1/selected_configurations.json
+    - nodes/bootstrap_1/ConfigurationSelection_1/selection.png
+    metrics:
+    - nodes/bootstrap_1/ConfigurationSelection_1/node-meta.json:
+        cache: false
+  bootstrap_1_ConfigurationSelection_2:
+    cmd: zntrack run ipsuite.nodes.RandomSelection --name bootstrap_1_ConfigurationSelection_2
+    deps:
+    - nodes/bootstrap_1/ConfigurationSelection_1/_hash.json
+    - nodes/bootstrap_1/ConfigurationSelection_1/node-meta.json
+    - nodes/bootstrap_1/ConfigurationSelection_1/selected_configurations.json
+    - nodes/bootstrap_1/ConfigurationSelection_1/selection.png
+    params:
+    - bootstrap_1_ConfigurationSelection_2
+    outs:
+    - nodes/bootstrap_1/ConfigurationSelection_2/_hash.json
+    - nodes/bootstrap_1/ConfigurationSelection_2/selected_configurations.json
+    metrics:
+    - nodes/bootstrap_1/ConfigurationSelection_2/node-meta.json:
+        cache: false
+  bootstrap_1_ConfigurationSelection_3:
+    cmd: zntrack run ipsuite.nodes.RandomSelection --name bootstrap_1_ConfigurationSelection_3
+    deps:
+    - nodes/bootstrap_1/ConfigurationSelection_2/_hash.json
+    - nodes/bootstrap_1/ConfigurationSelection_2/node-meta.json
+    - nodes/bootstrap_1/ConfigurationSelection_2/selected_configurations.json
+    params:
+    - bootstrap_1_ConfigurationSelection_3
+    outs:
+    - nodes/bootstrap_1/ConfigurationSelection_3/_hash.json
+    - nodes/bootstrap_1/ConfigurationSelection_3/selected_configurations.json
+    metrics:
+    - nodes/bootstrap_1/ConfigurationSelection_3/node-meta.json:
+        cache: false
+  bootstrap_1_CP2KSinglePoint_1:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name bootstrap_1_CP2KSinglePoint_1
+    deps:
+    - BASIS_MOLOPT
+    - GTH_POTENTIALS
+    - dftd3.dat
+    - nodes/CP2KSinglePoint/atoms.h5
+    - nodes/CP2KSinglePoint/cp2k
+    - nodes/CP2KSinglePoint/node-meta.json
+    - nodes/bootstrap_1/ConfigurationSelection_1/_hash.json
+    - nodes/bootstrap_1/ConfigurationSelection_1/node-meta.json
+    - nodes/bootstrap_1/ConfigurationSelection_1/selected_configurations.json
+    - nodes/bootstrap_1/ConfigurationSelection_1/selection.png
+    - nodes/bootstrap_1/ConfigurationSelection_2/_hash.json
+    - nodes/bootstrap_1/ConfigurationSelection_2/node-meta.json
+    - nodes/bootstrap_1/ConfigurationSelection_2/selected_configurations.json
+    params:
+    - cp2k.yaml:
+    outs:
+    - nodes/bootstrap_1/CP2KSinglePoint_1/atoms.h5
+    - nodes/bootstrap_1/CP2KSinglePoint_1/cp2k
+    metrics:
+    - nodes/bootstrap_1/CP2KSinglePoint_1/node-meta.json:
+        cache: false
+  bootstrap_1_CP2KSinglePoint_2:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name bootstrap_1_CP2KSinglePoint_2
+    deps:
+    - BASIS_MOLOPT
+    - GTH_POTENTIALS
+    - dftd3.dat
+    - nodes/CP2KSinglePoint/atoms.h5
+    - nodes/CP2KSinglePoint/cp2k
+    - nodes/CP2KSinglePoint/node-meta.json
+    - nodes/bootstrap_1/ConfigurationSelection_3/_hash.json
+    - nodes/bootstrap_1/ConfigurationSelection_3/node-meta.json
+    - nodes/bootstrap_1/ConfigurationSelection_3/selected_configurations.json
+    params:
+    - cp2k.yaml:
+    outs:
+    - nodes/bootstrap_1/CP2KSinglePoint_2/atoms.h5
+    - nodes/bootstrap_1/CP2KSinglePoint_2/cp2k
+    metrics:
+    - nodes/bootstrap_1/CP2KSinglePoint_2/node-meta.json:
+        cache: false

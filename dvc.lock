@@ -11068,3 +11068,317 @@ stages:
       hash: md5
       md5: ab842ed3522315095792ab204f8798ed
       size: 2783
+  bootstrap_1_ASEMD_checker_list_0:
+    cmd: zntrack run ipsuite.nodes.ThresholdCheck --name bootstrap_1_ASEMD_checker_list_0
+      --meta-only
+    params:
+      params.yaml:
+        bootstrap_1_ASEMD_checker_list_0:
+          larger_only: true
+          max_std:
+          max_value: 2.0
+          minimum_window_size: 1
+          value: energy_uncertainty
+          window_size: 500
+      zntrack.json:
+        bootstrap_1_ASEMD.checker_list:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: ThresholdCheck
+            name: bootstrap_1_ASEMD_checker_list_0
+            remote:
+            rev:
+    outs:
+    - path: nodes/bootstrap_1/ASEMD_checker_list_0/node-meta.json
+      hash: md5
+      md5: 7c0a3d706a1270ea0c59802952354087
+      size: 48
+  bootstrap_1_ASEMD_modifier_0:
+    cmd: zntrack run ipsuite.nodes.TemperatureOscillatingRampModifier --name bootstrap_1_ASEMD_modifier_0
+      --meta-only
+    params:
+      params.yaml:
+        bootstrap_1_ASEMD_modifier_0:
+          end_temperature: 450
+          interval: 1
+          num_oscillations: 10
+          start_temperature: 270
+          temperature_amplitude: 150
+      zntrack.json:
+        bootstrap_1_ASEMD.modifier:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: TemperatureOscillatingRampModifier
+            name: bootstrap_1_ASEMD_modifier_0
+            remote:
+            rev:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: BoxOscillatingRampModifier
+            name: bootstrap_1_ASEMD_modifier_1
+            remote:
+            rev:
+    outs:
+    - path: nodes/bootstrap_1/ASEMD_modifier_0/node-meta.json
+      hash: md5
+      md5: d030d22744cae2547eaa44191564076e
+      size: 48
+  bootstrap_1_ASEMD_thermostat:
+    cmd: zntrack run ipsuite.nodes.LangevinThermostat --name bootstrap_1_ASEMD_thermostat
+      --meta-only
+    params:
+      params.yaml:
+        bootstrap_1_ASEMD_thermostat:
+          friction: 0.01
+          temperature: 298.15
+          time_step: 0.5
+      zntrack.json:
+        bootstrap_1_ASEMD.thermostat:
+          _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: LangevinThermostat
+            name: bootstrap_1_ASEMD_thermostat
+            remote:
+            rev:
+    outs:
+    - path: nodes/bootstrap_1/ASEMD_thermostat/node-meta.json
+      hash: md5
+      md5: bbf58dfab5e7340dc2a38de6deb37e58
+      size: 48
+  bootstrap_1_ASEMD:
+    cmd: zntrack run ipsuite.nodes.ASEMD --name bootstrap_1_ASEMD
+    deps:
+    - path: nodes/ASEGeoOpt/model_outs
+      hash: md5
+      md5: 55a17d4cf10898236beac4f2d757f2b4.dir
+      size: 89601466
+      nfiles: 7
+    - path: nodes/ASEGeoOpt/node-meta.json
+      hash: md5
+      md5: 336193404ed866dfebe5a4c56f8ef2f8
+      size: 48
+    - path: nodes/ASEGeoOpt/trajectory.h5
+      hash: md5
+      md5: ea5b960f96c3f1f8cd9328fb1ea918f5
+      size: 1410008
+    - path: nodes/bootstrap_0/EnsembleModel/node-meta.json
+      hash: md5
+      md5: a7602397e8d151db14348a72bcc5256d
+      size: 48
+    - path: nodes/bootstrap_0/EnsembleModel/uuid.json
+      hash: md5
+      md5: 861a80a083582466890ad040c6807e35
+      size: 38
+    - path: nodes/bootstrap_1/ASEMD_checker_list_0/node-meta.json
+      hash: md5
+      md5: 7c0a3d706a1270ea0c59802952354087
+      size: 48
+    - path: nodes/bootstrap_1/ASEMD_modifier_0/node-meta.json
+      hash: md5
+      md5: d030d22744cae2547eaa44191564076e
+      size: 48
+    - path: nodes/bootstrap_1/ASEMD_modifier_1/node-meta.json
+      hash: md5
+      md5: 39fe58f40bf5289ebb183052b8e6ad61
+      size: 48
+    - path: nodes/bootstrap_1/ASEMD_thermostat/node-meta.json
+      hash: md5
+      md5: bbf58dfab5e7340dc2a38de6deb37e58
+      size: 48
+    params:
+      params.yaml:
+        bootstrap_1_ASEMD:
+          data_id: -1
+          dump_rate: 1000
+          init_temperature:
+          init_velocity:
+          repeat:
+          - 1
+          - 1
+          - 1
+          sampling_rate: 100
+          steps: 10000
+    outs:
+    - path: nodes/bootstrap_1/ASEMD/metrics_dict.csv
+      hash: md5
+      md5: 8ed3777939d437a7cd578ed39c27519e
+      size: 228370
+    - path: nodes/bootstrap_1/ASEMD/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/bootstrap_1/ASEMD/node-meta.json
+      hash: md5
+      md5: 8865d2ead7a1ebbb710d8e766246d919
+      size: 48
+    - path: nodes/bootstrap_1/ASEMD/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/bootstrap_1/ASEMD/trajectory.h5
+      hash: md5
+      md5: 9b2e09fd88451aad683cddc8f62b8a80
+      size: 215885544
+    - path: nodes/bootstrap_1/ASEMD/velocity_cache.json
+      hash: md5
+      md5: 850238908d9987012ab9f25b25659aad
+      size: 12382
+  bootstrap_1_ASEMD_modifier_1:
+    cmd: zntrack run ipsuite.nodes.BoxOscillatingRampModifier --name bootstrap_1_ASEMD_modifier_1
+      --meta-only
+    params:
+      params.yaml:
+        bootstrap_1_ASEMD_modifier_1:
+          cell_amplitude: 1
+          end_cell:
+          interval: 1
+          num_oscillations: 3
+      zntrack.json:
+        bootstrap_1_ASEMD.modifier:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: TemperatureOscillatingRampModifier
+            name: bootstrap_1_ASEMD_modifier_0
+            remote:
+            rev:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: BoxOscillatingRampModifier
+            name: bootstrap_1_ASEMD_modifier_1
+            remote:
+            rev:
+    outs:
+    - path: nodes/bootstrap_1/ASEMD_modifier_1/node-meta.json
+      hash: md5
+      md5: 39fe58f40bf5289ebb183052b8e6ad61
+      size: 48
+  bootstrap_1_ConfigurationSelection_1:
+    cmd: zntrack run ipsuite.nodes.ThresholdSelection --name bootstrap_1_ConfigurationSelection_1
+    deps:
+    - path: nodes/bootstrap_1/ASEMD/metrics_dict.csv
+      hash: md5
+      md5: 8ed3777939d437a7cd578ed39c27519e
+      size: 228370
+    - path: nodes/bootstrap_1/ASEMD/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/bootstrap_1/ASEMD/node-meta.json
+      hash: md5
+      md5: 8865d2ead7a1ebbb710d8e766246d919
+      size: 48
+    - path: nodes/bootstrap_1/ASEMD/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/bootstrap_1/ASEMD/trajectory.h5
+      hash: md5
+      md5: 9b2e09fd88451aad683cddc8f62b8a80
+      size: 215885544
+    - path: nodes/bootstrap_1/ASEMD/velocity_cache.json
+      hash: md5
+      md5: 850238908d9987012ab9f25b25659aad
+      size: 12382
+    params:
+      params.yaml:
+        bootstrap_1_ConfigurationSelection_1:
+          key: energy_uncertainty
+          min_distance: 10
+          n_configurations: 20
+          reference: energy
+          threshold:
+    outs:
+    - path: nodes/bootstrap_1/ConfigurationSelection_1/_hash.json
+      hash: md5
+      md5: d8ab991070c9f8bce2692abbd771cbbe
+      size: 38
+    - path: nodes/bootstrap_1/ConfigurationSelection_1/node-meta.json
+      hash: md5
+      md5: 1c0b85db4f4c8297aba3556a7a18ba97
+      size: 48
+    - path: nodes/bootstrap_1/ConfigurationSelection_1/selected_configurations.json
+      hash: md5
+      md5: c82eb9261b04ca13a86509f776978c35
+      size: 291
+    - path: nodes/bootstrap_1/ConfigurationSelection_1/selection.png
+      hash: md5
+      md5: 92075764bf43867b311235b212fe4de9
+      size: 49870
+  bootstrap_1_ConfigurationSelection_2:
+    cmd: zntrack run ipsuite.nodes.RandomSelection --name bootstrap_1_ConfigurationSelection_2
+    deps:
+    - path: nodes/bootstrap_1/ConfigurationSelection_1/_hash.json
+      hash: md5
+      md5: d8ab991070c9f8bce2692abbd771cbbe
+      size: 38
+    - path: nodes/bootstrap_1/ConfigurationSelection_1/node-meta.json
+      hash: md5
+      md5: 1c0b85db4f4c8297aba3556a7a18ba97
+      size: 48
+    - path: nodes/bootstrap_1/ConfigurationSelection_1/selected_configurations.json
+      hash: md5
+      md5: c82eb9261b04ca13a86509f776978c35
+      size: 291
+    - path: nodes/bootstrap_1/ConfigurationSelection_1/selection.png
+      hash: md5
+      md5: 92075764bf43867b311235b212fe4de9
+      size: 49870
+    params:
+      params.yaml:
+        bootstrap_1_ConfigurationSelection_2:
+          n_configurations: 80
+          seed: 1234
+    outs:
+    - path: nodes/bootstrap_1/ConfigurationSelection_2/_hash.json
+      hash: md5
+      md5: 835b5b4b3ebb974bd6f3cbe675b9d072
+      size: 38
+    - path: nodes/bootstrap_1/ConfigurationSelection_2/node-meta.json
+      hash: md5
+      md5: 7396663c77564bbf08e448f94b5cb893
+      size: 48
+    - path: nodes/bootstrap_1/ConfigurationSelection_2/selected_configurations.json
+      hash: md5
+      md5: 8e4b2780c43cf962d9d1ca5cb7365a7f
+      size: 1145
+  bootstrap_1_ConfigurationSelection_3:
+    cmd: zntrack run ipsuite.nodes.RandomSelection --name bootstrap_1_ConfigurationSelection_3
+    deps:
+    - path: nodes/bootstrap_1/ConfigurationSelection_2/_hash.json
+      hash: md5
+      md5: 835b5b4b3ebb974bd6f3cbe675b9d072
+      size: 38
+    - path: nodes/bootstrap_1/ConfigurationSelection_2/node-meta.json
+      hash: md5
+      md5: 7396663c77564bbf08e448f94b5cb893
+      size: 48
+    - path: nodes/bootstrap_1/ConfigurationSelection_2/selected_configurations.json
+      hash: md5
+      md5: 8e4b2780c43cf962d9d1ca5cb7365a7f
+      size: 1145
+    params:
+      params.yaml:
+        bootstrap_1_ConfigurationSelection_3:
+          n_configurations: 20
+          seed: 1234
+    outs:
+    - path: nodes/bootstrap_1/ConfigurationSelection_3/_hash.json
+      hash: md5
+      md5: e4b216a6dd9a0c35f33e2b5ff4d3b4f7
+      size: 38
+    - path: nodes/bootstrap_1/ConfigurationSelection_3/node-meta.json
+      hash: md5
+      md5: 2f1d9a65d1ae187dfbd2ef338a705dc2
+      size: 48
+    - path: nodes/bootstrap_1/ConfigurationSelection_3/selected_configurations.json
+      hash: md5
+      md5: ad71f86624a8f00d91f693fa60aea0d2
+      size: 322
