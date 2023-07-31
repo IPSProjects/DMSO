@@ -11382,3 +11382,231 @@ stages:
       hash: md5
       md5: ad71f86624a8f00d91f693fa60aea0d2
       size: 322
+  bootstrap_1_CP2KSinglePoint_1:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name bootstrap_1_CP2KSinglePoint_1
+    deps:
+    - path: BASIS_MOLOPT
+      hash: md5
+      md5: 4e877f2fa6a2b401ae1516a48f977f2b
+      size: 126074
+    - path: GTH_POTENTIALS
+      hash: md5
+      md5: 39f14f5181cb73cf1f7aec6d838f3fe5
+      size: 108689
+    - path: dftd3.dat
+      hash: md5
+      md5: 88745bcc951a4bcdccc4d6bcfa78d105
+      size: 1959318
+    - path: nodes/CP2KSinglePoint/atoms.h5
+      hash: md5
+      md5: 9697c746c6f69d428bd2f5a5b7979666
+      size: 61928
+    - path: nodes/CP2KSinglePoint/cp2k
+      hash: md5
+      md5: fb7bfe3b3264befe3419725f830a8775.dir
+      size: 21603140
+      nfiles: 3
+    - path: nodes/CP2KSinglePoint/node-meta.json
+      hash: md5
+      md5: 63df96639d4fa5cd5d2b3bf3d4671e3a
+      size: 48
+    - path: nodes/bootstrap_1/ConfigurationSelection_1/_hash.json
+      hash: md5
+      md5: d8ab991070c9f8bce2692abbd771cbbe
+      size: 38
+    - path: nodes/bootstrap_1/ConfigurationSelection_1/node-meta.json
+      hash: md5
+      md5: 1c0b85db4f4c8297aba3556a7a18ba97
+      size: 48
+    - path: nodes/bootstrap_1/ConfigurationSelection_1/selected_configurations.json
+      hash: md5
+      md5: c82eb9261b04ca13a86509f776978c35
+      size: 291
+    - path: nodes/bootstrap_1/ConfigurationSelection_1/selection.png
+      hash: md5
+      md5: 92075764bf43867b311235b212fe4de9
+      size: 49870
+    - path: nodes/bootstrap_1/ConfigurationSelection_2/_hash.json
+      hash: md5
+      md5: 835b5b4b3ebb974bd6f3cbe675b9d072
+      size: 38
+    - path: nodes/bootstrap_1/ConfigurationSelection_2/node-meta.json
+      hash: md5
+      md5: 7396663c77564bbf08e448f94b5cb893
+      size: 48
+    - path: nodes/bootstrap_1/ConfigurationSelection_2/selected_configurations.json
+      hash: md5
+      md5: 8e4b2780c43cf962d9d1ca5cb7365a7f
+      size: 1145
+    params:
+      cp2k.yaml:
+        force_eval:
+          method: quickstep
+          DFT:
+            mgrid:
+              cutoff: 600.0
+              rel_cutoff: 80.0
+              ngrids: 5
+            QS:
+              eps_filter_matrix: 0.0
+              eps_pgf_orb: 0.0001
+            SCF:
+              scf_guess: restart
+              max_scf: 100
+              eps_scf: 1e-06
+              OT:
+                minimizer: diis
+                preconditioner: full_single_inverse
+              outer_scf:
+                max_scf: 100
+                eps_scf: 1e-06
+              print:
+                restart:
+                  each:
+                    QS_SCF: 0
+            XC:
+              xc_functional:
+                _: BLYP
+              vdw_potential:
+                pair_potential:
+                  type: DFTD3
+                  parameter_file_name: dftd3.dat
+                  reference_functional: BLYP
+                  r_cutoff: 18
+                potential_type: pair_potential
+            basis_set_file_name: BASIS_MOLOPT
+            potential_file_name: GTH_POTENTIALS
+          subsys:
+            kind:
+              O:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+              C:
+                basis_set: TZV2P-MOLOPT-GTH-q4
+                potential: GTH-BLYP-q4
+              H:
+                basis_set: TZV2P-MOLOPT-GTH-q1
+                potential: GTH-BLYP-q1
+              S:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+    outs:
+    - path: nodes/bootstrap_1/CP2KSinglePoint_1/atoms.h5
+      hash: md5
+      md5: fa4227105379f8d79a48be3b1f266ff2
+      size: 3144944
+    - path: nodes/bootstrap_1/CP2KSinglePoint_1/cp2k
+      hash: md5
+      md5: 3dd88623baf113824e21c5e98492fc60.dir
+      size: 29429539
+      nfiles: 3
+    - path: nodes/bootstrap_1/CP2KSinglePoint_1/node-meta.json
+      hash: md5
+      md5: fdefcde82c241140074bbef8503296dc
+      size: 48
+  bootstrap_1_CP2KSinglePoint_2:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name bootstrap_1_CP2KSinglePoint_2
+    deps:
+    - path: BASIS_MOLOPT
+      hash: md5
+      md5: 4e877f2fa6a2b401ae1516a48f977f2b
+      size: 126074
+    - path: GTH_POTENTIALS
+      hash: md5
+      md5: 39f14f5181cb73cf1f7aec6d838f3fe5
+      size: 108689
+    - path: dftd3.dat
+      hash: md5
+      md5: 88745bcc951a4bcdccc4d6bcfa78d105
+      size: 1959318
+    - path: nodes/CP2KSinglePoint/atoms.h5
+      hash: md5
+      md5: 9697c746c6f69d428bd2f5a5b7979666
+      size: 61928
+    - path: nodes/CP2KSinglePoint/cp2k
+      hash: md5
+      md5: fb7bfe3b3264befe3419725f830a8775.dir
+      size: 21603140
+      nfiles: 3
+    - path: nodes/CP2KSinglePoint/node-meta.json
+      hash: md5
+      md5: 63df96639d4fa5cd5d2b3bf3d4671e3a
+      size: 48
+    - path: nodes/bootstrap_1/ConfigurationSelection_3/_hash.json
+      hash: md5
+      md5: e4b216a6dd9a0c35f33e2b5ff4d3b4f7
+      size: 38
+    - path: nodes/bootstrap_1/ConfigurationSelection_3/node-meta.json
+      hash: md5
+      md5: 2f1d9a65d1ae187dfbd2ef338a705dc2
+      size: 48
+    - path: nodes/bootstrap_1/ConfigurationSelection_3/selected_configurations.json
+      hash: md5
+      md5: ad71f86624a8f00d91f693fa60aea0d2
+      size: 322
+    params:
+      cp2k.yaml:
+        force_eval:
+          method: quickstep
+          DFT:
+            mgrid:
+              cutoff: 600.0
+              rel_cutoff: 80.0
+              ngrids: 5
+            QS:
+              eps_filter_matrix: 0.0
+              eps_pgf_orb: 0.0001
+            SCF:
+              scf_guess: restart
+              max_scf: 100
+              eps_scf: 1e-06
+              OT:
+                minimizer: diis
+                preconditioner: full_single_inverse
+              outer_scf:
+                max_scf: 100
+                eps_scf: 1e-06
+              print:
+                restart:
+                  each:
+                    QS_SCF: 0
+            XC:
+              xc_functional:
+                _: BLYP
+              vdw_potential:
+                pair_potential:
+                  type: DFTD3
+                  parameter_file_name: dftd3.dat
+                  reference_functional: BLYP
+                  r_cutoff: 18
+                potential_type: pair_potential
+            basis_set_file_name: BASIS_MOLOPT
+            potential_file_name: GTH_POTENTIALS
+          subsys:
+            kind:
+              O:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+              C:
+                basis_set: TZV2P-MOLOPT-GTH-q4
+                potential: GTH-BLYP-q4
+              H:
+                basis_set: TZV2P-MOLOPT-GTH-q1
+                potential: GTH-BLYP-q1
+              S:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+    outs:
+    - path: nodes/bootstrap_1/CP2KSinglePoint_2/atoms.h5
+      hash: md5
+      md5: 13adbb9ea5090d34a2679e4690ff10df
+      size: 656216
+    - path: nodes/bootstrap_1/CP2KSinglePoint_2/cp2k
+      hash: md5
+      md5: a446067a801005c2b35db3c9869782b5.dir
+      size: 23128573
+      nfiles: 3
+    - path: nodes/bootstrap_1/CP2KSinglePoint_2/node-meta.json
+      hash: md5
+      md5: 847cd3fbaaebe5912e788a0c93af551f
+      size: 48
