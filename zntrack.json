@@ -7512,5 +7512,213 @@
             "_type": "pathlib.Path",
             "value": "nodes/final/BoxScale_mapping"
         }
+    },
+    "volume_scan_ASEMD_checker_list_0": {
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/volume_scan/ASEMD_checker_list_0"
+        }
+    },
+    "volume_scan_ASEMD": {
+        "checker_list": [
+            {
+                "_type": "zntrack.Node",
+                "value": {
+                    "module": "ipsuite.nodes",
+                    "cls": "ThresholdCheck",
+                    "name": "volume_scan_ASEMD_checker_list_0",
+                    "remote": null,
+                    "rev": null
+                }
+            }
+        ],
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ASEGeoOpt",
+                        "name": "ASEGeoOpt",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "data_file": null,
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "bootstrap_0_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "model_outs": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/model"
+        },
+        "modifier": null,
+        "thermostat": {
+            "_type": "zntrack.Node",
+            "value": {
+                "module": "ipsuite.nodes",
+                "cls": "LangevinThermostat",
+                "name": "volume_scan_ASEMD_thermostat",
+                "remote": null,
+                "rev": null
+            }
+        },
+        "traj_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trajectory.h5"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/volume_scan/ASEMD"
+        }
+    },
+    "volume_scan_ASEMD_thermostat": {
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/volume_scan/ASEMD_thermostat"
+        }
+    },
+    "volume_scan_BoxScale": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ASEMD",
+                        "name": "volume_scan_ASEMD",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "data_file": null,
+        "mapping": {
+            "_type": "zntrack.Node",
+            "value": {
+                "module": "ipsuite.nodes",
+                "cls": "BarycenterMapping",
+                "name": "volume_scan_BoxScale_mapping",
+                "remote": null,
+                "rev": null
+            }
+        },
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "EnsembleModel",
+                        "name": "bootstrap_0_EnsembleModel",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "model_outs": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/model"
+        },
+        "plot": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/volume_scan/BoxScale"
+        }
+    },
+    "volume_scan_BoxScale_mapping": {
+        "data": null,
+        "data_file": null,
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/volume_scan/BoxScale_mapping"
+        }
+    },
+    "volume_scan_CP2KSinglePoint_1": {
+        "cp2k_directory": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/cp2k"
+        },
+        "cp2k_files": [
+            "BASIS_MOLOPT",
+            "GTH_POTENTIALS",
+            "dftd3.dat"
+        ],
+        "cp2k_params": "cp2k.yaml",
+        "cp2k_shell": "cp2k_shell.ssmp",
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "BoxScale",
+                        "name": "volume_scan_BoxScale",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "data_file": null,
+        "output_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/atoms.h5"
+        },
+        "wfn_restart_file": null,
+        "wfn_restart_node": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "CP2KSinglePoint",
+                        "name": "CP2KSinglePoint",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/volume_scan/CP2KSinglePoint_1"
+        }
     }
 }

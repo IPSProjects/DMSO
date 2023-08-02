@@ -11649,3 +11649,328 @@ stages:
       hash: md5
       md5: 847cd3fbaaebe5912e788a0c93af551f
       size: 48
+  volume_scan_ASEMD_checker_list_0:
+    cmd: zntrack run ipsuite.nodes.ThresholdCheck --name volume_scan_ASEMD_checker_list_0
+      --meta-only
+    params:
+      params.yaml:
+        volume_scan_ASEMD_checker_list_0:
+          larger_only: true
+          max_std:
+          max_value: 2.0
+          minimum_window_size: 1
+          value: energy_uncertainty
+          window_size: 500
+      zntrack.json:
+        volume_scan_ASEMD.checker_list:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: ThresholdCheck
+            name: volume_scan_ASEMD_checker_list_0
+            remote:
+            rev:
+    outs:
+    - path: nodes/volume_scan/ASEMD_checker_list_0/node-meta.json
+      hash: md5
+      md5: e1b82bd75ea430367797a12e01f0da46
+      size: 48
+  volume_scan_ASEMD_thermostat:
+    cmd: zntrack run ipsuite.nodes.LangevinThermostat --name volume_scan_ASEMD_thermostat
+      --meta-only
+    params:
+      params.yaml:
+        volume_scan_ASEMD_thermostat:
+          friction: 0.01
+          temperature: 298.15
+          time_step: 0.5
+      zntrack.json:
+        volume_scan_ASEMD.thermostat:
+          _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: LangevinThermostat
+            name: volume_scan_ASEMD_thermostat
+            remote:
+            rev:
+    outs:
+    - path: nodes/volume_scan/ASEMD_thermostat/node-meta.json
+      hash: md5
+      md5: bf14cdf59a727c05e132e381bfb34646
+      size: 48
+  volume_scan_ASEMD:
+    cmd: zntrack run ipsuite.nodes.ASEMD --name volume_scan_ASEMD
+    deps:
+    - path: nodes/ASEGeoOpt/model_outs
+      hash: md5
+      md5: 55a17d4cf10898236beac4f2d757f2b4.dir
+      size: 89601466
+      nfiles: 7
+    - path: nodes/ASEGeoOpt/node-meta.json
+      hash: md5
+      md5: 336193404ed866dfebe5a4c56f8ef2f8
+      size: 48
+    - path: nodes/ASEGeoOpt/trajectory.h5
+      hash: md5
+      md5: ea5b960f96c3f1f8cd9328fb1ea918f5
+      size: 1410008
+    - path: nodes/bootstrap_0/EnsembleModel/node-meta.json
+      hash: md5
+      md5: a7602397e8d151db14348a72bcc5256d
+      size: 48
+    - path: nodes/bootstrap_0/EnsembleModel/uuid.json
+      hash: md5
+      md5: 861a80a083582466890ad040c6807e35
+      size: 38
+    - path: nodes/volume_scan/ASEMD_checker_list_0/node-meta.json
+      hash: md5
+      md5: e1b82bd75ea430367797a12e01f0da46
+      size: 48
+    - path: nodes/volume_scan/ASEMD_thermostat/node-meta.json
+      hash: md5
+      md5: bf14cdf59a727c05e132e381bfb34646
+      size: 48
+    params:
+      params.yaml:
+        volume_scan_ASEMD:
+          data_id: -1
+          dump_rate: 1000
+          init_temperature:
+          init_velocity:
+          repeat:
+          - 1
+          - 1
+          - 1
+          sampling_rate: 10
+          steps: 250
+    outs:
+    - path: nodes/volume_scan/ASEMD/metrics_dict.csv
+      hash: md5
+      md5: 84d946abeae8d6397139cd9fca245913
+      size: 10527
+    - path: nodes/volume_scan/ASEMD/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/volume_scan/ASEMD/node-meta.json
+      hash: md5
+      md5: 02523d5bf4b9e243cccec0f905c6bd37
+      size: 48
+    - path: nodes/volume_scan/ASEMD/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/volume_scan/ASEMD/trajectory.h5
+      hash: md5
+      md5: d89e91d7c8372f173b0297fb5e2d6cf2
+      size: 10251752
+    - path: nodes/volume_scan/ASEMD/velocity_cache.json
+      hash: md5
+      md5: 964acc3287fc73c6383afc2f1d81b2dd
+      size: 12382
+  volume_scan_BoxScale_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name volume_scan_BoxScale_mapping
+      --meta-only
+    params:
+      params.yaml:
+        volume_scan_BoxScale_mapping:
+          frozen: false
+      zntrack.json:
+        volume_scan_BoxScale.mapping:
+          _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: BarycenterMapping
+            name: volume_scan_BoxScale_mapping
+            remote:
+            rev:
+    outs:
+    - path: nodes/volume_scan/BoxScale_mapping/node-meta.json
+      hash: md5
+      md5: 469743bca849f4ffd4b41330abdc5c71
+      size: 48
+  volume_scan_BoxScale:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name volume_scan_BoxScale
+    deps:
+    - path: nodes/bootstrap_0/EnsembleModel/node-meta.json
+      hash: md5
+      md5: a7602397e8d151db14348a72bcc5256d
+      size: 48
+    - path: nodes/bootstrap_0/EnsembleModel/uuid.json
+      hash: md5
+      md5: 861a80a083582466890ad040c6807e35
+      size: 38
+    - path: nodes/volume_scan/ASEMD/metrics_dict.csv
+      hash: md5
+      md5: 84d946abeae8d6397139cd9fca245913
+      size: 10527
+    - path: nodes/volume_scan/ASEMD/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/volume_scan/ASEMD/node-meta.json
+      hash: md5
+      md5: 02523d5bf4b9e243cccec0f905c6bd37
+      size: 48
+    - path: nodes/volume_scan/ASEMD/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/volume_scan/ASEMD/trajectory.h5
+      hash: md5
+      md5: d89e91d7c8372f173b0297fb5e2d6cf2
+      size: 10251752
+    - path: nodes/volume_scan/ASEMD/velocity_cache.json
+      hash: md5
+      md5: 964acc3287fc73c6383afc2f1d81b2dd
+      size: 12382
+    - path: nodes/volume_scan/BoxScale_mapping/node-meta.json
+      hash: md5
+      md5: 469743bca849f4ffd4b41330abdc5c71
+      size: 48
+    params:
+      params.yaml:
+        volume_scan_BoxScale:
+          data_id: -1
+          num: 50
+          start: 0.9
+          stop: 1.7
+    outs:
+    - path: nodes/volume_scan/BoxScale/atoms.h5
+      hash: md5
+      md5: d73aff9373d605fc0fa8b7035c9fee26
+      size: 2123680
+    - path: nodes/volume_scan/BoxScale/energies.csv
+      hash: md5
+      md5: 585dc24006789c9e9e6ee77601764df4
+      size: 2009
+    - path: nodes/volume_scan/BoxScale/energy.png
+      hash: md5
+      md5: 0affdd06c99d54877ce8d0d754b50f07
+      size: 32011
+    - path: nodes/volume_scan/BoxScale/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/volume_scan/BoxScale/node-meta.json
+      hash: md5
+      md5: a11506b02a1f591777dc6fe0f2ba31c2
+      size: 48
+  volume_scan_CP2KSinglePoint_1:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name volume_scan_CP2KSinglePoint_1
+    deps:
+    - path: BASIS_MOLOPT
+      hash: md5
+      md5: 4e877f2fa6a2b401ae1516a48f977f2b
+      size: 126074
+    - path: GTH_POTENTIALS
+      hash: md5
+      md5: 39f14f5181cb73cf1f7aec6d838f3fe5
+      size: 108689
+    - path: dftd3.dat
+      hash: md5
+      md5: 88745bcc951a4bcdccc4d6bcfa78d105
+      size: 1959318
+    - path: nodes/CP2KSinglePoint/atoms.h5
+      hash: md5
+      md5: 9697c746c6f69d428bd2f5a5b7979666
+      size: 61928
+    - path: nodes/CP2KSinglePoint/cp2k
+      hash: md5
+      md5: fb7bfe3b3264befe3419725f830a8775.dir
+      size: 21603140
+      nfiles: 3
+    - path: nodes/CP2KSinglePoint/node-meta.json
+      hash: md5
+      md5: 63df96639d4fa5cd5d2b3bf3d4671e3a
+      size: 48
+    - path: nodes/volume_scan/BoxScale/atoms.h5
+      hash: md5
+      md5: d73aff9373d605fc0fa8b7035c9fee26
+      size: 2123680
+    - path: nodes/volume_scan/BoxScale/energies.csv
+      hash: md5
+      md5: 585dc24006789c9e9e6ee77601764df4
+      size: 2009
+    - path: nodes/volume_scan/BoxScale/energy.png
+      hash: md5
+      md5: 0affdd06c99d54877ce8d0d754b50f07
+      size: 32011
+    - path: nodes/volume_scan/BoxScale/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/volume_scan/BoxScale/node-meta.json
+      hash: md5
+      md5: a11506b02a1f591777dc6fe0f2ba31c2
+      size: 48
+    params:
+      cp2k.yaml:
+        force_eval:
+          method: quickstep
+          DFT:
+            mgrid:
+              cutoff: 600.0
+              rel_cutoff: 80.0
+              ngrids: 5
+            QS:
+              eps_filter_matrix: 0.0
+              eps_pgf_orb: 0.0001
+            SCF:
+              scf_guess: restart
+              max_scf: 100
+              eps_scf: 1e-06
+              OT:
+                minimizer: diis
+                preconditioner: full_single_inverse
+              outer_scf:
+                max_scf: 100
+                eps_scf: 1e-06
+              print:
+                restart:
+                  each:
+                    QS_SCF: 0
+            XC:
+              xc_functional:
+                _: BLYP
+              vdw_potential:
+                pair_potential:
+                  type: DFTD3
+                  parameter_file_name: dftd3.dat
+                  reference_functional: BLYP
+                  r_cutoff: 18
+                potential_type: pair_potential
+            basis_set_file_name: BASIS_MOLOPT
+            potential_file_name: GTH_POTENTIALS
+          subsys:
+            kind:
+              O:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+              C:
+                basis_set: TZV2P-MOLOPT-GTH-q4
+                potential: GTH-BLYP-q4
+              H:
+                basis_set: TZV2P-MOLOPT-GTH-q1
+                potential: GTH-BLYP-q1
+              S:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+    outs:
+    - path: nodes/volume_scan/CP2KSinglePoint_1/atoms.h5
+      hash: md5
+      md5: ec76f350405867c9003318c97f144ec2
+      size: 1572296
+    - path: nodes/volume_scan/CP2KSinglePoint_1/cp2k
+      hash: md5
+      md5: eca0b92605089f2343259a75ae592ad6.dir
+      size: 25094488
+      nfiles: 3
+    - path: nodes/volume_scan/CP2KSinglePoint_1/node-meta.json
+      hash: md5
+      md5: 8d52b8d6c032bc73eb730541332600fa
+      size: 48
