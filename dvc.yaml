@@ -125,6 +125,7 @@ plots:
     x_label: epochs
     y: val_loss
     y_label: validation loss
+- nodes/AL2_1/ASEMD/metrics_dict.csv: {}
 stages:
   AL2_0_ASEGeoOpt_1:
     cmd: zntrack run ipsuite.nodes.ASEGeoOpt --name AL2_0_ASEGeoOpt_1
