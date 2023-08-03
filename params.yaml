@@ -72,6 +72,80 @@ AL2_0_MLModel_1:
     use_energy: true
     use_forces: true
     use_stresses: false
+AL2_1_ASEGeoOpt_1:
+    data_id: -1
+    dump_rate: 1000
+    init_kwargs: {}
+    optimizer: BFGS
+    repeat:
+    - 1
+    - 1
+    - 1
+    run_kwargs:
+        fmax: 0.5
+AL2_1_ASEGeoOpt_2:
+    data_id: -1
+    dump_rate: 1000
+    init_kwargs: {}
+    optimizer: BFGS
+    repeat:
+    - 1
+    - 1
+    - 1
+    run_kwargs:
+        fmax: 1.0
+AL2_1_ASEMD:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    init_velocity: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+AL2_1_ASEMD_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+AL2_1_ASEMD_modifier_0:
+    end_temperature: 450
+    interval: 1
+    num_oscillations: 10
+    start_temperature: 270
+    temperature_amplitude: 150
+AL2_1_ASEMD_modifier_1:
+    cell_amplitude: 1
+    end_cell: null
+    interval: 1
+    num_oscillations: 3
+AL2_1_ASEMD_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+AL2_1_ConfigurationSelection_1:
+    key: energy_uncertainty
+    min_distance: 20
+    n_configurations: 20
+    reference: energy
+    threshold: null
+AL2_1_ConfigurationSelection_2:
+    n_configurations: 5
+    seed: 1234
+AL2_1_MLModel:
+    jax_enable_x64: true
+    use_energy: true
+    use_forces: true
+    use_stresses: false
+AL2_1_MLModel_1:
+    jax_enable_x64: true
+    use_energy: true
+    use_forces: true
+    use_stresses: false
 AL_0_ASEMD:
     data_id: -1
     dump_rate: 1000
