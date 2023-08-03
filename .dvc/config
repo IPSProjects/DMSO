@@ -3,3 +3,6 @@
 ['remote "origin"']
     url = s3://dvc/IPS-DMSO
     endpointurl = https://minio.pythonf.net
+    access_key_id = DMSOgzb6NSeJZRIb
+    secret_access_key = qSZqFqYtR98hs1nS8avAZZ9xDHrNWD3z
+
