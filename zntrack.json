@@ -6877,7 +6877,7 @@
             "dftd3.dat"
         ],
         "cp2k_params": "cp2k.yaml",
-        "cp2k_shell": "mpirun -np 12 /home/linux38_i1/schaefer/miniconda3/envs/dmso/bin/cp2k_shell.psmp",
+        "cp2k_shell": "cp2k_shell.ssmp",
         "data": {
             "_type": "znflow.Connection",
             "value": {
@@ -8749,7 +8749,7 @@
             "dftd3.dat"
         ],
         "cp2k_params": "cp2k.yaml",
-        "cp2k_shell": "mpirun -np 12 /home/linux38_i1/schaefer/miniconda3/envs/dmso/bin/cp2k_shell.psmp",
+        "cp2k_shell": "cp2k_shell.ssmp",
         "data": {
             "_type": "znflow.Connection",
             "value": {
@@ -8806,7 +8806,7 @@
             "dftd3.dat"
         ],
         "cp2k_params": "cp2k.yaml",
-        "cp2k_shell": "mpirun -np 12 /home/linux38_i1/schaefer/miniconda3/envs/dmso/bin/cp2k_shell.psmp",
+        "cp2k_shell": "cp2k_shell.ssmp",
         "data": {
             "_type": "znflow.Connection",
             "value": {
@@ -10130,7 +10130,7 @@
             "dftd3.dat"
         ],
         "cp2k_params": "cp2k.yaml",
-        "cp2k_shell": "mpirun -np 12 /home/linux38_i1/schaefer/miniconda3/envs/dmso/bin/cp2k_shell.psmp",
+        "cp2k_shell": "cp2k_shell.ssmp",
         "data": {
             "_type": "znflow.Connection",
             "value": {
@@ -10187,7 +10187,7 @@
             "dftd3.dat"
         ],
         "cp2k_params": "cp2k.yaml",
-        "cp2k_shell": "mpirun -np 12 /home/linux38_i1/schaefer/miniconda3/envs/dmso/bin/cp2k_shell.psmp",
+        "cp2k_shell": "cp2k_shell.ssmp",
         "data": {
             "_type": "znflow.Connection",
             "value": {
