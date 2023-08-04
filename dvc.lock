@@ -14600,3 +14600,267 @@ stages:
       hash: md5
       md5: 12e630819ed665de3ae5cf45a4dc3274
       size: 92
+  AL2_1_ASEGeoOpt_2:
+    cmd: zntrack run ipsuite.nodes.ASEGeoOpt --name AL2_1_ASEGeoOpt_2
+    deps:
+    - path: nodes/AL2_1/ASEGeoOpt_1/model_outs
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/AL2_1/ASEGeoOpt_1/node-meta.json
+      hash: md5
+      md5: 84b37ec5a2734a5a4d6b38263132ad7f
+      size: 48
+    - path: nodes/AL2_1/ASEGeoOpt_1/trajectory.h5
+      hash: md5
+      md5: 932f7eb338165875652d9375f947fb4d
+      size: 469216
+    - path: nodes/CP2KSinglePoint/atoms.h5
+      hash: md5
+      md5: 9697c746c6f69d428bd2f5a5b7979666
+      size: 61928
+    - path: nodes/CP2KSinglePoint/cp2k
+      hash: md5
+      md5: fb7bfe3b3264befe3419725f830a8775.dir
+      size: 21603140
+      nfiles: 3
+    - path: nodes/CP2KSinglePoint/node-meta.json
+      hash: md5
+      md5: 63df96639d4fa5cd5d2b3bf3d4671e3a
+      size: 48
+    params:
+      params.yaml:
+        AL2_1_ASEGeoOpt_2:
+          data_id: -1
+          dump_rate: 1000
+          init_kwargs: {}
+          optimizer: BFGS
+          repeat:
+          - 1
+          - 1
+          - 1
+          run_kwargs:
+            fmax: 1.0
+    outs:
+    - path: nodes/AL2_1/ASEGeoOpt_2/model_outs
+      hash: md5
+      md5: f52ec6659676e4b23dbc0262f7364db0.dir
+      size: 42934485
+      nfiles: 5
+    - path: nodes/AL2_1/ASEGeoOpt_2/node-meta.json
+      hash: md5
+      md5: 6b3b454b9990a5d4dfae2d1f869a54f4
+      size: 48
+    - path: nodes/AL2_1/ASEGeoOpt_2/trajectory.h5
+      hash: md5
+      md5: d226e62104b27b177157d97339e422f3
+      size: 106432
+  AL2_1_CP2KSinglePoint_1:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL2_1_CP2KSinglePoint_1
+    deps:
+    - path: BASIS_MOLOPT
+      hash: md5
+      md5: 4e877f2fa6a2b401ae1516a48f977f2b
+      size: 126074
+    - path: GTH_POTENTIALS
+      hash: md5
+      md5: 39f14f5181cb73cf1f7aec6d838f3fe5
+      size: 108689
+    - path: dftd3.dat
+      hash: md5
+      md5: 88745bcc951a4bcdccc4d6bcfa78d105
+      size: 1959318
+    - path: nodes/AL2_1/ConfigurationSelection_1/node-meta.json
+      hash: md5
+      md5: c67fabf2e3bf645c5d4a735e8c44e935
+      size: 48
+    - path: nodes/AL2_1/ConfigurationSelection_1/selected_configurations.json
+      hash: md5
+      md5: 1e10c42f7f3df1c1a831b20c59105bf2
+      size: 303
+    - path: nodes/AL2_1/ConfigurationSelection_1/selection.png
+      hash: md5
+      md5: 68a3aaf8d5406fa030e801c3fd6f99e7
+      size: 40518
+    - path: nodes/CP2KSinglePoint/atoms.h5
+      hash: md5
+      md5: 9697c746c6f69d428bd2f5a5b7979666
+      size: 61928
+    - path: nodes/CP2KSinglePoint/cp2k
+      hash: md5
+      md5: fb7bfe3b3264befe3419725f830a8775.dir
+      size: 21603140
+      nfiles: 3
+    - path: nodes/CP2KSinglePoint/node-meta.json
+      hash: md5
+      md5: 63df96639d4fa5cd5d2b3bf3d4671e3a
+      size: 48
+    params:
+      cp2k.yaml:
+        force_eval:
+          method: quickstep
+          DFT:
+            mgrid:
+              cutoff: 600.0
+              rel_cutoff: 80.0
+              ngrids: 5
+            QS:
+              eps_filter_matrix: 0.0
+              eps_pgf_orb: 0.0001
+            SCF:
+              scf_guess: restart
+              max_scf: 100
+              eps_scf: 1e-06
+              OT:
+                minimizer: diis
+                preconditioner: full_single_inverse
+              outer_scf:
+                max_scf: 100
+                eps_scf: 1e-06
+              print:
+                restart:
+                  each:
+                    QS_SCF: 0
+            XC:
+              xc_functional:
+                _: BLYP
+              vdw_potential:
+                pair_potential:
+                  type: DFTD3
+                  parameter_file_name: dftd3.dat
+                  reference_functional: BLYP
+                  r_cutoff: 18
+                potential_type: pair_potential
+            basis_set_file_name: BASIS_MOLOPT
+            potential_file_name: GTH_POTENTIALS
+          subsys:
+            kind:
+              O:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+              C:
+                basis_set: TZV2P-MOLOPT-GTH-q4
+                potential: GTH-BLYP-q4
+              H:
+                basis_set: TZV2P-MOLOPT-GTH-q1
+                potential: GTH-BLYP-q1
+              S:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+    outs:
+    - path: nodes/AL2_1/CP2KSinglePoint_1/atoms.h5
+      hash: md5
+      md5: f4f842ad9bbb2316b411ebb9d78eec2c
+      size: 656216
+    - path: nodes/AL2_1/CP2KSinglePoint_1/cp2k
+      hash: md5
+      md5: 341c29a938c53c1aebe72cd8d9c36bcc.dir
+      size: 23032603
+      nfiles: 3
+    - path: nodes/AL2_1/CP2KSinglePoint_1/node-meta.json
+      hash: md5
+      md5: 6698c16aee8a1aa84400018dc4445f2e
+      size: 48
+  AL2_1_CP2KSinglePoint_2:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name AL2_1_CP2KSinglePoint_2
+    deps:
+    - path: BASIS_MOLOPT
+      hash: md5
+      md5: 4e877f2fa6a2b401ae1516a48f977f2b
+      size: 126074
+    - path: GTH_POTENTIALS
+      hash: md5
+      md5: 39f14f5181cb73cf1f7aec6d838f3fe5
+      size: 108689
+    - path: dftd3.dat
+      hash: md5
+      md5: 88745bcc951a4bcdccc4d6bcfa78d105
+      size: 1959318
+    - path: nodes/AL2_1/ConfigurationSelection_2/node-meta.json
+      hash: md5
+      md5: 6d2a18b07ad657933b584894c8ddd74e
+      size: 48
+    - path: nodes/AL2_1/ConfigurationSelection_2/selected_configurations.json
+      hash: md5
+      md5: 12e630819ed665de3ae5cf45a4dc3274
+      size: 92
+    - path: nodes/CP2KSinglePoint/atoms.h5
+      hash: md5
+      md5: 9697c746c6f69d428bd2f5a5b7979666
+      size: 61928
+    - path: nodes/CP2KSinglePoint/cp2k
+      hash: md5
+      md5: fb7bfe3b3264befe3419725f830a8775.dir
+      size: 21603140
+      nfiles: 3
+    - path: nodes/CP2KSinglePoint/node-meta.json
+      hash: md5
+      md5: 63df96639d4fa5cd5d2b3bf3d4671e3a
+      size: 48
+    params:
+      cp2k.yaml:
+        force_eval:
+          method: quickstep
+          DFT:
+            mgrid:
+              cutoff: 600.0
+              rel_cutoff: 80.0
+              ngrids: 5
+            QS:
+              eps_filter_matrix: 0.0
+              eps_pgf_orb: 0.0001
+            SCF:
+              scf_guess: restart
+              max_scf: 100
+              eps_scf: 1e-06
+              OT:
+                minimizer: diis
+                preconditioner: full_single_inverse
+              outer_scf:
+                max_scf: 100
+                eps_scf: 1e-06
+              print:
+                restart:
+                  each:
+                    QS_SCF: 0
+            XC:
+              xc_functional:
+                _: BLYP
+              vdw_potential:
+                pair_potential:
+                  type: DFTD3
+                  parameter_file_name: dftd3.dat
+                  reference_functional: BLYP
+                  r_cutoff: 18
+                potential_type: pair_potential
+            basis_set_file_name: BASIS_MOLOPT
+            potential_file_name: GTH_POTENTIALS
+          subsys:
+            kind:
+              O:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+              C:
+                basis_set: TZV2P-MOLOPT-GTH-q4
+                potential: GTH-BLYP-q4
+              H:
+                basis_set: TZV2P-MOLOPT-GTH-q1
+                potential: GTH-BLYP-q1
+              S:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+    outs:
+    - path: nodes/AL2_1/CP2KSinglePoint_2/atoms.h5
+      hash: md5
+      md5: eacce0820d40aaeee7522a701cdd925d
+      size: 198176
+    - path: nodes/AL2_1/CP2KSinglePoint_2/cp2k
+      hash: md5
+      md5: 843c3b46c730e689241afa73e2d91000.dir
+      size: 21886157
+      nfiles: 3
+    - path: nodes/AL2_1/CP2KSinglePoint_2/node-meta.json
+      hash: md5
+      md5: c5be953d5284505be2410dbcbba79a47
+      size: 48
