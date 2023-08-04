@@ -582,3 +582,9 @@ final_MLModel:
     use_energy: true
     use_forces: true
     use_stresses: false
+isolated_mol_SmilesToConformers:
+    cell: 10
+    maxAttempts: 1000
+    numConfs: 200
+    seed: 42
+    smiles: CS(=O)C
