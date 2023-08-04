@@ -136,7 +136,7 @@ stages:
     - nodes/bootstrap_1/ASEMD/node-meta.json
     - nodes/bootstrap_1/ASEMD/steps_before_stopping.json
     - nodes/bootstrap_1/ASEMD/trajectory.h5
-    - nodes/bootstrap_1/ASEMD/velocity_cache.json
+    - nodes/bootstrap_1/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL2_0/ASEGeoOpt_1/node-meta.json:
         cache: false
@@ -175,7 +175,7 @@ stages:
     - nodes/bootstrap_1/ASEMD/node-meta.json
     - nodes/bootstrap_1/ASEMD/steps_before_stopping.json
     - nodes/bootstrap_1/ASEMD/trajectory.h5
-    - nodes/bootstrap_1/ASEMD/velocity_cache.json
+    - nodes/bootstrap_1/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL2_0/ASEMD/node-meta.json:
         cache: false
@@ -185,7 +185,7 @@ stages:
     - nodes/AL2_0/ASEMD/metrics_dict.csv
     - nodes/AL2_0/ASEMD/model
     - nodes/AL2_0/ASEMD/trajectory.h5
-    - nodes/AL2_0/ASEMD/velocity_cache.json
+    - nodes/AL2_0/ASEMD/velocities_cache.json
     params:
     - AL2_0_ASEMD
   AL2_0_ASEMD_checker_list_0:
@@ -295,7 +295,7 @@ stages:
     - nodes/AL2_0/ASEMD/node-meta.json
     - nodes/AL2_0/ASEMD/steps_before_stopping.json
     - nodes/AL2_0/ASEMD/trajectory.h5
-    - nodes/AL2_0/ASEMD/velocity_cache.json
+    - nodes/AL2_0/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL2_0/ConfigurationSelection_1/node-meta.json:
         cache: false
@@ -312,7 +312,7 @@ stages:
     - nodes/AL2_0/ASEMD/node-meta.json
     - nodes/AL2_0/ASEMD/steps_before_stopping.json
     - nodes/AL2_0/ASEMD/trajectory.h5
-    - nodes/AL2_0/ASEMD/velocity_cache.json
+    - nodes/AL2_0/ASEMD/velocities_cache.json
     - nodes/AL2_0/ConfigurationSelection_1/node-meta.json
     - nodes/AL2_0/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL2_0/ConfigurationSelection_1/selection.png
@@ -546,7 +546,7 @@ stages:
     - nodes/AL2_0/ASEMD/node-meta.json
     - nodes/AL2_0/ASEMD/steps_before_stopping.json
     - nodes/AL2_0/ASEMD/trajectory.h5
-    - nodes/AL2_0/ASEMD/velocity_cache.json
+    - nodes/AL2_0/ASEMD/velocities_cache.json
     - nodes/AL2_1/ApaxEnsemble/node-meta.json
     metrics:
     - nodes/AL2_1/ASEGeoOpt_1/node-meta.json:
@@ -581,7 +581,7 @@ stages:
     - nodes/AL2_0/ASEMD/node-meta.json
     - nodes/AL2_0/ASEMD/steps_before_stopping.json
     - nodes/AL2_0/ASEMD/trajectory.h5
-    - nodes/AL2_0/ASEMD/velocity_cache.json
+    - nodes/AL2_0/ASEMD/velocities_cache.json
     - nodes/AL2_1/ASEMD_checker_list_0/node-meta.json
     - nodes/AL2_1/ASEMD_modifier_0/node-meta.json
     - nodes/AL2_1/ASEMD_modifier_1/node-meta.json
@@ -596,7 +596,7 @@ stages:
     - nodes/AL2_1/ASEMD/metrics_dict.csv
     - nodes/AL2_1/ASEMD/model
     - nodes/AL2_1/ASEMD/trajectory.h5
-    - nodes/AL2_1/ASEMD/velocity_cache.json
+    - nodes/AL2_1/ASEMD/velocities_cache.json
     params:
     - AL2_1_ASEMD
   AL2_1_ASEMD_checker_list_0:
@@ -706,7 +706,7 @@ stages:
     - nodes/AL2_1/ASEMD/node-meta.json
     - nodes/AL2_1/ASEMD/steps_before_stopping.json
     - nodes/AL2_1/ASEMD/trajectory.h5
-    - nodes/AL2_1/ASEMD/velocity_cache.json
+    - nodes/AL2_1/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL2_1/ConfigurationSelection_1/node-meta.json:
         cache: false
@@ -723,7 +723,7 @@ stages:
     - nodes/AL2_1/ASEMD/node-meta.json
     - nodes/AL2_1/ASEMD/steps_before_stopping.json
     - nodes/AL2_1/ASEMD/trajectory.h5
-    - nodes/AL2_1/ASEMD/velocity_cache.json
+    - nodes/AL2_1/ASEMD/velocities_cache.json
     - nodes/AL2_1/ConfigurationSelection_1/node-meta.json
     - nodes/AL2_1/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL2_1/ConfigurationSelection_1/selection.png
@@ -989,7 +989,7 @@ stages:
     - nodes/AL_0/ASEMD/metrics_dict.csv
     - nodes/AL_0/ASEMD/model
     - nodes/AL_0/ASEMD/trajectory.h5
-    - nodes/AL_0/ASEMD/velocity_cache.json
+    - nodes/AL_0/ASEMD/velocities_cache.json
     params:
     - AL_0_ASEMD
   AL_0_ASEMD_checker_list_0:
@@ -1047,7 +1047,6 @@ stages:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
     - dftd3.dat
-    - nodes/AL_0/ConfigurationSelection_1/_hash.json
     - nodes/AL_0/ConfigurationSelection_1/node-meta.json
     - nodes/AL_0/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_0/ConfigurationSelection_1/selection.png
@@ -1068,7 +1067,6 @@ stages:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
     - dftd3.dat
-    - nodes/AL_0/ConfigurationSelection_2/_hash.json
     - nodes/AL_0/ConfigurationSelection_2/node-meta.json
     - nodes/AL_0/ConfigurationSelection_2/selected_configurations.json
     - nodes/CP2KSinglePoint/atoms.h5
@@ -1090,12 +1088,11 @@ stages:
     - nodes/AL_0/ASEMD/node-meta.json
     - nodes/AL_0/ASEMD/steps_before_stopping.json
     - nodes/AL_0/ASEMD/trajectory.h5
-    - nodes/AL_0/ASEMD/velocity_cache.json
+    - nodes/AL_0/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_0/ConfigurationSelection_1/node-meta.json:
         cache: false
     outs:
-    - nodes/AL_0/ConfigurationSelection_1/_hash.json
     - nodes/AL_0/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_0/ConfigurationSelection_1/selection.png
     params:
@@ -1108,8 +1105,7 @@ stages:
     - nodes/AL_0/ASEMD/node-meta.json
     - nodes/AL_0/ASEMD/steps_before_stopping.json
     - nodes/AL_0/ASEMD/trajectory.h5
-    - nodes/AL_0/ASEMD/velocity_cache.json
-    - nodes/AL_0/ConfigurationSelection_1/_hash.json
+    - nodes/AL_0/ASEMD/velocities_cache.json
     - nodes/AL_0/ConfigurationSelection_1/node-meta.json
     - nodes/AL_0/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_0/ConfigurationSelection_1/selection.png
@@ -1117,7 +1113,6 @@ stages:
     - nodes/AL_0/ConfigurationSelection_2/node-meta.json:
         cache: false
     outs:
-    - nodes/AL_0/ConfigurationSelection_2/_hash.json
     - nodes/AL_0/ConfigurationSelection_2/selected_configurations.json
     params:
     - AL_0_ConfigurationSelection_2
@@ -1129,7 +1124,7 @@ stages:
     - nodes/AL_0/ASEMD/node-meta.json
     - nodes/AL_0/ASEMD/steps_before_stopping.json
     - nodes/AL_0/ASEMD/trajectory.h5
-    - nodes/AL_0/ASEMD/velocity_cache.json
+    - nodes/AL_0/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_0/EnergyUncertaintyHistogram/metrics.json:
         cache: false
@@ -1191,7 +1186,7 @@ stages:
     - nodes/AL_0/ASEMD/node-meta.json
     - nodes/AL_0/ASEMD/steps_before_stopping.json
     - nodes/AL_0/ASEMD/trajectory.h5
-    - nodes/AL_0/ASEMD/velocity_cache.json
+    - nodes/AL_0/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_0/ForcesUncertaintyHistogram/metrics.json:
         cache: false
@@ -1205,7 +1200,6 @@ stages:
   AL_0_MLModel:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_0_MLModel
     deps:
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -1225,7 +1219,6 @@ stages:
   AL_0_MLModel_1:
     cmd: zntrack run ipsuite.nodes.Apax --name AL_0_MLModel_1
     deps:
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -1247,7 +1240,6 @@ stages:
     deps:
     - nodes/AL_0/EnsembleModel/node-meta.json
     - nodes/AL_0/EnsembleModel/uuid.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -1299,7 +1291,7 @@ stages:
     - nodes/AL_1/ASEMD/metrics_dict.csv
     - nodes/AL_1/ASEMD/model
     - nodes/AL_1/ASEMD/trajectory.h5
-    - nodes/AL_1/ASEMD/velocity_cache.json
+    - nodes/AL_1/ASEMD/velocities_cache.json
     params:
     - AL_1_ASEMD
   AL_1_ASEMD_checker_list_0:
@@ -1357,7 +1349,6 @@ stages:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
     - dftd3.dat
-    - nodes/AL_1/ConfigurationSelection_1/_hash.json
     - nodes/AL_1/ConfigurationSelection_1/node-meta.json
     - nodes/AL_1/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_1/ConfigurationSelection_1/selection.png
@@ -1378,7 +1369,6 @@ stages:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
     - dftd3.dat
-    - nodes/AL_1/ConfigurationSelection_2/_hash.json
     - nodes/AL_1/ConfigurationSelection_2/node-meta.json
     - nodes/AL_1/ConfigurationSelection_2/selected_configurations.json
     - nodes/CP2KSinglePoint/atoms.h5
@@ -1400,12 +1390,11 @@ stages:
     - nodes/AL_1/ASEMD/node-meta.json
     - nodes/AL_1/ASEMD/steps_before_stopping.json
     - nodes/AL_1/ASEMD/trajectory.h5
-    - nodes/AL_1/ASEMD/velocity_cache.json
+    - nodes/AL_1/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_1/ConfigurationSelection_1/node-meta.json:
         cache: false
     outs:
-    - nodes/AL_1/ConfigurationSelection_1/_hash.json
     - nodes/AL_1/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_1/ConfigurationSelection_1/selection.png
     params:
@@ -1418,8 +1407,7 @@ stages:
     - nodes/AL_1/ASEMD/node-meta.json
     - nodes/AL_1/ASEMD/steps_before_stopping.json
     - nodes/AL_1/ASEMD/trajectory.h5
-    - nodes/AL_1/ASEMD/velocity_cache.json
-    - nodes/AL_1/ConfigurationSelection_1/_hash.json
+    - nodes/AL_1/ASEMD/velocities_cache.json
     - nodes/AL_1/ConfigurationSelection_1/node-meta.json
     - nodes/AL_1/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_1/ConfigurationSelection_1/selection.png
@@ -1427,7 +1415,6 @@ stages:
     - nodes/AL_1/ConfigurationSelection_2/node-meta.json:
         cache: false
     outs:
-    - nodes/AL_1/ConfigurationSelection_2/_hash.json
     - nodes/AL_1/ConfigurationSelection_2/selected_configurations.json
     params:
     - AL_1_ConfigurationSelection_2
@@ -1439,7 +1426,7 @@ stages:
     - nodes/AL_1/ASEMD/node-meta.json
     - nodes/AL_1/ASEMD/steps_before_stopping.json
     - nodes/AL_1/ASEMD/trajectory.h5
-    - nodes/AL_1/ASEMD/velocity_cache.json
+    - nodes/AL_1/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_1/EnergyUncertaintyHistogram/metrics.json:
         cache: false
@@ -1501,7 +1488,7 @@ stages:
     - nodes/AL_1/ASEMD/node-meta.json
     - nodes/AL_1/ASEMD/steps_before_stopping.json
     - nodes/AL_1/ASEMD/trajectory.h5
-    - nodes/AL_1/ASEMD/velocity_cache.json
+    - nodes/AL_1/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_1/ForcesUncertaintyHistogram/metrics.json:
         cache: false
@@ -1521,7 +1508,6 @@ stages:
     - nodes/AL_0/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_0/CP2KSinglePoint_2/cp2k
     - nodes/AL_0/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -1547,7 +1533,6 @@ stages:
     - nodes/AL_0/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_0/CP2KSinglePoint_2/cp2k
     - nodes/AL_0/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -1572,7 +1557,6 @@ stages:
     - nodes/AL_0/CP2KSinglePoint_2/node-meta.json
     - nodes/AL_1/EnsembleModel/node-meta.json
     - nodes/AL_1/EnsembleModel/uuid.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -1624,7 +1608,7 @@ stages:
     - nodes/AL_2/ASEMD/metrics_dict.csv
     - nodes/AL_2/ASEMD/model
     - nodes/AL_2/ASEMD/trajectory.h5
-    - nodes/AL_2/ASEMD/velocity_cache.json
+    - nodes/AL_2/ASEMD/velocities_cache.json
     params:
     - AL_2_ASEMD
   AL_2_ASEMD_checker_list_0:
@@ -1682,7 +1666,6 @@ stages:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
     - dftd3.dat
-    - nodes/AL_2/ConfigurationSelection_1/_hash.json
     - nodes/AL_2/ConfigurationSelection_1/node-meta.json
     - nodes/AL_2/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_2/ConfigurationSelection_1/selection.png
@@ -1703,7 +1686,6 @@ stages:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
     - dftd3.dat
-    - nodes/AL_2/ConfigurationSelection_2/_hash.json
     - nodes/AL_2/ConfigurationSelection_2/node-meta.json
     - nodes/AL_2/ConfigurationSelection_2/selected_configurations.json
     - nodes/CP2KSinglePoint/atoms.h5
@@ -1725,12 +1707,11 @@ stages:
     - nodes/AL_2/ASEMD/node-meta.json
     - nodes/AL_2/ASEMD/steps_before_stopping.json
     - nodes/AL_2/ASEMD/trajectory.h5
-    - nodes/AL_2/ASEMD/velocity_cache.json
+    - nodes/AL_2/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_2/ConfigurationSelection_1/node-meta.json:
         cache: false
     outs:
-    - nodes/AL_2/ConfigurationSelection_1/_hash.json
     - nodes/AL_2/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_2/ConfigurationSelection_1/selection.png
     params:
@@ -1743,8 +1724,7 @@ stages:
     - nodes/AL_2/ASEMD/node-meta.json
     - nodes/AL_2/ASEMD/steps_before_stopping.json
     - nodes/AL_2/ASEMD/trajectory.h5
-    - nodes/AL_2/ASEMD/velocity_cache.json
-    - nodes/AL_2/ConfigurationSelection_1/_hash.json
+    - nodes/AL_2/ASEMD/velocities_cache.json
     - nodes/AL_2/ConfigurationSelection_1/node-meta.json
     - nodes/AL_2/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_2/ConfigurationSelection_1/selection.png
@@ -1752,7 +1732,6 @@ stages:
     - nodes/AL_2/ConfigurationSelection_2/node-meta.json:
         cache: false
     outs:
-    - nodes/AL_2/ConfigurationSelection_2/_hash.json
     - nodes/AL_2/ConfigurationSelection_2/selected_configurations.json
     params:
     - AL_2_ConfigurationSelection_2
@@ -1764,7 +1743,7 @@ stages:
     - nodes/AL_2/ASEMD/node-meta.json
     - nodes/AL_2/ASEMD/steps_before_stopping.json
     - nodes/AL_2/ASEMD/trajectory.h5
-    - nodes/AL_2/ASEMD/velocity_cache.json
+    - nodes/AL_2/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_2/EnergyUncertaintyHistogram/metrics.json:
         cache: false
@@ -1826,7 +1805,7 @@ stages:
     - nodes/AL_2/ASEMD/node-meta.json
     - nodes/AL_2/ASEMD/steps_before_stopping.json
     - nodes/AL_2/ASEMD/trajectory.h5
-    - nodes/AL_2/ASEMD/velocity_cache.json
+    - nodes/AL_2/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_2/ForcesUncertaintyHistogram/metrics.json:
         cache: false
@@ -1852,7 +1831,6 @@ stages:
     - nodes/AL_1/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_1/CP2KSinglePoint_2/cp2k
     - nodes/AL_1/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -1884,7 +1862,6 @@ stages:
     - nodes/AL_1/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_1/CP2KSinglePoint_2/cp2k
     - nodes/AL_1/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -1912,7 +1889,6 @@ stages:
     - nodes/AL_1/CP2KSinglePoint_2/node-meta.json
     - nodes/AL_2/EnsembleModel/node-meta.json
     - nodes/AL_2/EnsembleModel/uuid.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -1964,7 +1940,7 @@ stages:
     - nodes/AL_3/ASEMD/metrics_dict.csv
     - nodes/AL_3/ASEMD/model
     - nodes/AL_3/ASEMD/trajectory.h5
-    - nodes/AL_3/ASEMD/velocity_cache.json
+    - nodes/AL_3/ASEMD/velocities_cache.json
     params:
     - AL_3_ASEMD
   AL_3_ASEMD_checker_list_0:
@@ -2022,7 +1998,6 @@ stages:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
     - dftd3.dat
-    - nodes/AL_3/ConfigurationSelection_1/_hash.json
     - nodes/AL_3/ConfigurationSelection_1/node-meta.json
     - nodes/AL_3/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_3/ConfigurationSelection_1/selection.png
@@ -2043,7 +2018,6 @@ stages:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
     - dftd3.dat
-    - nodes/AL_3/ConfigurationSelection_2/_hash.json
     - nodes/AL_3/ConfigurationSelection_2/node-meta.json
     - nodes/AL_3/ConfigurationSelection_2/selected_configurations.json
     - nodes/CP2KSinglePoint/atoms.h5
@@ -2065,12 +2039,11 @@ stages:
     - nodes/AL_3/ASEMD/node-meta.json
     - nodes/AL_3/ASEMD/steps_before_stopping.json
     - nodes/AL_3/ASEMD/trajectory.h5
-    - nodes/AL_3/ASEMD/velocity_cache.json
+    - nodes/AL_3/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_3/ConfigurationSelection_1/node-meta.json:
         cache: false
     outs:
-    - nodes/AL_3/ConfigurationSelection_1/_hash.json
     - nodes/AL_3/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_3/ConfigurationSelection_1/selection.png
     params:
@@ -2083,8 +2056,7 @@ stages:
     - nodes/AL_3/ASEMD/node-meta.json
     - nodes/AL_3/ASEMD/steps_before_stopping.json
     - nodes/AL_3/ASEMD/trajectory.h5
-    - nodes/AL_3/ASEMD/velocity_cache.json
-    - nodes/AL_3/ConfigurationSelection_1/_hash.json
+    - nodes/AL_3/ASEMD/velocities_cache.json
     - nodes/AL_3/ConfigurationSelection_1/node-meta.json
     - nodes/AL_3/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_3/ConfigurationSelection_1/selection.png
@@ -2092,7 +2064,6 @@ stages:
     - nodes/AL_3/ConfigurationSelection_2/node-meta.json:
         cache: false
     outs:
-    - nodes/AL_3/ConfigurationSelection_2/_hash.json
     - nodes/AL_3/ConfigurationSelection_2/selected_configurations.json
     params:
     - AL_3_ConfigurationSelection_2
@@ -2104,7 +2075,7 @@ stages:
     - nodes/AL_3/ASEMD/node-meta.json
     - nodes/AL_3/ASEMD/steps_before_stopping.json
     - nodes/AL_3/ASEMD/trajectory.h5
-    - nodes/AL_3/ASEMD/velocity_cache.json
+    - nodes/AL_3/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_3/EnergyUncertaintyHistogram/metrics.json:
         cache: false
@@ -2166,7 +2137,7 @@ stages:
     - nodes/AL_3/ASEMD/node-meta.json
     - nodes/AL_3/ASEMD/steps_before_stopping.json
     - nodes/AL_3/ASEMD/trajectory.h5
-    - nodes/AL_3/ASEMD/velocity_cache.json
+    - nodes/AL_3/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_3/ForcesUncertaintyHistogram/metrics.json:
         cache: false
@@ -2198,7 +2169,6 @@ stages:
     - nodes/AL_2/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_2/CP2KSinglePoint_2/cp2k
     - nodes/AL_2/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -2236,7 +2206,6 @@ stages:
     - nodes/AL_2/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_2/CP2KSinglePoint_2/cp2k
     - nodes/AL_2/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -2267,7 +2236,6 @@ stages:
     - nodes/AL_2/CP2KSinglePoint_2/node-meta.json
     - nodes/AL_3/EnsembleModel/node-meta.json
     - nodes/AL_3/EnsembleModel/uuid.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -2319,7 +2287,7 @@ stages:
     - nodes/AL_4/ASEMD/metrics_dict.csv
     - nodes/AL_4/ASEMD/model
     - nodes/AL_4/ASEMD/trajectory.h5
-    - nodes/AL_4/ASEMD/velocity_cache.json
+    - nodes/AL_4/ASEMD/velocities_cache.json
     params:
     - AL_4_ASEMD
   AL_4_ASEMD_checker_list_0:
@@ -2377,7 +2345,6 @@ stages:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
     - dftd3.dat
-    - nodes/AL_4/ConfigurationSelection_1/_hash.json
     - nodes/AL_4/ConfigurationSelection_1/node-meta.json
     - nodes/AL_4/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_4/ConfigurationSelection_1/selection.png
@@ -2398,7 +2365,6 @@ stages:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
     - dftd3.dat
-    - nodes/AL_4/ConfigurationSelection_2/_hash.json
     - nodes/AL_4/ConfigurationSelection_2/node-meta.json
     - nodes/AL_4/ConfigurationSelection_2/selected_configurations.json
     - nodes/CP2KSinglePoint/atoms.h5
@@ -2420,12 +2386,11 @@ stages:
     - nodes/AL_4/ASEMD/node-meta.json
     - nodes/AL_4/ASEMD/steps_before_stopping.json
     - nodes/AL_4/ASEMD/trajectory.h5
-    - nodes/AL_4/ASEMD/velocity_cache.json
+    - nodes/AL_4/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_4/ConfigurationSelection_1/node-meta.json:
         cache: false
     outs:
-    - nodes/AL_4/ConfigurationSelection_1/_hash.json
     - nodes/AL_4/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_4/ConfigurationSelection_1/selection.png
     params:
@@ -2438,8 +2403,7 @@ stages:
     - nodes/AL_4/ASEMD/node-meta.json
     - nodes/AL_4/ASEMD/steps_before_stopping.json
     - nodes/AL_4/ASEMD/trajectory.h5
-    - nodes/AL_4/ASEMD/velocity_cache.json
-    - nodes/AL_4/ConfigurationSelection_1/_hash.json
+    - nodes/AL_4/ASEMD/velocities_cache.json
     - nodes/AL_4/ConfigurationSelection_1/node-meta.json
     - nodes/AL_4/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_4/ConfigurationSelection_1/selection.png
@@ -2447,7 +2411,6 @@ stages:
     - nodes/AL_4/ConfigurationSelection_2/node-meta.json:
         cache: false
     outs:
-    - nodes/AL_4/ConfigurationSelection_2/_hash.json
     - nodes/AL_4/ConfigurationSelection_2/selected_configurations.json
     params:
     - AL_4_ConfigurationSelection_2
@@ -2459,7 +2422,7 @@ stages:
     - nodes/AL_4/ASEMD/node-meta.json
     - nodes/AL_4/ASEMD/steps_before_stopping.json
     - nodes/AL_4/ASEMD/trajectory.h5
-    - nodes/AL_4/ASEMD/velocity_cache.json
+    - nodes/AL_4/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_4/EnergyUncertaintyHistogram/metrics.json:
         cache: false
@@ -2521,7 +2484,7 @@ stages:
     - nodes/AL_4/ASEMD/node-meta.json
     - nodes/AL_4/ASEMD/steps_before_stopping.json
     - nodes/AL_4/ASEMD/trajectory.h5
-    - nodes/AL_4/ASEMD/velocity_cache.json
+    - nodes/AL_4/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_4/ForcesUncertaintyHistogram/metrics.json:
         cache: false
@@ -2559,7 +2522,6 @@ stages:
     - nodes/AL_3/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_3/CP2KSinglePoint_2/cp2k
     - nodes/AL_3/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -2603,7 +2565,6 @@ stages:
     - nodes/AL_3/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_3/CP2KSinglePoint_2/cp2k
     - nodes/AL_3/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -2637,7 +2598,6 @@ stages:
     - nodes/AL_3/CP2KSinglePoint_2/node-meta.json
     - nodes/AL_4/EnsembleModel/node-meta.json
     - nodes/AL_4/EnsembleModel/uuid.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -2689,7 +2649,7 @@ stages:
     - nodes/AL_5/ASEMD/metrics_dict.csv
     - nodes/AL_5/ASEMD/model
     - nodes/AL_5/ASEMD/trajectory.h5
-    - nodes/AL_5/ASEMD/velocity_cache.json
+    - nodes/AL_5/ASEMD/velocities_cache.json
     params:
     - AL_5_ASEMD
   AL_5_ASEMD_checker_list_0:
@@ -2747,7 +2707,6 @@ stages:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
     - dftd3.dat
-    - nodes/AL_5/ConfigurationSelection_1/_hash.json
     - nodes/AL_5/ConfigurationSelection_1/node-meta.json
     - nodes/AL_5/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_5/ConfigurationSelection_1/selection.png
@@ -2768,7 +2727,6 @@ stages:
     - BASIS_MOLOPT
     - GTH_POTENTIALS
     - dftd3.dat
-    - nodes/AL_5/ConfigurationSelection_2/_hash.json
     - nodes/AL_5/ConfigurationSelection_2/node-meta.json
     - nodes/AL_5/ConfigurationSelection_2/selected_configurations.json
     - nodes/CP2KSinglePoint/atoms.h5
@@ -2790,12 +2748,11 @@ stages:
     - nodes/AL_5/ASEMD/node-meta.json
     - nodes/AL_5/ASEMD/steps_before_stopping.json
     - nodes/AL_5/ASEMD/trajectory.h5
-    - nodes/AL_5/ASEMD/velocity_cache.json
+    - nodes/AL_5/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_5/ConfigurationSelection_1/node-meta.json:
         cache: false
     outs:
-    - nodes/AL_5/ConfigurationSelection_1/_hash.json
     - nodes/AL_5/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_5/ConfigurationSelection_1/selection.png
     params:
@@ -2808,8 +2765,7 @@ stages:
     - nodes/AL_5/ASEMD/node-meta.json
     - nodes/AL_5/ASEMD/steps_before_stopping.json
     - nodes/AL_5/ASEMD/trajectory.h5
-    - nodes/AL_5/ASEMD/velocity_cache.json
-    - nodes/AL_5/ConfigurationSelection_1/_hash.json
+    - nodes/AL_5/ASEMD/velocities_cache.json
     - nodes/AL_5/ConfigurationSelection_1/node-meta.json
     - nodes/AL_5/ConfigurationSelection_1/selected_configurations.json
     - nodes/AL_5/ConfigurationSelection_1/selection.png
@@ -2817,7 +2773,6 @@ stages:
     - nodes/AL_5/ConfigurationSelection_2/node-meta.json:
         cache: false
     outs:
-    - nodes/AL_5/ConfigurationSelection_2/_hash.json
     - nodes/AL_5/ConfigurationSelection_2/selected_configurations.json
     params:
     - AL_5_ConfigurationSelection_2
@@ -2829,7 +2784,7 @@ stages:
     - nodes/AL_5/ASEMD/node-meta.json
     - nodes/AL_5/ASEMD/steps_before_stopping.json
     - nodes/AL_5/ASEMD/trajectory.h5
-    - nodes/AL_5/ASEMD/velocity_cache.json
+    - nodes/AL_5/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_5/EnergyUncertaintyHistogram/metrics.json:
         cache: false
@@ -2891,7 +2846,7 @@ stages:
     - nodes/AL_5/ASEMD/node-meta.json
     - nodes/AL_5/ASEMD/steps_before_stopping.json
     - nodes/AL_5/ASEMD/trajectory.h5
-    - nodes/AL_5/ASEMD/velocity_cache.json
+    - nodes/AL_5/ASEMD/velocities_cache.json
     metrics:
     - nodes/AL_5/ForcesUncertaintyHistogram/metrics.json:
         cache: false
@@ -2935,7 +2890,6 @@ stages:
     - nodes/AL_4/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_4/CP2KSinglePoint_2/cp2k
     - nodes/AL_4/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -2985,7 +2939,6 @@ stages:
     - nodes/AL_4/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_4/CP2KSinglePoint_2/cp2k
     - nodes/AL_4/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -3022,7 +2975,6 @@ stages:
     - nodes/AL_4/CP2KSinglePoint_2/node-meta.json
     - nodes/AL_5/EnsembleModel/node-meta.json
     - nodes/AL_5/EnsembleModel/uuid.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     metrics:
@@ -3099,7 +3051,6 @@ stages:
     - nodes/ConfigurationSelection/node-meta.json:
         cache: false
     outs:
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/selected_configurations.json
     params:
     - ConfigurationSelection
@@ -3280,7 +3231,6 @@ stages:
     - nodes/AL_5/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_5/CP2KSinglePoint_2/cp2k
     - nodes/AL_5/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     - nodes/bootstrap_0/CP2KSinglePoint_1/atoms.h5
@@ -3342,7 +3292,6 @@ stages:
     - nodes/AL_5/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_5/CP2KSinglePoint_2/cp2k
     - nodes/AL_5/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     - nodes/bootstrap_0/CP2KSinglePoint_1/atoms.h5
@@ -3386,7 +3335,6 @@ stages:
     - nodes/AL_5/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_5/CP2KSinglePoint_2/cp2k
     - nodes/AL_5/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/_hash.json
     - nodes/ConfigurationSelection/node-meta.json
     - nodes/ConfigurationSelection/selected_configurations.json
     - nodes/bootstrap_0/CP2KSinglePoint_2/atoms.h5
@@ -3497,7 +3445,7 @@ stages:
     - nodes/bootstrap_1/ASEMD/metrics_dict.csv
     - nodes/bootstrap_1/ASEMD/model
     - nodes/bootstrap_1/ASEMD/trajectory.h5
-    - nodes/bootstrap_1/ASEMD/velocity_cache.json
+    - nodes/bootstrap_1/ASEMD/velocities_cache.json
     params:
     - bootstrap_1_ASEMD
   bootstrap_1_ASEMD_checker_list_0:
@@ -3549,11 +3497,9 @@ stages:
     - nodes/CP2KSinglePoint/atoms.h5
     - nodes/CP2KSinglePoint/cp2k
     - nodes/CP2KSinglePoint/node-meta.json
-    - nodes/bootstrap_1/ConfigurationSelection_1/_hash.json
     - nodes/bootstrap_1/ConfigurationSelection_1/node-meta.json
     - nodes/bootstrap_1/ConfigurationSelection_1/selected_configurations.json
     - nodes/bootstrap_1/ConfigurationSelection_1/selection.png
-    - nodes/bootstrap_1/ConfigurationSelection_2/_hash.json
     - nodes/bootstrap_1/ConfigurationSelection_2/node-meta.json
     - nodes/bootstrap_1/ConfigurationSelection_2/selected_configurations.json
     metrics:
@@ -3573,7 +3519,6 @@ stages:
     - nodes/CP2KSinglePoint/atoms.h5
     - nodes/CP2KSinglePoint/cp2k
     - nodes/CP2KSinglePoint/node-meta.json
-    - nodes/bootstrap_1/ConfigurationSelection_3/_hash.json
     - nodes/bootstrap_1/ConfigurationSelection_3/node-meta.json
     - nodes/bootstrap_1/ConfigurationSelection_3/selected_configurations.json
     metrics:
@@ -3592,12 +3537,11 @@ stages:
     - nodes/bootstrap_1/ASEMD/node-meta.json
     - nodes/bootstrap_1/ASEMD/steps_before_stopping.json
     - nodes/bootstrap_1/ASEMD/trajectory.h5
-    - nodes/bootstrap_1/ASEMD/velocity_cache.json
+    - nodes/bootstrap_1/ASEMD/velocities_cache.json
     metrics:
     - nodes/bootstrap_1/ConfigurationSelection_1/node-meta.json:
         cache: false
     outs:
-    - nodes/bootstrap_1/ConfigurationSelection_1/_hash.json
     - nodes/bootstrap_1/ConfigurationSelection_1/selected_configurations.json
     - nodes/bootstrap_1/ConfigurationSelection_1/selection.png
     params:
@@ -3605,7 +3549,6 @@ stages:
   bootstrap_1_ConfigurationSelection_2:
     cmd: zntrack run ipsuite.nodes.RandomSelection --name bootstrap_1_ConfigurationSelection_2
     deps:
-    - nodes/bootstrap_1/ConfigurationSelection_1/_hash.json
     - nodes/bootstrap_1/ConfigurationSelection_1/node-meta.json
     - nodes/bootstrap_1/ConfigurationSelection_1/selected_configurations.json
     - nodes/bootstrap_1/ConfigurationSelection_1/selection.png
@@ -3613,21 +3556,18 @@ stages:
     - nodes/bootstrap_1/ConfigurationSelection_2/node-meta.json:
         cache: false
     outs:
-    - nodes/bootstrap_1/ConfigurationSelection_2/_hash.json
     - nodes/bootstrap_1/ConfigurationSelection_2/selected_configurations.json
     params:
     - bootstrap_1_ConfigurationSelection_2
   bootstrap_1_ConfigurationSelection_3:
     cmd: zntrack run ipsuite.nodes.RandomSelection --name bootstrap_1_ConfigurationSelection_3
     deps:
-    - nodes/bootstrap_1/ConfigurationSelection_2/_hash.json
     - nodes/bootstrap_1/ConfigurationSelection_2/node-meta.json
     - nodes/bootstrap_1/ConfigurationSelection_2/selected_configurations.json
     metrics:
     - nodes/bootstrap_1/ConfigurationSelection_3/node-meta.json:
         cache: false
     outs:
-    - nodes/bootstrap_1/ConfigurationSelection_3/_hash.json
     - nodes/bootstrap_1/ConfigurationSelection_3/selected_configurations.json
     params:
     - bootstrap_1_ConfigurationSelection_3
@@ -3698,6 +3638,15 @@ stages:
     - nodes/AL2_0/CP2KSinglePoint_2/atoms.h5
     - nodes/AL2_0/CP2KSinglePoint_2/cp2k
     - nodes/AL2_0/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_1/ASEGeoOpt_2/model_outs
+    - nodes/AL2_1/ASEGeoOpt_2/node-meta.json
+    - nodes/AL2_1/ASEGeoOpt_2/trajectory.h5
+    - nodes/AL2_1/CP2KSinglePoint_1/atoms.h5
+    - nodes/AL2_1/CP2KSinglePoint_1/cp2k
+    - nodes/AL2_1/CP2KSinglePoint_1/node-meta.json
+    - nodes/AL2_1/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_1/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_1/CP2KSinglePoint_2/node-meta.json
     - nodes/AL_0/CP2KSinglePoint_1/atoms.h5
     - nodes/AL_0/CP2KSinglePoint_1/cp2k
     - nodes/AL_0/CP2KSinglePoint_1/node-meta.json
@@ -3768,6 +3717,9 @@ stages:
     - nodes/AL2_0/CP2KSinglePoint_2/atoms.h5
     - nodes/AL2_0/CP2KSinglePoint_2/cp2k
     - nodes/AL2_0/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_1/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_1/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_1/CP2KSinglePoint_2/node-meta.json
     - nodes/AL_0/CP2KSinglePoint_2/atoms.h5
     - nodes/AL_0/CP2KSinglePoint_2/cp2k
     - nodes/AL_0/CP2KSinglePoint_2/node-meta.json
@@ -3831,15 +3783,6 @@ stages:
     - nodes/final/PredictionMetrics/stress_deviatoric_df.csv
     - nodes/final/PredictionMetrics/stress_df.csv
     - nodes/final/PredictionMetrics/stress_hydrostatic_df.csv
-  isolated_mol_SmilesToConformers:
-    cmd: zntrack run ipsuite.nodes.SmilesToConformers --name isolated_mol_SmilesToConformers
-    params:
-    - isolated_mol_SmilesToConformers
-    outs:
-    - nodes/isolated_mol/SmilesToConformers/atoms.h5
-    metrics:
-    - nodes/isolated_mol/SmilesToConformers/node-meta.json:
-        cache: false
   isolated_mol_CP2KSinglePoint_1:
     cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name isolated_mol_CP2KSinglePoint_1
     deps:
@@ -3848,11 +3791,20 @@ stages:
     - dftd3.dat
     - nodes/isolated_mol/SmilesToConformers/atoms.h5
     - nodes/isolated_mol/SmilesToConformers/node-meta.json
-    params:
-    - cp2k.yaml:
-    outs:
-    - nodes/isolated_mol/CP2KSinglePoint_1/atoms.h5
-    - nodes/isolated_mol/CP2KSinglePoint_1/cp2k
     metrics:
     - nodes/isolated_mol/CP2KSinglePoint_1/node-meta.json:
         cache: false
+    outs:
+    - nodes/isolated_mol/CP2KSinglePoint_1/atoms.h5
+    - nodes/isolated_mol/CP2KSinglePoint_1/cp2k
+    params:
+    - cp2k.yaml:
+  isolated_mol_SmilesToConformers:
+    cmd: zntrack run ipsuite.nodes.SmilesToConformers --name isolated_mol_SmilesToConformers
+    metrics:
+    - nodes/isolated_mol/SmilesToConformers/node-meta.json:
+        cache: false
+    outs:
+    - nodes/isolated_mol/SmilesToConformers/atoms.h5
+    params:
+    - isolated_mol_SmilesToConformers

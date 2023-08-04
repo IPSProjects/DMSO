@@ -24,7 +24,6 @@ AL2_0_ASEMD:
     data_id: -1
     dump_rate: 1000
     init_temperature: null
-    init_velocity: null
     repeat:
     - 1
     - 1
@@ -98,7 +97,6 @@ AL2_1_ASEMD:
     data_id: -1
     dump_rate: 1000
     init_temperature: null
-    init_velocity: null
     repeat:
     - 1
     - 1
@@ -150,7 +148,6 @@ AL_0_ASEMD:
     data_id: -1
     dump_rate: 1000
     init_temperature: null
-    init_velocity: null
     repeat:
     - 1
     - 1
@@ -186,8 +183,12 @@ AL_0_ConfigurationSelection_2:
     seed: 1234
 AL_0_EnergyUncertaintyHistogram:
     bins: null
+    x_lim: null
+    y_lim: null
 AL_0_ForcesUncertaintyHistogram:
     bins: null
+    x_lim: null
+    y_lim: null
 AL_0_MLModel:
     jax_enable_x64: true
     use_energy: true
@@ -202,7 +203,6 @@ AL_1_ASEMD:
     data_id: -1
     dump_rate: 1000
     init_temperature: null
-    init_velocity: null
     repeat:
     - 1
     - 1
@@ -238,8 +238,12 @@ AL_1_ConfigurationSelection_2:
     seed: 1234
 AL_1_EnergyUncertaintyHistogram:
     bins: null
+    x_lim: null
+    y_lim: null
 AL_1_ForcesUncertaintyHistogram:
     bins: null
+    x_lim: null
+    y_lim: null
 AL_1_MLModel:
     jax_enable_x64: true
     use_energy: true
@@ -254,7 +258,6 @@ AL_2_ASEMD:
     data_id: -1
     dump_rate: 1000
     init_temperature: null
-    init_velocity: null
     repeat:
     - 1
     - 1
@@ -290,8 +293,12 @@ AL_2_ConfigurationSelection_2:
     seed: 1234
 AL_2_EnergyUncertaintyHistogram:
     bins: null
+    x_lim: null
+    y_lim: null
 AL_2_ForcesUncertaintyHistogram:
     bins: null
+    x_lim: null
+    y_lim: null
 AL_2_MLModel:
     jax_enable_x64: true
     use_energy: true
@@ -306,7 +313,6 @@ AL_3_ASEMD:
     data_id: -1
     dump_rate: 1000
     init_temperature: null
-    init_velocity: null
     repeat:
     - 1
     - 1
@@ -342,8 +348,12 @@ AL_3_ConfigurationSelection_2:
     seed: 1234
 AL_3_EnergyUncertaintyHistogram:
     bins: null
+    x_lim: null
+    y_lim: null
 AL_3_ForcesUncertaintyHistogram:
     bins: null
+    x_lim: null
+    y_lim: null
 AL_3_MLModel:
     jax_enable_x64: true
     use_energy: true
@@ -358,7 +368,6 @@ AL_4_ASEMD:
     data_id: -1
     dump_rate: 1000
     init_temperature: null
-    init_velocity: null
     repeat:
     - 1
     - 1
@@ -394,8 +403,12 @@ AL_4_ConfigurationSelection_2:
     seed: 1234
 AL_4_EnergyUncertaintyHistogram:
     bins: null
+    x_lim: null
+    y_lim: null
 AL_4_ForcesUncertaintyHistogram:
     bins: null
+    x_lim: null
+    y_lim: null
 AL_4_MLModel:
     jax_enable_x64: true
     use_energy: true
@@ -410,7 +423,6 @@ AL_5_ASEMD:
     data_id: -1
     dump_rate: 1000
     init_temperature: null
-    init_velocity: null
     repeat:
     - 1
     - 1
@@ -446,8 +458,12 @@ AL_5_ConfigurationSelection_2:
     seed: 1234
 AL_5_EnergyUncertaintyHistogram:
     bins: null
+    x_lim: null
+    y_lim: null
 AL_5_ForcesUncertaintyHistogram:
     bins: null
+    x_lim: null
+    y_lim: null
 AL_5_MLModel:
     jax_enable_x64: true
     use_energy: true
@@ -529,7 +545,6 @@ bootstrap_1_ASEMD:
     data_id: -1
     dump_rate: 1000
     init_temperature: null
-    init_velocity: null
     repeat:
     - 1
     - 1
@@ -583,7 +598,7 @@ final_MLModel:
     use_forces: true
     use_stresses: false
 isolated_mol_SmilesToConformers:
-    cell: 10
+    cell: 100
     maxAttempts: 1000
     numConfs: 200
     seed: 42
