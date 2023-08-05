@@ -2,3 +2,4 @@
 /trajectory.h5
 /metrics_dict.csv
 /model
+/velocities_cache.json
