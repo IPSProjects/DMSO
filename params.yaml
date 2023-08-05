@@ -29,7 +29,7 @@ AL2_0_ASEMD:
     - 1
     - 1
     sampling_rate: 100
-    steps: 10000
+    steps: 1000000
 AL2_0_ASEMD_checker_list_0:
     larger_only: true
     max_std: null
@@ -102,7 +102,7 @@ AL2_1_ASEMD:
     - 1
     - 1
     sampling_rate: 100
-    steps: 10000
+    steps: 1000000
 AL2_1_ASEMD_checker_list_0:
     larger_only: true
     max_std: null

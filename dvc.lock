@@ -12516,7 +12516,7 @@ stages:
           - 1
           - 1
           sampling_rate: 100
-          steps: 10000
+          steps: 1000000
     outs:
     - path: nodes/AL2_0/ASEMD/metrics_dict.csv
       hash: md5
@@ -14325,7 +14325,7 @@ stages:
           - 1
           - 1
           sampling_rate: 100
-          steps: 10000
+          steps: 1000000
     outs:
     - path: nodes/AL2_1/ASEMD/metrics_dict.csv
       hash: md5
