@@ -603,3 +603,563 @@ isolated_mol_SmilesToConformers:
     numConfs: 200
     seed: 42
     smiles: CS(=O)C
+locality_C_ASEMD:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_C_ASEMD_1:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_C_ASEMD_1_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_C_ASEMD_1_constraint_list_0:
+    atom_id: 0
+    atom_type: C
+    radius: 3
+locality_C_ASEMD_1_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_C_ASEMD_2:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_C_ASEMD_2_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_C_ASEMD_2_constraint_list_0:
+    atom_id: 0
+    atom_type: C
+    radius: 4
+locality_C_ASEMD_2_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_C_ASEMD_3:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_C_ASEMD_3_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_C_ASEMD_3_constraint_list_0:
+    atom_id: 0
+    atom_type: C
+    radius: 5
+locality_C_ASEMD_3_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_C_ASEMD_4:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_C_ASEMD_4_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_C_ASEMD_4_constraint_list_0:
+    atom_id: 0
+    atom_type: C
+    radius: 6
+locality_C_ASEMD_4_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_C_ASEMD_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_C_ASEMD_constraint_list_0:
+    atom_id: 0
+    atom_type: C
+    radius: 2
+locality_C_ASEMD_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_C_ConfigurationSelection_1:
+    n_configurations: 7
+    seed: 1234
+locality_C_ConfigurationSelection_2:
+    n_configurations: 7
+    seed: 1234
+locality_C_ConfigurationSelection_3:
+    n_configurations: 7
+    seed: 1234
+locality_C_ConfigurationSelection_4:
+    n_configurations: 7
+    seed: 1234
+locality_C_ConfigurationSelection_5:
+    n_configurations: 7
+    seed: 1234
+locality_H_ASEMD:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_H_ASEMD_1:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_H_ASEMD_1_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_H_ASEMD_1_constraint_list_0:
+    atom_id: 0
+    atom_type: H
+    radius: 3
+locality_H_ASEMD_1_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_H_ASEMD_2:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_H_ASEMD_2_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_H_ASEMD_2_constraint_list_0:
+    atom_id: 0
+    atom_type: H
+    radius: 4
+locality_H_ASEMD_2_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_H_ASEMD_3:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_H_ASEMD_3_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_H_ASEMD_3_constraint_list_0:
+    atom_id: 0
+    atom_type: H
+    radius: 5
+locality_H_ASEMD_3_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_H_ASEMD_4:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_H_ASEMD_4_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_H_ASEMD_4_constraint_list_0:
+    atom_id: 0
+    atom_type: H
+    radius: 6
+locality_H_ASEMD_4_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_H_ASEMD_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_H_ASEMD_constraint_list_0:
+    atom_id: 0
+    atom_type: H
+    radius: 2
+locality_H_ASEMD_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_H_ConfigurationSelection_1:
+    n_configurations: 7
+    seed: 1234
+locality_H_ConfigurationSelection_2:
+    n_configurations: 7
+    seed: 1234
+locality_H_ConfigurationSelection_3:
+    n_configurations: 7
+    seed: 1234
+locality_H_ConfigurationSelection_4:
+    n_configurations: 7
+    seed: 1234
+locality_H_ConfigurationSelection_5:
+    n_configurations: 7
+    seed: 1234
+locality_O_ASEMD:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_O_ASEMD_1:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_O_ASEMD_1_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_O_ASEMD_1_constraint_list_0:
+    atom_id: 0
+    atom_type: O
+    radius: 3
+locality_O_ASEMD_1_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_O_ASEMD_2:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_O_ASEMD_2_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_O_ASEMD_2_constraint_list_0:
+    atom_id: 0
+    atom_type: O
+    radius: 4
+locality_O_ASEMD_2_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_O_ASEMD_3:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_O_ASEMD_3_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_O_ASEMD_3_constraint_list_0:
+    atom_id: 0
+    atom_type: O
+    radius: 5
+locality_O_ASEMD_3_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_O_ASEMD_4:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_O_ASEMD_4_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_O_ASEMD_4_constraint_list_0:
+    atom_id: 0
+    atom_type: O
+    radius: 6
+locality_O_ASEMD_4_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_O_ASEMD_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_O_ASEMD_constraint_list_0:
+    atom_id: 0
+    atom_type: O
+    radius: 2
+locality_O_ASEMD_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_O_ConfigurationSelection_1:
+    n_configurations: 7
+    seed: 1234
+locality_O_ConfigurationSelection_2:
+    n_configurations: 7
+    seed: 1234
+locality_O_ConfigurationSelection_3:
+    n_configurations: 7
+    seed: 1234
+locality_O_ConfigurationSelection_4:
+    n_configurations: 7
+    seed: 1234
+locality_O_ConfigurationSelection_5:
+    n_configurations: 7
+    seed: 1234
+locality_S_ASEMD:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_S_ASEMD_1:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_S_ASEMD_1_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_S_ASEMD_1_constraint_list_0:
+    atom_id: 0
+    atom_type: S
+    radius: 3
+locality_S_ASEMD_1_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_S_ASEMD_2:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_S_ASEMD_2_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_S_ASEMD_2_constraint_list_0:
+    atom_id: 0
+    atom_type: S
+    radius: 4
+locality_S_ASEMD_2_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_S_ASEMD_3:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_S_ASEMD_3_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_S_ASEMD_3_constraint_list_0:
+    atom_id: 0
+    atom_type: S
+    radius: 5
+locality_S_ASEMD_3_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_S_ASEMD_4:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 10000
+locality_S_ASEMD_4_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_S_ASEMD_4_constraint_list_0:
+    atom_id: 0
+    atom_type: S
+    radius: 6
+locality_S_ASEMD_4_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_S_ASEMD_checker_list_0:
+    larger_only: true
+    max_std: null
+    max_value: 2.0
+    minimum_window_size: 1
+    value: energy_uncertainty
+    window_size: 500
+locality_S_ASEMD_constraint_list_0:
+    atom_id: 0
+    atom_type: S
+    radius: 2
+locality_S_ASEMD_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+locality_S_ConfigurationSelection_1:
+    n_configurations: 7
+    seed: 1234
+locality_S_ConfigurationSelection_2:
+    n_configurations: 7
+    seed: 1234
+locality_S_ConfigurationSelection_3:
+    n_configurations: 7
+    seed: 1234
+locality_S_ConfigurationSelection_4:
+    n_configurations: 7
+    seed: 1234
+locality_S_ConfigurationSelection_5:
+    n_configurations: 7
+    seed: 1234
