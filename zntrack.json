@@ -11858,6 +11858,292 @@
             "value": "nodes/locality/C/CP2KSinglePoint_8"
         }
     },
+    "locality_C_AnalyseSingleForceSensitivity": {
+        "data": [
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_C_CP2KSinglePoint_1",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_C_CP2KSinglePoint_2",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_C_CP2KSinglePoint_3",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_C_CP2KSinglePoint_4",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_C_CP2KSinglePoint_5",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_C_CP2KSinglePoint_6",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_C_CP2KSinglePoint_7",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_C_CP2KSinglePoint_8",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            }
+        ],
+        "sensitivity_plot": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/sensitivity.png"
+        },
+        "sim_list": [
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_C_ASEMD",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_C_ASEMD_1",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_C_ASEMD_2",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_C_ASEMD_3",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_C_ASEMD_4",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_C_ASEMD_5",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_C_ASEMD_6",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_C_ASEMD_7",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            }
+        ],
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/locality/C/AnalyseSingleForceSensitivity"
+        }
+    },
     "locality_H_ASEMD_checker_list_0": {
         "nwd": {
             "_type": "pathlib.Path",
@@ -13360,6 +13646,292 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/locality/H/CP2KSinglePoint_8"
+        }
+    },
+    "locality_H_AnalyseSingleForceSensitivity": {
+        "data": [
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_H_CP2KSinglePoint_1",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_H_CP2KSinglePoint_2",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_H_CP2KSinglePoint_3",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_H_CP2KSinglePoint_4",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_H_CP2KSinglePoint_5",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_H_CP2KSinglePoint_6",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_H_CP2KSinglePoint_7",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_H_CP2KSinglePoint_8",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            }
+        ],
+        "sensitivity_plot": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/sensitivity.png"
+        },
+        "sim_list": [
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_H_ASEMD",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_H_ASEMD_1",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_H_ASEMD_2",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_H_ASEMD_3",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_H_ASEMD_4",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_H_ASEMD_5",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_H_ASEMD_6",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_H_ASEMD_7",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            }
+        ],
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/locality/H/AnalyseSingleForceSensitivity"
         }
     },
     "locality_O_ASEMD_checker_list_0": {
@@ -14866,6 +15438,292 @@
             "value": "nodes/locality/O/CP2KSinglePoint_8"
         }
     },
+    "locality_O_AnalyseSingleForceSensitivity": {
+        "data": [
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_O_CP2KSinglePoint_1",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_O_CP2KSinglePoint_2",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_O_CP2KSinglePoint_3",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_O_CP2KSinglePoint_4",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_O_CP2KSinglePoint_5",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_O_CP2KSinglePoint_6",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_O_CP2KSinglePoint_7",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_O_CP2KSinglePoint_8",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            }
+        ],
+        "sensitivity_plot": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/sensitivity.png"
+        },
+        "sim_list": [
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_O_ASEMD",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_O_ASEMD_1",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_O_ASEMD_2",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_O_ASEMD_3",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_O_ASEMD_4",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_O_ASEMD_5",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_O_ASEMD_6",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_O_ASEMD_7",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            }
+        ],
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/locality/O/AnalyseSingleForceSensitivity"
+        }
+    },
     "locality_S_ASEMD_checker_list_0": {
         "nwd": {
             "_type": "pathlib.Path",
@@ -16368,6 +17226,292 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/locality/S/CP2KSinglePoint_8"
+        }
+    },
+    "locality_S_AnalyseSingleForceSensitivity": {
+        "data": [
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_S_CP2KSinglePoint_1",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_S_CP2KSinglePoint_2",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_S_CP2KSinglePoint_3",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_S_CP2KSinglePoint_4",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_S_CP2KSinglePoint_5",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_S_CP2KSinglePoint_6",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_S_CP2KSinglePoint_7",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "locality_S_CP2KSinglePoint_8",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            }
+        ],
+        "sensitivity_plot": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/sensitivity.png"
+        },
+        "sim_list": [
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_S_ASEMD",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_S_ASEMD_1",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_S_ASEMD_2",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_S_ASEMD_3",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_S_ASEMD_4",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_S_ASEMD_5",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_S_ASEMD_6",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "ASEMD",
+                            "name": "locality_S_ASEMD_7",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            }
+        ],
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/locality/S/AnalyseSingleForceSensitivity"
         }
     }
 }

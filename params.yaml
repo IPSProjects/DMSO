@@ -803,6 +803,8 @@ locality_C_ASEMD_thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
+locality_C_AnalyseSingleForceSensitivity:
+    alpha: 0.05
 locality_C_ConfigurationSelection_1:
     n_configurations: 7
     seed: 1234
@@ -1027,6 +1029,8 @@ locality_H_ASEMD_thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
+locality_H_AnalyseSingleForceSensitivity:
+    alpha: 0.05
 locality_H_ConfigurationSelection_1:
     n_configurations: 7
     seed: 1234
@@ -1251,6 +1255,8 @@ locality_O_ASEMD_thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
+locality_O_AnalyseSingleForceSensitivity:
+    alpha: 0.05
 locality_O_ConfigurationSelection_1:
     n_configurations: 7
     seed: 1234
@@ -1475,6 +1481,8 @@ locality_S_ASEMD_thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
+locality_S_AnalyseSingleForceSensitivity:
+    alpha: 0.05
 locality_S_ConfigurationSelection_1:
     n_configurations: 7
     seed: 1234
