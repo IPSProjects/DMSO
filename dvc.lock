@@ -24183,6 +24183,31 @@ stages:
       hash: md5
       md5: 35c2574c28fff367e474ad4b1c4033a2
       size: 12382
+    - path: nodes/locality/C/ASEMD_8/metrics_dict.csv
+      hash: md5
+      md5: ad20ab09b09af894a80e76bae89b868e
+      size: 6115
+    - path: nodes/locality/C/ASEMD_8/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/locality/C/ASEMD_8/node-meta.json
+      hash: md5
+      md5: 4954d5113a55e99e6a2e9eeb23de6d04
+      size: 48
+    - path: nodes/locality/C/ASEMD_8/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/locality/C/ASEMD_8/trajectory.h5
+      hash: md5
+      md5: 01f4cd2c998e1e81fbf24a20e25deb11
+      size: 4039136
+    - path: nodes/locality/C/ASEMD_8/velocities_cache.json
+      hash: md5
+      md5: 40dfdb3f70f1c66f5ae0ed27f7843b15
+      size: 12382
     - path: nodes/locality/C/CP2KSinglePoint_1/atoms.h5
       hash: md5
       md5: f6eef6237113f7ba3366afc4fb9e1ead
@@ -24287,6 +24312,19 @@ stages:
       hash: md5
       md5: 9f8e5aefe7c7968710213330f9385fec
       size: 48
+    - path: nodes/locality/C/CP2KSinglePoint_9/atoms.h5
+      hash: md5
+      md5: 75f096759dd1638b428bb179ec4e6e71
+      size: 259248
+    - path: nodes/locality/C/CP2KSinglePoint_9/cp2k
+      hash: md5
+      md5: b0c460156a21ba1caa650e9c3ae6c62a.dir
+      size: 21974955
+      nfiles: 3
+    - path: nodes/locality/C/CP2KSinglePoint_9/node-meta.json
+      hash: md5
+      md5: b4cda09093519da35075bb96adc7f72b
+      size: 48
     params:
       params.yaml:
         locality_C_AnalyseSingleForceSensitivity:
@@ -24294,16 +24332,16 @@ stages:
     outs:
     - path: nodes/locality/C/AnalyseSingleForceSensitivity/node-meta.json
       hash: md5
-      md5: 19efacc2a23853823e0971d4848bd671
+      md5: 2b816343fa862e482e82d20a30f6f460
       size: 48
     - path: nodes/locality/C/AnalyseSingleForceSensitivity/sensitivity.csv
       hash: md5
-      md5: ba8aebca1c951bbaf37cb9dfabe373d6
-      size: 357
+      md5: 0ca0e186bc978b5d41fc710040c167e0
+      size: 402
     - path: nodes/locality/C/AnalyseSingleForceSensitivity/sensitivity.png
       hash: md5
-      md5: cdb0e415e2cade90eaf76828c7519f92
-      size: 23374
+      md5: abba5dc5488a34e75290208678962986
+      size: 23963
   locality_H_AnalyseSingleForceSensitivity:
     cmd: zntrack run ipsuite.analysis.sensitivity.AnalyseSingleForceSensitivity --name
       locality_H_AnalyseSingleForceSensitivity
@@ -24508,6 +24546,31 @@ stages:
       hash: md5
       md5: b116e658b47f1e6c3dd36aa523c918b8
       size: 12382
+    - path: nodes/locality/H/ASEMD_8/metrics_dict.csv
+      hash: md5
+      md5: 560d163dff4d1026c8acfe76269edd74
+      size: 6122
+    - path: nodes/locality/H/ASEMD_8/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/locality/H/ASEMD_8/node-meta.json
+      hash: md5
+      md5: f3286d143c7dfadf5973bdf89819644a
+      size: 48
+    - path: nodes/locality/H/ASEMD_8/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/locality/H/ASEMD_8/trajectory.h5
+      hash: md5
+      md5: dc1a189c16c22ee17ca2f1ca920671b3
+      size: 4039136
+    - path: nodes/locality/H/ASEMD_8/velocities_cache.json
+      hash: md5
+      md5: 8c2acd7bddf193b18850537ae1338d3d
+      size: 12382
     - path: nodes/locality/H/CP2KSinglePoint_1/atoms.h5
       hash: md5
       md5: 9acd3dd72f21082bfa2d44a2ae050704
@@ -24612,6 +24675,19 @@ stages:
       hash: md5
       md5: 74d2f88981c286e27a183c2545333d83
       size: 48
+    - path: nodes/locality/H/CP2KSinglePoint_9/atoms.h5
+      hash: md5
+      md5: 5f8ec0a45a07f40b17b12313d99ebb1b
+      size: 259248
+    - path: nodes/locality/H/CP2KSinglePoint_9/cp2k
+      hash: md5
+      md5: e87405d3a1ff6bcb6e3774061f81c166.dir
+      size: 21978924
+      nfiles: 3
+    - path: nodes/locality/H/CP2KSinglePoint_9/node-meta.json
+      hash: md5
+      md5: 7a4e00652af288469619a06c16b0f706
+      size: 48
     params:
       params.yaml:
         locality_H_AnalyseSingleForceSensitivity:
@@ -24619,16 +24695,16 @@ stages:
     outs:
     - path: nodes/locality/H/AnalyseSingleForceSensitivity/node-meta.json
       hash: md5
-      md5: 930b1ef05a9ec39c0e26d7c8994cf108
+      md5: 7eabb6ca411055cd2fd526305ecd423d
       size: 48
     - path: nodes/locality/H/AnalyseSingleForceSensitivity/sensitivity.csv
       hash: md5
-      md5: e95ab16d9d3bff5de7a9807e014c8a7b
-      size: 368
+      md5: f8ad08831618c0fb86c917cb69da99cd
+      size: 415
     - path: nodes/locality/H/AnalyseSingleForceSensitivity/sensitivity.png
       hash: md5
-      md5: 93b48b26b77bb5858a38ffc0156a86ad
-      size: 22643
+      md5: b503acc71ab7c33a98f3a7e2e681a58c
+      size: 22953
   locality_O_AnalyseSingleForceSensitivity:
     cmd: zntrack run ipsuite.analysis.sensitivity.AnalyseSingleForceSensitivity --name
       locality_O_AnalyseSingleForceSensitivity
@@ -24833,6 +24909,31 @@ stages:
       hash: md5
       md5: d856de76783131b6649045b55a067788
       size: 12382
+    - path: nodes/locality/O/ASEMD_8/metrics_dict.csv
+      hash: md5
+      md5: 85f62a7add99ad44277d3ee2ea9ee1f6
+      size: 6116
+    - path: nodes/locality/O/ASEMD_8/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/locality/O/ASEMD_8/node-meta.json
+      hash: md5
+      md5: 4662b15c8131c3382ea6b911f372dde8
+      size: 48
+    - path: nodes/locality/O/ASEMD_8/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/locality/O/ASEMD_8/trajectory.h5
+      hash: md5
+      md5: e34727d0c319786d583832096a62c10c
+      size: 4039136
+    - path: nodes/locality/O/ASEMD_8/velocities_cache.json
+      hash: md5
+      md5: 8c7ac30ff82644b4663ce871b035750b
+      size: 12382
     - path: nodes/locality/O/CP2KSinglePoint_1/atoms.h5
       hash: md5
       md5: a5fbcac127c3476ec2b6b2b1370094a8
@@ -24937,6 +25038,19 @@ stages:
       hash: md5
       md5: 98fa3503bb1f952924b39f5ba0adf3c4
       size: 48
+    - path: nodes/locality/O/CP2KSinglePoint_9/atoms.h5
+      hash: md5
+      md5: aae128f4416570ffcc0b14f714f5b47b
+      size: 259248
+    - path: nodes/locality/O/CP2KSinglePoint_9/cp2k
+      hash: md5
+      md5: c61a3b818719f4b35cd48c7e913fade1.dir
+      size: 21982326
+      nfiles: 3
+    - path: nodes/locality/O/CP2KSinglePoint_9/node-meta.json
+      hash: md5
+      md5: db0dc9ed6d029c25167984b762f1333a
+      size: 48
     params:
       params.yaml:
         locality_O_AnalyseSingleForceSensitivity:
@@ -24944,16 +25058,16 @@ stages:
     outs:
     - path: nodes/locality/O/AnalyseSingleForceSensitivity/node-meta.json
       hash: md5
-      md5: b96e109b699abc9a7c5647c938bcdc0a
+      md5: 95662387bcb4380eaa65d787ac72086a
       size: 48
     - path: nodes/locality/O/AnalyseSingleForceSensitivity/sensitivity.csv
       hash: md5
-      md5: 00bcd6e98c54ba8af316c13201d6e9e1
-      size: 353
+      md5: 5e77788ba10ad94fb21e28ecc2d8b7db
+      size: 398
     - path: nodes/locality/O/AnalyseSingleForceSensitivity/sensitivity.png
       hash: md5
-      md5: 9743ff1b0e42dc701086f0bef29c835e
-      size: 24276
+      md5: 527c9a240c2b8586435da52a2754fe24
+      size: 25007
   locality_S_AnalyseSingleForceSensitivity:
     cmd: zntrack run ipsuite.analysis.sensitivity.AnalyseSingleForceSensitivity --name
       locality_S_AnalyseSingleForceSensitivity
@@ -25158,6 +25272,31 @@ stages:
       hash: md5
       md5: 2f9860ec5e037edd2fd8dc3fbed68296
       size: 12382
+    - path: nodes/locality/S/ASEMD_8/metrics_dict.csv
+      hash: md5
+      md5: 0da53f2ed49e2b9666766becc7e8dcb7
+      size: 6134
+    - path: nodes/locality/S/ASEMD_8/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/locality/S/ASEMD_8/node-meta.json
+      hash: md5
+      md5: 02476fd178b119e16d0048001f462d6c
+      size: 48
+    - path: nodes/locality/S/ASEMD_8/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/locality/S/ASEMD_8/trajectory.h5
+      hash: md5
+      md5: 066efd618a2fa87eaf1267e79d5addf1
+      size: 4039136
+    - path: nodes/locality/S/ASEMD_8/velocities_cache.json
+      hash: md5
+      md5: 3670db8877f8df930cf8ef6798a25ce3
+      size: 12382
     - path: nodes/locality/S/CP2KSinglePoint_1/atoms.h5
       hash: md5
       md5: 0a46998f4dcf8e24989d9431996a496e
@@ -25262,6 +25401,19 @@ stages:
       hash: md5
       md5: e4959d3e1558534558c7b0b699554d9e
       size: 48
+    - path: nodes/locality/S/CP2KSinglePoint_9/atoms.h5
+      hash: md5
+      md5: 7b205d5561d86f5b584acae660a681dc
+      size: 259248
+    - path: nodes/locality/S/CP2KSinglePoint_9/cp2k
+      hash: md5
+      md5: 9ef23f9d28c3683f8adc5bd54f7fd9fd.dir
+      size: 21978197
+      nfiles: 3
+    - path: nodes/locality/S/CP2KSinglePoint_9/node-meta.json
+      hash: md5
+      md5: 2dfa619f7f078bde1a39261fe8901446
+      size: 48
     params:
       params.yaml:
         locality_S_AnalyseSingleForceSensitivity:
@@ -25269,13 +25421,1157 @@ stages:
     outs:
     - path: nodes/locality/S/AnalyseSingleForceSensitivity/node-meta.json
       hash: md5
-      md5: f59354fe38b4a40c1853a53b356d9f10
+      md5: fb9aaf91d37faf25c82fc4b95ededf88
       size: 48
     - path: nodes/locality/S/AnalyseSingleForceSensitivity/sensitivity.csv
       hash: md5
-      md5: 1e01b4be601af0592dc6f95db7c2ea28
-      size: 353
+      md5: 17b913826592954a3aabfe73f6720fb7
+      size: 397
     - path: nodes/locality/S/AnalyseSingleForceSensitivity/sensitivity.png
       hash: md5
-      md5: 98cc73e3b1d2840941910e8295826bb3
-      size: 21069
+      md5: f331ffa225b0bf1f931783b332fcf79e
+      size: 22186
+  locality_C_ASEMD_8_checker_list_0:
+    cmd: zntrack run ipsuite.nodes.ThresholdCheck --name locality_C_ASEMD_8_checker_list_0
+      --meta-only
+    params:
+      params.yaml:
+        locality_C_ASEMD_8_checker_list_0:
+          larger_only: true
+          max_std:
+          max_value: 2.0
+          minimum_window_size: 1
+          value: energy_uncertainty
+          window_size: 500
+      zntrack.json:
+        locality_C_ASEMD_8.checker_list:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: ThresholdCheck
+            name: locality_C_ASEMD_8_checker_list_0
+            remote:
+            rev:
+    outs:
+    - path: nodes/locality/C/locality_C_ASEMD_8_checker_list_0/node-meta.json
+      hash: md5
+      md5: 267cd34cd11b102aee31a3c5ddfd86d6
+      size: 48
+  locality_C_ASEMD_8_constraint_list_0:
+    cmd: zntrack run ipsuite.nodes.FixedSphereConstraint --name locality_C_ASEMD_8_constraint_list_0
+      --meta-only
+    params:
+      params.yaml:
+        locality_C_ASEMD_8_constraint_list_0:
+          atom_id: 0
+          atom_type: C
+          radius: 9
+      zntrack.json:
+        locality_C_ASEMD_8.constraint_list:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: FixedSphereConstraint
+            name: locality_C_ASEMD_8_constraint_list_0
+            remote:
+            rev:
+    outs:
+    - path: nodes/locality/C/locality_C_ASEMD_8_constraint_list_0/node-meta.json
+      hash: md5
+      md5: 4e80b1da7e855bec601921c1cb012508
+      size: 48
+  locality_C_ASEMD_8_thermostat:
+    cmd: zntrack run ipsuite.nodes.LangevinThermostat --name locality_C_ASEMD_8_thermostat
+      --meta-only
+    params:
+      params.yaml:
+        locality_C_ASEMD_8_thermostat:
+          friction: 0.01
+          temperature: 298.15
+          time_step: 0.5
+      zntrack.json:
+        locality_C_ASEMD_8.thermostat:
+          _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: LangevinThermostat
+            name: locality_C_ASEMD_8_thermostat
+            remote:
+            rev:
+    outs:
+    - path: nodes/locality/C/locality_C_ASEMD_8_thermostat/node-meta.json
+      hash: md5
+      md5: c83d9fd05722228673b48f7a46a7e4bd
+      size: 48
+  locality_C_ASEMD_8:
+    cmd: zntrack run ipsuite.nodes.ASEMD --name locality_C_ASEMD_8
+    deps:
+    - path: nodes/AL2_1/ApaxEnsemble/node-meta.json
+      hash: md5
+      md5: 28bb0ded630cc155a210f8bc17323d28
+      size: 48
+    - path: nodes/ASEGeoOpt/model_outs
+      hash: md5
+      md5: 55a17d4cf10898236beac4f2d757f2b4.dir
+      size: 89601466
+      nfiles: 7
+    - path: nodes/ASEGeoOpt/node-meta.json
+      hash: md5
+      md5: 336193404ed866dfebe5a4c56f8ef2f8
+      size: 48
+    - path: nodes/ASEGeoOpt/trajectory.h5
+      hash: md5
+      md5: ea5b960f96c3f1f8cd9328fb1ea918f5
+      size: 1410008
+    - path: nodes/locality/C/locality_C_ASEMD_8_checker_list_0/node-meta.json
+      hash: md5
+      md5: 267cd34cd11b102aee31a3c5ddfd86d6
+      size: 48
+    - path: nodes/locality/C/locality_C_ASEMD_8_constraint_list_0/node-meta.json
+      hash: md5
+      md5: 4e80b1da7e855bec601921c1cb012508
+      size: 48
+    - path: nodes/locality/C/locality_C_ASEMD_8_thermostat/node-meta.json
+      hash: md5
+      md5: c83d9fd05722228673b48f7a46a7e4bd
+      size: 48
+    params:
+      params.yaml:
+        locality_C_ASEMD_8:
+          data_id: -1
+          dump_rate: 1000
+          init_temperature:
+          repeat:
+          - 1
+          - 1
+          - 1
+          sampling_rate: 100
+          steps: 10000
+    outs:
+    - path: nodes/locality/C/ASEMD_8/metrics_dict.csv
+      hash: md5
+      md5: ad20ab09b09af894a80e76bae89b868e
+      size: 6115
+    - path: nodes/locality/C/ASEMD_8/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/locality/C/ASEMD_8/node-meta.json
+      hash: md5
+      md5: 4954d5113a55e99e6a2e9eeb23de6d04
+      size: 48
+    - path: nodes/locality/C/ASEMD_8/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/locality/C/ASEMD_8/trajectory.h5
+      hash: md5
+      md5: 01f4cd2c998e1e81fbf24a20e25deb11
+      size: 4039136
+    - path: nodes/locality/C/ASEMD_8/velocities_cache.json
+      hash: md5
+      md5: 40dfdb3f70f1c66f5ae0ed27f7843b15
+      size: 12382
+  locality_C_ConfigurationSelection_9:
+    cmd: zntrack run ipsuite.nodes.RandomSelection --name locality_C_ConfigurationSelection_9
+    deps:
+    - path: nodes/locality/C/ASEMD_8/metrics_dict.csv
+      hash: md5
+      md5: ad20ab09b09af894a80e76bae89b868e
+      size: 6115
+    - path: nodes/locality/C/ASEMD_8/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/locality/C/ASEMD_8/node-meta.json
+      hash: md5
+      md5: 4954d5113a55e99e6a2e9eeb23de6d04
+      size: 48
+    - path: nodes/locality/C/ASEMD_8/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/locality/C/ASEMD_8/trajectory.h5
+      hash: md5
+      md5: 01f4cd2c998e1e81fbf24a20e25deb11
+      size: 4039136
+    - path: nodes/locality/C/ASEMD_8/velocities_cache.json
+      hash: md5
+      md5: 40dfdb3f70f1c66f5ae0ed27f7843b15
+      size: 12382
+    params:
+      params.yaml:
+        locality_C_ConfigurationSelection_9:
+          n_configurations: 7
+          seed: 1234
+    outs:
+    - path: nodes/locality/C/ConfigurationSelection_9/node-meta.json
+      hash: md5
+      md5: 31462f9877e0ea9b347e8c4c3335e71a
+      size: 48
+    - path: nodes/locality/C/ConfigurationSelection_9/selected_configurations.json
+      hash: md5
+      md5: 3c7d31f03bb7aaf9179f0d5108611181
+      size: 109
+  locality_C_CP2KSinglePoint_9:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name locality_C_CP2KSinglePoint_9
+    deps:
+    - path: BASIS_MOLOPT
+      hash: md5
+      md5: 4e877f2fa6a2b401ae1516a48f977f2b
+      size: 126074
+    - path: GTH_POTENTIALS
+      hash: md5
+      md5: 39f14f5181cb73cf1f7aec6d838f3fe5
+      size: 108689
+    - path: dftd3.dat
+      hash: md5
+      md5: 88745bcc951a4bcdccc4d6bcfa78d105
+      size: 1959318
+    - path: nodes/CP2KSinglePoint/atoms.h5
+      hash: md5
+      md5: 9697c746c6f69d428bd2f5a5b7979666
+      size: 61928
+    - path: nodes/CP2KSinglePoint/cp2k
+      hash: md5
+      md5: fb7bfe3b3264befe3419725f830a8775.dir
+      size: 21603140
+      nfiles: 3
+    - path: nodes/CP2KSinglePoint/node-meta.json
+      hash: md5
+      md5: 63df96639d4fa5cd5d2b3bf3d4671e3a
+      size: 48
+    - path: nodes/locality/C/ConfigurationSelection_9/node-meta.json
+      hash: md5
+      md5: 31462f9877e0ea9b347e8c4c3335e71a
+      size: 48
+    - path: nodes/locality/C/ConfigurationSelection_9/selected_configurations.json
+      hash: md5
+      md5: 3c7d31f03bb7aaf9179f0d5108611181
+      size: 109
+    params:
+      cp2k.yaml:
+        force_eval:
+          method: quickstep
+          DFT:
+            mgrid:
+              cutoff: 600.0
+              rel_cutoff: 80.0
+              ngrids: 5
+            QS:
+              eps_filter_matrix: 0.0
+              eps_pgf_orb: 0.0001
+            SCF:
+              scf_guess: restart
+              max_scf: 100
+              eps_scf: 1e-06
+              OT:
+                minimizer: diis
+                preconditioner: full_single_inverse
+              outer_scf:
+                max_scf: 100
+                eps_scf: 1e-06
+              print:
+                restart:
+                  each:
+                    QS_SCF: 0
+            XC:
+              xc_functional:
+                _: BLYP
+              vdw_potential:
+                pair_potential:
+                  type: DFTD3
+                  parameter_file_name: dftd3.dat
+                  reference_functional: BLYP
+                  r_cutoff: 18
+                potential_type: pair_potential
+            basis_set_file_name: BASIS_MOLOPT
+            potential_file_name: GTH_POTENTIALS
+          subsys:
+            kind:
+              O:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+              C:
+                basis_set: TZV2P-MOLOPT-GTH-q4
+                potential: GTH-BLYP-q4
+              H:
+                basis_set: TZV2P-MOLOPT-GTH-q1
+                potential: GTH-BLYP-q1
+              S:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+    outs:
+    - path: nodes/locality/C/CP2KSinglePoint_9/atoms.h5
+      hash: md5
+      md5: 75f096759dd1638b428bb179ec4e6e71
+      size: 259248
+    - path: nodes/locality/C/CP2KSinglePoint_9/cp2k
+      hash: md5
+      md5: b0c460156a21ba1caa650e9c3ae6c62a.dir
+      size: 21974955
+      nfiles: 3
+    - path: nodes/locality/C/CP2KSinglePoint_9/node-meta.json
+      hash: md5
+      md5: b4cda09093519da35075bb96adc7f72b
+      size: 48
+  locality_H_ASEMD_8_checker_list_0:
+    cmd: zntrack run ipsuite.nodes.ThresholdCheck --name locality_H_ASEMD_8_checker_list_0
+      --meta-only
+    params:
+      params.yaml:
+        locality_H_ASEMD_8_checker_list_0:
+          larger_only: true
+          max_std:
+          max_value: 2.0
+          minimum_window_size: 1
+          value: energy_uncertainty
+          window_size: 500
+      zntrack.json:
+        locality_H_ASEMD_8.checker_list:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: ThresholdCheck
+            name: locality_H_ASEMD_8_checker_list_0
+            remote:
+            rev:
+    outs:
+    - path: nodes/locality/H/locality_H_ASEMD_8_checker_list_0/node-meta.json
+      hash: md5
+      md5: 3d52332c3c741244fae0de23bf300482
+      size: 48
+  locality_H_ASEMD_8_constraint_list_0:
+    cmd: zntrack run ipsuite.nodes.FixedSphereConstraint --name locality_H_ASEMD_8_constraint_list_0
+      --meta-only
+    params:
+      params.yaml:
+        locality_H_ASEMD_8_constraint_list_0:
+          atom_id: 0
+          atom_type: H
+          radius: 9
+      zntrack.json:
+        locality_H_ASEMD_8.constraint_list:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: FixedSphereConstraint
+            name: locality_H_ASEMD_8_constraint_list_0
+            remote:
+            rev:
+    outs:
+    - path: nodes/locality/H/locality_H_ASEMD_8_constraint_list_0/node-meta.json
+      hash: md5
+      md5: 51ad6edd2ee3b44987f45c46201febc4
+      size: 48
+  locality_H_ASEMD_8_thermostat:
+    cmd: zntrack run ipsuite.nodes.LangevinThermostat --name locality_H_ASEMD_8_thermostat
+      --meta-only
+    params:
+      params.yaml:
+        locality_H_ASEMD_8_thermostat:
+          friction: 0.01
+          temperature: 298.15
+          time_step: 0.5
+      zntrack.json:
+        locality_H_ASEMD_8.thermostat:
+          _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: LangevinThermostat
+            name: locality_H_ASEMD_8_thermostat
+            remote:
+            rev:
+    outs:
+    - path: nodes/locality/H/locality_H_ASEMD_8_thermostat/node-meta.json
+      hash: md5
+      md5: 3350d95fd917519302ac87c9b3e912e4
+      size: 48
+  locality_H_ASEMD_8:
+    cmd: zntrack run ipsuite.nodes.ASEMD --name locality_H_ASEMD_8
+    deps:
+    - path: nodes/AL2_1/ApaxEnsemble/node-meta.json
+      hash: md5
+      md5: 28bb0ded630cc155a210f8bc17323d28
+      size: 48
+    - path: nodes/ASEGeoOpt/model_outs
+      hash: md5
+      md5: 55a17d4cf10898236beac4f2d757f2b4.dir
+      size: 89601466
+      nfiles: 7
+    - path: nodes/ASEGeoOpt/node-meta.json
+      hash: md5
+      md5: 336193404ed866dfebe5a4c56f8ef2f8
+      size: 48
+    - path: nodes/ASEGeoOpt/trajectory.h5
+      hash: md5
+      md5: ea5b960f96c3f1f8cd9328fb1ea918f5
+      size: 1410008
+    - path: nodes/locality/H/locality_H_ASEMD_8_checker_list_0/node-meta.json
+      hash: md5
+      md5: 3d52332c3c741244fae0de23bf300482
+      size: 48
+    - path: nodes/locality/H/locality_H_ASEMD_8_constraint_list_0/node-meta.json
+      hash: md5
+      md5: 51ad6edd2ee3b44987f45c46201febc4
+      size: 48
+    - path: nodes/locality/H/locality_H_ASEMD_8_thermostat/node-meta.json
+      hash: md5
+      md5: 3350d95fd917519302ac87c9b3e912e4
+      size: 48
+    params:
+      params.yaml:
+        locality_H_ASEMD_8:
+          data_id: -1
+          dump_rate: 1000
+          init_temperature:
+          repeat:
+          - 1
+          - 1
+          - 1
+          sampling_rate: 100
+          steps: 10000
+    outs:
+    - path: nodes/locality/H/ASEMD_8/metrics_dict.csv
+      hash: md5
+      md5: 560d163dff4d1026c8acfe76269edd74
+      size: 6122
+    - path: nodes/locality/H/ASEMD_8/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/locality/H/ASEMD_8/node-meta.json
+      hash: md5
+      md5: f3286d143c7dfadf5973bdf89819644a
+      size: 48
+    - path: nodes/locality/H/ASEMD_8/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/locality/H/ASEMD_8/trajectory.h5
+      hash: md5
+      md5: dc1a189c16c22ee17ca2f1ca920671b3
+      size: 4039136
+    - path: nodes/locality/H/ASEMD_8/velocities_cache.json
+      hash: md5
+      md5: 8c2acd7bddf193b18850537ae1338d3d
+      size: 12382
+  locality_H_ConfigurationSelection_9:
+    cmd: zntrack run ipsuite.nodes.RandomSelection --name locality_H_ConfigurationSelection_9
+    deps:
+    - path: nodes/locality/H/ASEMD_8/metrics_dict.csv
+      hash: md5
+      md5: 560d163dff4d1026c8acfe76269edd74
+      size: 6122
+    - path: nodes/locality/H/ASEMD_8/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/locality/H/ASEMD_8/node-meta.json
+      hash: md5
+      md5: f3286d143c7dfadf5973bdf89819644a
+      size: 48
+    - path: nodes/locality/H/ASEMD_8/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/locality/H/ASEMD_8/trajectory.h5
+      hash: md5
+      md5: dc1a189c16c22ee17ca2f1ca920671b3
+      size: 4039136
+    - path: nodes/locality/H/ASEMD_8/velocities_cache.json
+      hash: md5
+      md5: 8c2acd7bddf193b18850537ae1338d3d
+      size: 12382
+    params:
+      params.yaml:
+        locality_H_ConfigurationSelection_9:
+          n_configurations: 7
+          seed: 1234
+    outs:
+    - path: nodes/locality/H/ConfigurationSelection_9/node-meta.json
+      hash: md5
+      md5: c7c14923231ac25aae12cdbe7d2800c5
+      size: 48
+    - path: nodes/locality/H/ConfigurationSelection_9/selected_configurations.json
+      hash: md5
+      md5: 3c7d31f03bb7aaf9179f0d5108611181
+      size: 109
+  locality_H_CP2KSinglePoint_9:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name locality_H_CP2KSinglePoint_9
+    deps:
+    - path: BASIS_MOLOPT
+      hash: md5
+      md5: 4e877f2fa6a2b401ae1516a48f977f2b
+      size: 126074
+    - path: GTH_POTENTIALS
+      hash: md5
+      md5: 39f14f5181cb73cf1f7aec6d838f3fe5
+      size: 108689
+    - path: dftd3.dat
+      hash: md5
+      md5: 88745bcc951a4bcdccc4d6bcfa78d105
+      size: 1959318
+    - path: nodes/CP2KSinglePoint/atoms.h5
+      hash: md5
+      md5: 9697c746c6f69d428bd2f5a5b7979666
+      size: 61928
+    - path: nodes/CP2KSinglePoint/cp2k
+      hash: md5
+      md5: fb7bfe3b3264befe3419725f830a8775.dir
+      size: 21603140
+      nfiles: 3
+    - path: nodes/CP2KSinglePoint/node-meta.json
+      hash: md5
+      md5: 63df96639d4fa5cd5d2b3bf3d4671e3a
+      size: 48
+    - path: nodes/locality/H/ConfigurationSelection_9/node-meta.json
+      hash: md5
+      md5: c7c14923231ac25aae12cdbe7d2800c5
+      size: 48
+    - path: nodes/locality/H/ConfigurationSelection_9/selected_configurations.json
+      hash: md5
+      md5: 3c7d31f03bb7aaf9179f0d5108611181
+      size: 109
+    params:
+      cp2k.yaml:
+        force_eval:
+          method: quickstep
+          DFT:
+            mgrid:
+              cutoff: 600.0
+              rel_cutoff: 80.0
+              ngrids: 5
+            QS:
+              eps_filter_matrix: 0.0
+              eps_pgf_orb: 0.0001
+            SCF:
+              scf_guess: restart
+              max_scf: 100
+              eps_scf: 1e-06
+              OT:
+                minimizer: diis
+                preconditioner: full_single_inverse
+              outer_scf:
+                max_scf: 100
+                eps_scf: 1e-06
+              print:
+                restart:
+                  each:
+                    QS_SCF: 0
+            XC:
+              xc_functional:
+                _: BLYP
+              vdw_potential:
+                pair_potential:
+                  type: DFTD3
+                  parameter_file_name: dftd3.dat
+                  reference_functional: BLYP
+                  r_cutoff: 18
+                potential_type: pair_potential
+            basis_set_file_name: BASIS_MOLOPT
+            potential_file_name: GTH_POTENTIALS
+          subsys:
+            kind:
+              O:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+              C:
+                basis_set: TZV2P-MOLOPT-GTH-q4
+                potential: GTH-BLYP-q4
+              H:
+                basis_set: TZV2P-MOLOPT-GTH-q1
+                potential: GTH-BLYP-q1
+              S:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+    outs:
+    - path: nodes/locality/H/CP2KSinglePoint_9/atoms.h5
+      hash: md5
+      md5: 5f8ec0a45a07f40b17b12313d99ebb1b
+      size: 259248
+    - path: nodes/locality/H/CP2KSinglePoint_9/cp2k
+      hash: md5
+      md5: e87405d3a1ff6bcb6e3774061f81c166.dir
+      size: 21978924
+      nfiles: 3
+    - path: nodes/locality/H/CP2KSinglePoint_9/node-meta.json
+      hash: md5
+      md5: 7a4e00652af288469619a06c16b0f706
+      size: 48
+  locality_O_ASEMD_8_checker_list_0:
+    cmd: zntrack run ipsuite.nodes.ThresholdCheck --name locality_O_ASEMD_8_checker_list_0
+      --meta-only
+    params:
+      params.yaml:
+        locality_O_ASEMD_8_checker_list_0:
+          larger_only: true
+          max_std:
+          max_value: 2.0
+          minimum_window_size: 1
+          value: energy_uncertainty
+          window_size: 500
+      zntrack.json:
+        locality_O_ASEMD_8.checker_list:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: ThresholdCheck
+            name: locality_O_ASEMD_8_checker_list_0
+            remote:
+            rev:
+    outs:
+    - path: nodes/locality/O/locality_O_ASEMD_8_checker_list_0/node-meta.json
+      hash: md5
+      md5: 861ddcb45a7ce87164135c52486cdce1
+      size: 48
+  locality_O_ASEMD_8_constraint_list_0:
+    cmd: zntrack run ipsuite.nodes.FixedSphereConstraint --name locality_O_ASEMD_8_constraint_list_0
+      --meta-only
+    params:
+      params.yaml:
+        locality_O_ASEMD_8_constraint_list_0:
+          atom_id: 0
+          atom_type: O
+          radius: 9
+      zntrack.json:
+        locality_O_ASEMD_8.constraint_list:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: FixedSphereConstraint
+            name: locality_O_ASEMD_8_constraint_list_0
+            remote:
+            rev:
+    outs:
+    - path: nodes/locality/O/locality_O_ASEMD_8_constraint_list_0/node-meta.json
+      hash: md5
+      md5: 3d5fa607c9c35398efcf10b7cfa1c3f5
+      size: 48
+  locality_O_ASEMD_8_thermostat:
+    cmd: zntrack run ipsuite.nodes.LangevinThermostat --name locality_O_ASEMD_8_thermostat
+      --meta-only
+    params:
+      params.yaml:
+        locality_O_ASEMD_8_thermostat:
+          friction: 0.01
+          temperature: 298.15
+          time_step: 0.5
+      zntrack.json:
+        locality_O_ASEMD_8.thermostat:
+          _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: LangevinThermostat
+            name: locality_O_ASEMD_8_thermostat
+            remote:
+            rev:
+    outs:
+    - path: nodes/locality/O/locality_O_ASEMD_8_thermostat/node-meta.json
+      hash: md5
+      md5: a472e83ec4daa30f87618d12bdaeb7b1
+      size: 48
+  locality_O_ASEMD_8:
+    cmd: zntrack run ipsuite.nodes.ASEMD --name locality_O_ASEMD_8
+    deps:
+    - path: nodes/AL2_1/ApaxEnsemble/node-meta.json
+      hash: md5
+      md5: 28bb0ded630cc155a210f8bc17323d28
+      size: 48
+    - path: nodes/ASEGeoOpt/model_outs
+      hash: md5
+      md5: 55a17d4cf10898236beac4f2d757f2b4.dir
+      size: 89601466
+      nfiles: 7
+    - path: nodes/ASEGeoOpt/node-meta.json
+      hash: md5
+      md5: 336193404ed866dfebe5a4c56f8ef2f8
+      size: 48
+    - path: nodes/ASEGeoOpt/trajectory.h5
+      hash: md5
+      md5: ea5b960f96c3f1f8cd9328fb1ea918f5
+      size: 1410008
+    - path: nodes/locality/O/locality_O_ASEMD_8_checker_list_0/node-meta.json
+      hash: md5
+      md5: 861ddcb45a7ce87164135c52486cdce1
+      size: 48
+    - path: nodes/locality/O/locality_O_ASEMD_8_constraint_list_0/node-meta.json
+      hash: md5
+      md5: 3d5fa607c9c35398efcf10b7cfa1c3f5
+      size: 48
+    - path: nodes/locality/O/locality_O_ASEMD_8_thermostat/node-meta.json
+      hash: md5
+      md5: a472e83ec4daa30f87618d12bdaeb7b1
+      size: 48
+    params:
+      params.yaml:
+        locality_O_ASEMD_8:
+          data_id: -1
+          dump_rate: 1000
+          init_temperature:
+          repeat:
+          - 1
+          - 1
+          - 1
+          sampling_rate: 100
+          steps: 10000
+    outs:
+    - path: nodes/locality/O/ASEMD_8/metrics_dict.csv
+      hash: md5
+      md5: 85f62a7add99ad44277d3ee2ea9ee1f6
+      size: 6116
+    - path: nodes/locality/O/ASEMD_8/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/locality/O/ASEMD_8/node-meta.json
+      hash: md5
+      md5: 4662b15c8131c3382ea6b911f372dde8
+      size: 48
+    - path: nodes/locality/O/ASEMD_8/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/locality/O/ASEMD_8/trajectory.h5
+      hash: md5
+      md5: e34727d0c319786d583832096a62c10c
+      size: 4039136
+    - path: nodes/locality/O/ASEMD_8/velocities_cache.json
+      hash: md5
+      md5: 8c7ac30ff82644b4663ce871b035750b
+      size: 12382
+  locality_O_ConfigurationSelection_9:
+    cmd: zntrack run ipsuite.nodes.RandomSelection --name locality_O_ConfigurationSelection_9
+    deps:
+    - path: nodes/locality/O/ASEMD_8/metrics_dict.csv
+      hash: md5
+      md5: 85f62a7add99ad44277d3ee2ea9ee1f6
+      size: 6116
+    - path: nodes/locality/O/ASEMD_8/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/locality/O/ASEMD_8/node-meta.json
+      hash: md5
+      md5: 4662b15c8131c3382ea6b911f372dde8
+      size: 48
+    - path: nodes/locality/O/ASEMD_8/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/locality/O/ASEMD_8/trajectory.h5
+      hash: md5
+      md5: e34727d0c319786d583832096a62c10c
+      size: 4039136
+    - path: nodes/locality/O/ASEMD_8/velocities_cache.json
+      hash: md5
+      md5: 8c7ac30ff82644b4663ce871b035750b
+      size: 12382
+    params:
+      params.yaml:
+        locality_O_ConfigurationSelection_9:
+          n_configurations: 7
+          seed: 1234
+    outs:
+    - path: nodes/locality/O/ConfigurationSelection_9/node-meta.json
+      hash: md5
+      md5: 01ab40a3c6c0aea7b00b3ecb3ffe167e
+      size: 48
+    - path: nodes/locality/O/ConfigurationSelection_9/selected_configurations.json
+      hash: md5
+      md5: 3c7d31f03bb7aaf9179f0d5108611181
+      size: 109
+  locality_O_CP2KSinglePoint_9:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name locality_O_CP2KSinglePoint_9
+    deps:
+    - path: BASIS_MOLOPT
+      hash: md5
+      md5: 4e877f2fa6a2b401ae1516a48f977f2b
+      size: 126074
+    - path: GTH_POTENTIALS
+      hash: md5
+      md5: 39f14f5181cb73cf1f7aec6d838f3fe5
+      size: 108689
+    - path: dftd3.dat
+      hash: md5
+      md5: 88745bcc951a4bcdccc4d6bcfa78d105
+      size: 1959318
+    - path: nodes/CP2KSinglePoint/atoms.h5
+      hash: md5
+      md5: 9697c746c6f69d428bd2f5a5b7979666
+      size: 61928
+    - path: nodes/CP2KSinglePoint/cp2k
+      hash: md5
+      md5: fb7bfe3b3264befe3419725f830a8775.dir
+      size: 21603140
+      nfiles: 3
+    - path: nodes/CP2KSinglePoint/node-meta.json
+      hash: md5
+      md5: 63df96639d4fa5cd5d2b3bf3d4671e3a
+      size: 48
+    - path: nodes/locality/O/ConfigurationSelection_9/node-meta.json
+      hash: md5
+      md5: 01ab40a3c6c0aea7b00b3ecb3ffe167e
+      size: 48
+    - path: nodes/locality/O/ConfigurationSelection_9/selected_configurations.json
+      hash: md5
+      md5: 3c7d31f03bb7aaf9179f0d5108611181
+      size: 109
+    params:
+      cp2k.yaml:
+        force_eval:
+          method: quickstep
+          DFT:
+            mgrid:
+              cutoff: 600.0
+              rel_cutoff: 80.0
+              ngrids: 5
+            QS:
+              eps_filter_matrix: 0.0
+              eps_pgf_orb: 0.0001
+            SCF:
+              scf_guess: restart
+              max_scf: 100
+              eps_scf: 1e-06
+              OT:
+                minimizer: diis
+                preconditioner: full_single_inverse
+              outer_scf:
+                max_scf: 100
+                eps_scf: 1e-06
+              print:
+                restart:
+                  each:
+                    QS_SCF: 0
+            XC:
+              xc_functional:
+                _: BLYP
+              vdw_potential:
+                pair_potential:
+                  type: DFTD3
+                  parameter_file_name: dftd3.dat
+                  reference_functional: BLYP
+                  r_cutoff: 18
+                potential_type: pair_potential
+            basis_set_file_name: BASIS_MOLOPT
+            potential_file_name: GTH_POTENTIALS
+          subsys:
+            kind:
+              O:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+              C:
+                basis_set: TZV2P-MOLOPT-GTH-q4
+                potential: GTH-BLYP-q4
+              H:
+                basis_set: TZV2P-MOLOPT-GTH-q1
+                potential: GTH-BLYP-q1
+              S:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+    outs:
+    - path: nodes/locality/O/CP2KSinglePoint_9/atoms.h5
+      hash: md5
+      md5: aae128f4416570ffcc0b14f714f5b47b
+      size: 259248
+    - path: nodes/locality/O/CP2KSinglePoint_9/cp2k
+      hash: md5
+      md5: c61a3b818719f4b35cd48c7e913fade1.dir
+      size: 21982326
+      nfiles: 3
+    - path: nodes/locality/O/CP2KSinglePoint_9/node-meta.json
+      hash: md5
+      md5: db0dc9ed6d029c25167984b762f1333a
+      size: 48
+  locality_S_ASEMD_8_checker_list_0:
+    cmd: zntrack run ipsuite.nodes.ThresholdCheck --name locality_S_ASEMD_8_checker_list_0
+      --meta-only
+    params:
+      params.yaml:
+        locality_S_ASEMD_8_checker_list_0:
+          larger_only: true
+          max_std:
+          max_value: 2.0
+          minimum_window_size: 1
+          value: energy_uncertainty
+          window_size: 500
+      zntrack.json:
+        locality_S_ASEMD_8.checker_list:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: ThresholdCheck
+            name: locality_S_ASEMD_8_checker_list_0
+            remote:
+            rev:
+    outs:
+    - path: nodes/locality/S/locality_S_ASEMD_8_checker_list_0/node-meta.json
+      hash: md5
+      md5: a81d67d6cd411419c1cb05c286fd80be
+      size: 48
+  locality_S_ASEMD_8_constraint_list_0:
+    cmd: zntrack run ipsuite.nodes.FixedSphereConstraint --name locality_S_ASEMD_8_constraint_list_0
+      --meta-only
+    params:
+      params.yaml:
+        locality_S_ASEMD_8_constraint_list_0:
+          atom_id: 0
+          atom_type: S
+          radius: 9
+      zntrack.json:
+        locality_S_ASEMD_8.constraint_list:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: FixedSphereConstraint
+            name: locality_S_ASEMD_8_constraint_list_0
+            remote:
+            rev:
+    outs:
+    - path: nodes/locality/S/locality_S_ASEMD_8_constraint_list_0/node-meta.json
+      hash: md5
+      md5: c3b6c30d5f9c0c3fbc8982e02a5cfa5e
+      size: 48
+  locality_S_ASEMD_8_thermostat:
+    cmd: zntrack run ipsuite.nodes.LangevinThermostat --name locality_S_ASEMD_8_thermostat
+      --meta-only
+    params:
+      params.yaml:
+        locality_S_ASEMD_8_thermostat:
+          friction: 0.01
+          temperature: 298.15
+          time_step: 0.5
+      zntrack.json:
+        locality_S_ASEMD_8.thermostat:
+          _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: LangevinThermostat
+            name: locality_S_ASEMD_8_thermostat
+            remote:
+            rev:
+    outs:
+    - path: nodes/locality/S/locality_S_ASEMD_8_thermostat/node-meta.json
+      hash: md5
+      md5: f51f35fc0eca43915681924e20735566
+      size: 48
+  locality_S_ASEMD_8:
+    cmd: zntrack run ipsuite.nodes.ASEMD --name locality_S_ASEMD_8
+    deps:
+    - path: nodes/AL2_1/ApaxEnsemble/node-meta.json
+      hash: md5
+      md5: 28bb0ded630cc155a210f8bc17323d28
+      size: 48
+    - path: nodes/ASEGeoOpt/model_outs
+      hash: md5
+      md5: 55a17d4cf10898236beac4f2d757f2b4.dir
+      size: 89601466
+      nfiles: 7
+    - path: nodes/ASEGeoOpt/node-meta.json
+      hash: md5
+      md5: 336193404ed866dfebe5a4c56f8ef2f8
+      size: 48
+    - path: nodes/ASEGeoOpt/trajectory.h5
+      hash: md5
+      md5: ea5b960f96c3f1f8cd9328fb1ea918f5
+      size: 1410008
+    - path: nodes/locality/S/locality_S_ASEMD_8_checker_list_0/node-meta.json
+      hash: md5
+      md5: a81d67d6cd411419c1cb05c286fd80be
+      size: 48
+    - path: nodes/locality/S/locality_S_ASEMD_8_constraint_list_0/node-meta.json
+      hash: md5
+      md5: c3b6c30d5f9c0c3fbc8982e02a5cfa5e
+      size: 48
+    - path: nodes/locality/S/locality_S_ASEMD_8_thermostat/node-meta.json
+      hash: md5
+      md5: f51f35fc0eca43915681924e20735566
+      size: 48
+    params:
+      params.yaml:
+        locality_S_ASEMD_8:
+          data_id: -1
+          dump_rate: 1000
+          init_temperature:
+          repeat:
+          - 1
+          - 1
+          - 1
+          sampling_rate: 100
+          steps: 10000
+    outs:
+    - path: nodes/locality/S/ASEMD_8/metrics_dict.csv
+      hash: md5
+      md5: 0da53f2ed49e2b9666766becc7e8dcb7
+      size: 6134
+    - path: nodes/locality/S/ASEMD_8/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/locality/S/ASEMD_8/node-meta.json
+      hash: md5
+      md5: 02476fd178b119e16d0048001f462d6c
+      size: 48
+    - path: nodes/locality/S/ASEMD_8/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/locality/S/ASEMD_8/trajectory.h5
+      hash: md5
+      md5: 066efd618a2fa87eaf1267e79d5addf1
+      size: 4039136
+    - path: nodes/locality/S/ASEMD_8/velocities_cache.json
+      hash: md5
+      md5: 3670db8877f8df930cf8ef6798a25ce3
+      size: 12382
+  locality_S_ConfigurationSelection_9:
+    cmd: zntrack run ipsuite.nodes.RandomSelection --name locality_S_ConfigurationSelection_9
+    deps:
+    - path: nodes/locality/S/ASEMD_8/metrics_dict.csv
+      hash: md5
+      md5: 0da53f2ed49e2b9666766becc7e8dcb7
+      size: 6134
+    - path: nodes/locality/S/ASEMD_8/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/locality/S/ASEMD_8/node-meta.json
+      hash: md5
+      md5: 02476fd178b119e16d0048001f462d6c
+      size: 48
+    - path: nodes/locality/S/ASEMD_8/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/locality/S/ASEMD_8/trajectory.h5
+      hash: md5
+      md5: 066efd618a2fa87eaf1267e79d5addf1
+      size: 4039136
+    - path: nodes/locality/S/ASEMD_8/velocities_cache.json
+      hash: md5
+      md5: 3670db8877f8df930cf8ef6798a25ce3
+      size: 12382
+    params:
+      params.yaml:
+        locality_S_ConfigurationSelection_9:
+          n_configurations: 7
+          seed: 1234
+    outs:
+    - path: nodes/locality/S/ConfigurationSelection_9/node-meta.json
+      hash: md5
+      md5: f1d296f12924826f50fffa4e3195f7fa
+      size: 48
+    - path: nodes/locality/S/ConfigurationSelection_9/selected_configurations.json
+      hash: md5
+      md5: 3c7d31f03bb7aaf9179f0d5108611181
+      size: 109
+  locality_S_CP2KSinglePoint_9:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name locality_S_CP2KSinglePoint_9
+    deps:
+    - path: BASIS_MOLOPT
+      hash: md5
+      md5: 4e877f2fa6a2b401ae1516a48f977f2b
+      size: 126074
+    - path: GTH_POTENTIALS
+      hash: md5
+      md5: 39f14f5181cb73cf1f7aec6d838f3fe5
+      size: 108689
+    - path: dftd3.dat
+      hash: md5
+      md5: 88745bcc951a4bcdccc4d6bcfa78d105
+      size: 1959318
+    - path: nodes/CP2KSinglePoint/atoms.h5
+      hash: md5
+      md5: 9697c746c6f69d428bd2f5a5b7979666
+      size: 61928
+    - path: nodes/CP2KSinglePoint/cp2k
+      hash: md5
+      md5: fb7bfe3b3264befe3419725f830a8775.dir
+      size: 21603140
+      nfiles: 3
+    - path: nodes/CP2KSinglePoint/node-meta.json
+      hash: md5
+      md5: 63df96639d4fa5cd5d2b3bf3d4671e3a
+      size: 48
+    - path: nodes/locality/S/ConfigurationSelection_9/node-meta.json
+      hash: md5
+      md5: f1d296f12924826f50fffa4e3195f7fa
+      size: 48
+    - path: nodes/locality/S/ConfigurationSelection_9/selected_configurations.json
+      hash: md5
+      md5: 3c7d31f03bb7aaf9179f0d5108611181
+      size: 109
+    params:
+      cp2k.yaml:
+        force_eval:
+          method: quickstep
+          DFT:
+            mgrid:
+              cutoff: 600.0
+              rel_cutoff: 80.0
+              ngrids: 5
+            QS:
+              eps_filter_matrix: 0.0
+              eps_pgf_orb: 0.0001
+            SCF:
+              scf_guess: restart
+              max_scf: 100
+              eps_scf: 1e-06
+              OT:
+                minimizer: diis
+                preconditioner: full_single_inverse
+              outer_scf:
+                max_scf: 100
+                eps_scf: 1e-06
+              print:
+                restart:
+                  each:
+                    QS_SCF: 0
+            XC:
+              xc_functional:
+                _: BLYP
+              vdw_potential:
+                pair_potential:
+                  type: DFTD3
+                  parameter_file_name: dftd3.dat
+                  reference_functional: BLYP
+                  r_cutoff: 18
+                potential_type: pair_potential
+            basis_set_file_name: BASIS_MOLOPT
+            potential_file_name: GTH_POTENTIALS
+          subsys:
+            kind:
+              O:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+              C:
+                basis_set: TZV2P-MOLOPT-GTH-q4
+                potential: GTH-BLYP-q4
+              H:
+                basis_set: TZV2P-MOLOPT-GTH-q1
+                potential: GTH-BLYP-q1
+              S:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+    outs:
+    - path: nodes/locality/S/CP2KSinglePoint_9/atoms.h5
+      hash: md5
+      md5: 7b205d5561d86f5b584acae660a681dc
+      size: 259248
+    - path: nodes/locality/S/CP2KSinglePoint_9/cp2k
+      hash: md5
+      md5: 9ef23f9d28c3683f8adc5bd54f7fd9fd.dir
+      size: 21978197
+      nfiles: 3
+    - path: nodes/locality/S/CP2KSinglePoint_9/node-meta.json
+      hash: md5
+      md5: 2dfa619f7f078bde1a39261fe8901446
+      size: 48
