@@ -860,6 +860,83 @@ bootstrap_1_ConfigurationSelection_2:
 bootstrap_1_ConfigurationSelection_3:
     n_configurations: 20
     seed: 1234
+evaluation_BoxScale:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+evaluation_BoxScale_1:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+evaluation_BoxScale_10:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+evaluation_BoxScale_10_mapping:
+    frozen: false
+evaluation_BoxScale_1_mapping:
+    frozen: false
+evaluation_BoxScale_2:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+evaluation_BoxScale_2_mapping:
+    frozen: false
+evaluation_BoxScale_3:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+evaluation_BoxScale_3_mapping:
+    frozen: false
+evaluation_BoxScale_4:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+evaluation_BoxScale_4_mapping:
+    frozen: false
+evaluation_BoxScale_5:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+evaluation_BoxScale_5_mapping:
+    frozen: false
+evaluation_BoxScale_6:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+evaluation_BoxScale_6_mapping:
+    frozen: false
+evaluation_BoxScale_7:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+evaluation_BoxScale_7_mapping:
+    frozen: false
+evaluation_BoxScale_8:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+evaluation_BoxScale_8_mapping:
+    frozen: false
+evaluation_BoxScale_9:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+evaluation_BoxScale_9_mapping:
+    frozen: false
+evaluation_BoxScale_mapping:
+    frozen: false
 final_BoxScale:
     data_id: -1
     num: 100

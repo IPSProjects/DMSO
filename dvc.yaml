@@ -165,6 +165,61 @@ plots:
     y_label: validation loss
 - nodes/AL2_3/ASEMD/metrics_dict.csv: {}
 - nodes/AL2_4/ASEMD/metrics_dict.csv: {}
+- nodes/evaluation/BoxScale/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_3/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_5/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_2/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_4/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_1/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_10/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_6/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_7/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_8/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_9/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
 stages:
   AL2_0_ASEGeoOpt_1:
     cmd: zntrack run ipsuite.nodes.ASEGeoOpt --name AL2_0_ASEGeoOpt_1
@@ -4670,6 +4725,790 @@ stages:
     - nodes/bootstrap_1/ConfigurationSelection_3/selected_configurations.json
     params:
     - bootstrap_1_ConfigurationSelection_3
+  evaluation_BoxScale:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale
+    deps:
+    - nodes/AL_0/EnsembleModel/node-meta.json
+    - nodes/AL_0/EnsembleModel/uuid.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/evaluation/BoxScale_mapping/node-meta.json
+    metrics:
+    - nodes/evaluation/BoxScale/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/BoxScale/atoms.h5
+    - nodes/evaluation/BoxScale/energies.csv
+    - nodes/evaluation/BoxScale/energy.png
+    - nodes/evaluation/BoxScale/model
+    params:
+    - evaluation_BoxScale
+  evaluation_BoxScale_1:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_1
+    deps:
+    - nodes/AL_1/EnsembleModel/node-meta.json
+    - nodes/AL_1/EnsembleModel/uuid.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/evaluation/BoxScale_1_mapping/node-meta.json
+    metrics:
+    - nodes/evaluation/BoxScale_1/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/BoxScale_1/atoms.h5
+    - nodes/evaluation/BoxScale_1/energies.csv
+    - nodes/evaluation/BoxScale_1/energy.png
+    - nodes/evaluation/BoxScale_1/model
+    params:
+    - evaluation_BoxScale_1
+  evaluation_BoxScale_10:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_10
+    deps:
+    - nodes/AL2_3/ApaxEnsemble/node-meta.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/evaluation/BoxScale_10_mapping/node-meta.json
+    metrics:
+    - nodes/evaluation/BoxScale_10/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/BoxScale_10/atoms.h5
+    - nodes/evaluation/BoxScale_10/energies.csv
+    - nodes/evaluation/BoxScale_10/energy.png
+    - nodes/evaluation/BoxScale_10/model
+    params:
+    - evaluation_BoxScale_10
+  evaluation_BoxScale_10_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name evaluation_BoxScale_10_mapping
+      --meta-only
+    metrics:
+    - nodes/evaluation/BoxScale_10_mapping/node-meta.json:
+        cache: false
+    params:
+    - evaluation_BoxScale_10_mapping
+    - zntrack.json:
+      - evaluation_BoxScale_10.mapping
+  evaluation_BoxScale_1_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name evaluation_BoxScale_1_mapping
+      --meta-only
+    metrics:
+    - nodes/evaluation/BoxScale_1_mapping/node-meta.json:
+        cache: false
+    params:
+    - evaluation_BoxScale_1_mapping
+    - zntrack.json:
+      - evaluation_BoxScale_1.mapping
+  evaluation_BoxScale_2:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_2
+    deps:
+    - nodes/AL_2/EnsembleModel/node-meta.json
+    - nodes/AL_2/EnsembleModel/uuid.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/evaluation/BoxScale_2_mapping/node-meta.json
+    metrics:
+    - nodes/evaluation/BoxScale_2/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/BoxScale_2/atoms.h5
+    - nodes/evaluation/BoxScale_2/energies.csv
+    - nodes/evaluation/BoxScale_2/energy.png
+    - nodes/evaluation/BoxScale_2/model
+    params:
+    - evaluation_BoxScale_2
+  evaluation_BoxScale_2_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name evaluation_BoxScale_2_mapping
+      --meta-only
+    metrics:
+    - nodes/evaluation/BoxScale_2_mapping/node-meta.json:
+        cache: false
+    params:
+    - evaluation_BoxScale_2_mapping
+    - zntrack.json:
+      - evaluation_BoxScale_2.mapping
+  evaluation_BoxScale_3:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_3
+    deps:
+    - nodes/AL_3/EnsembleModel/node-meta.json
+    - nodes/AL_3/EnsembleModel/uuid.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/evaluation/BoxScale_3_mapping/node-meta.json
+    metrics:
+    - nodes/evaluation/BoxScale_3/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/BoxScale_3/atoms.h5
+    - nodes/evaluation/BoxScale_3/energies.csv
+    - nodes/evaluation/BoxScale_3/energy.png
+    - nodes/evaluation/BoxScale_3/model
+    params:
+    - evaluation_BoxScale_3
+  evaluation_BoxScale_3_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name evaluation_BoxScale_3_mapping
+      --meta-only
+    metrics:
+    - nodes/evaluation/BoxScale_3_mapping/node-meta.json:
+        cache: false
+    params:
+    - evaluation_BoxScale_3_mapping
+    - zntrack.json:
+      - evaluation_BoxScale_3.mapping
+  evaluation_BoxScale_4:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_4
+    deps:
+    - nodes/AL_4/EnsembleModel/node-meta.json
+    - nodes/AL_4/EnsembleModel/uuid.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/evaluation/BoxScale_4_mapping/node-meta.json
+    metrics:
+    - nodes/evaluation/BoxScale_4/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/BoxScale_4/atoms.h5
+    - nodes/evaluation/BoxScale_4/energies.csv
+    - nodes/evaluation/BoxScale_4/energy.png
+    - nodes/evaluation/BoxScale_4/model
+    params:
+    - evaluation_BoxScale_4
+  evaluation_BoxScale_4_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name evaluation_BoxScale_4_mapping
+      --meta-only
+    metrics:
+    - nodes/evaluation/BoxScale_4_mapping/node-meta.json:
+        cache: false
+    params:
+    - evaluation_BoxScale_4_mapping
+    - zntrack.json:
+      - evaluation_BoxScale_4.mapping
+  evaluation_BoxScale_5:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_5
+    deps:
+    - nodes/AL_5/EnsembleModel/node-meta.json
+    - nodes/AL_5/EnsembleModel/uuid.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/evaluation/BoxScale_5_mapping/node-meta.json
+    metrics:
+    - nodes/evaluation/BoxScale_5/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/BoxScale_5/atoms.h5
+    - nodes/evaluation/BoxScale_5/energies.csv
+    - nodes/evaluation/BoxScale_5/energy.png
+    - nodes/evaluation/BoxScale_5/model
+    params:
+    - evaluation_BoxScale_5
+  evaluation_BoxScale_5_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name evaluation_BoxScale_5_mapping
+      --meta-only
+    metrics:
+    - nodes/evaluation/BoxScale_5_mapping/node-meta.json:
+        cache: false
+    params:
+    - evaluation_BoxScale_5_mapping
+    - zntrack.json:
+      - evaluation_BoxScale_5.mapping
+  evaluation_BoxScale_6:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_6
+    deps:
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/bootstrap_0/EnsembleModel/node-meta.json
+    - nodes/bootstrap_0/EnsembleModel/uuid.json
+    - nodes/evaluation/BoxScale_6_mapping/node-meta.json
+    metrics:
+    - nodes/evaluation/BoxScale_6/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/BoxScale_6/atoms.h5
+    - nodes/evaluation/BoxScale_6/energies.csv
+    - nodes/evaluation/BoxScale_6/energy.png
+    - nodes/evaluation/BoxScale_6/model
+    params:
+    - evaluation_BoxScale_6
+  evaluation_BoxScale_6_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name evaluation_BoxScale_6_mapping
+      --meta-only
+    metrics:
+    - nodes/evaluation/BoxScale_6_mapping/node-meta.json:
+        cache: false
+    params:
+    - evaluation_BoxScale_6_mapping
+    - zntrack.json:
+      - evaluation_BoxScale_6.mapping
+  evaluation_BoxScale_7:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_7
+    deps:
+    - nodes/AL2_0/ApaxEnsemble/node-meta.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/evaluation/BoxScale_7_mapping/node-meta.json
+    metrics:
+    - nodes/evaluation/BoxScale_7/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/BoxScale_7/atoms.h5
+    - nodes/evaluation/BoxScale_7/energies.csv
+    - nodes/evaluation/BoxScale_7/energy.png
+    - nodes/evaluation/BoxScale_7/model
+    params:
+    - evaluation_BoxScale_7
+  evaluation_BoxScale_7_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name evaluation_BoxScale_7_mapping
+      --meta-only
+    metrics:
+    - nodes/evaluation/BoxScale_7_mapping/node-meta.json:
+        cache: false
+    params:
+    - evaluation_BoxScale_7_mapping
+    - zntrack.json:
+      - evaluation_BoxScale_7.mapping
+  evaluation_BoxScale_8:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_8
+    deps:
+    - nodes/AL2_1/ApaxEnsemble/node-meta.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/evaluation/BoxScale_8_mapping/node-meta.json
+    metrics:
+    - nodes/evaluation/BoxScale_8/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/BoxScale_8/atoms.h5
+    - nodes/evaluation/BoxScale_8/energies.csv
+    - nodes/evaluation/BoxScale_8/energy.png
+    - nodes/evaluation/BoxScale_8/model
+    params:
+    - evaluation_BoxScale_8
+  evaluation_BoxScale_8_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name evaluation_BoxScale_8_mapping
+      --meta-only
+    metrics:
+    - nodes/evaluation/BoxScale_8_mapping/node-meta.json:
+        cache: false
+    params:
+    - evaluation_BoxScale_8_mapping
+    - zntrack.json:
+      - evaluation_BoxScale_8.mapping
+  evaluation_BoxScale_9:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_9
+    deps:
+    - nodes/AL2_2/ApaxEnsemble/node-meta.json
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/evaluation/BoxScale_9_mapping/node-meta.json
+    metrics:
+    - nodes/evaluation/BoxScale_9/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/BoxScale_9/atoms.h5
+    - nodes/evaluation/BoxScale_9/energies.csv
+    - nodes/evaluation/BoxScale_9/energy.png
+    - nodes/evaluation/BoxScale_9/model
+    params:
+    - evaluation_BoxScale_9
+  evaluation_BoxScale_9_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name evaluation_BoxScale_9_mapping
+      --meta-only
+    metrics:
+    - nodes/evaluation/BoxScale_9_mapping/node-meta.json:
+        cache: false
+    params:
+    - evaluation_BoxScale_9_mapping
+    - zntrack.json:
+      - evaluation_BoxScale_9.mapping
+  evaluation_BoxScale_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name evaluation_BoxScale_mapping
+      --meta-only
+    metrics:
+    - nodes/evaluation/BoxScale_mapping/node-meta.json:
+        cache: false
+    params:
+    - evaluation_BoxScale_mapping
+    - zntrack.json:
+      - evaluation_BoxScale.mapping
+  evaluation_Prediction:
+    cmd: zntrack run ipsuite.nodes.Prediction --name evaluation_Prediction
+    deps:
+    - nodes/AL2_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/selected_configurations.json
+    - nodes/AL2_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL_0/EnsembleModel/node-meta.json
+    - nodes/AL_0/EnsembleModel/uuid.json
+    metrics:
+    - nodes/evaluation/Prediction/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/Prediction/atoms.h5
+  evaluation_PredictionMetrics:
+    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name evaluation_PredictionMetrics
+    deps:
+    - nodes/evaluation/Prediction/atoms.h5
+    - nodes/evaluation/Prediction/node-meta.json
+    metrics:
+    - nodes/evaluation/PredictionMetrics/deviat_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics/energy.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics/forces.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics/hydro_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics/node-meta.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics/stress.json:
+        cache: false
+    outs:
+    - nodes/evaluation/PredictionMetrics/energy_df.csv
+    - nodes/evaluation/PredictionMetrics/forces_df.csv
+    - nodes/evaluation/PredictionMetrics/plots
+    - nodes/evaluation/PredictionMetrics/stress_deviatoric_df.csv
+    - nodes/evaluation/PredictionMetrics/stress_df.csv
+    - nodes/evaluation/PredictionMetrics/stress_hydrostatic_df.csv
+  evaluation_PredictionMetrics_1:
+    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name evaluation_PredictionMetrics_1
+    deps:
+    - nodes/evaluation/Prediction_1/atoms.h5
+    - nodes/evaluation/Prediction_1/node-meta.json
+    metrics:
+    - nodes/evaluation/PredictionMetrics_1/deviat_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_1/energy.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_1/forces.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_1/hydro_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_1/node-meta.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_1/stress.json:
+        cache: false
+    outs:
+    - nodes/evaluation/PredictionMetrics_1/energy_df.csv
+    - nodes/evaluation/PredictionMetrics_1/forces_df.csv
+    - nodes/evaluation/PredictionMetrics_1/plots
+    - nodes/evaluation/PredictionMetrics_1/stress_deviatoric_df.csv
+    - nodes/evaluation/PredictionMetrics_1/stress_df.csv
+    - nodes/evaluation/PredictionMetrics_1/stress_hydrostatic_df.csv
+  evaluation_PredictionMetrics_10:
+    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name evaluation_PredictionMetrics_10
+    deps:
+    - nodes/evaluation/Prediction_10/atoms.h5
+    - nodes/evaluation/Prediction_10/node-meta.json
+    metrics:
+    - nodes/evaluation/PredictionMetrics_10/deviat_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_10/energy.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_10/forces.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_10/hydro_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_10/node-meta.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_10/stress.json:
+        cache: false
+    outs:
+    - nodes/evaluation/PredictionMetrics_10/energy_df.csv
+    - nodes/evaluation/PredictionMetrics_10/forces_df.csv
+    - nodes/evaluation/PredictionMetrics_10/plots
+    - nodes/evaluation/PredictionMetrics_10/stress_deviatoric_df.csv
+    - nodes/evaluation/PredictionMetrics_10/stress_df.csv
+    - nodes/evaluation/PredictionMetrics_10/stress_hydrostatic_df.csv
+  evaluation_PredictionMetrics_2:
+    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name evaluation_PredictionMetrics_2
+    deps:
+    - nodes/evaluation/Prediction_2/atoms.h5
+    - nodes/evaluation/Prediction_2/node-meta.json
+    metrics:
+    - nodes/evaluation/PredictionMetrics_2/deviat_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_2/energy.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_2/forces.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_2/hydro_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_2/node-meta.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_2/stress.json:
+        cache: false
+    outs:
+    - nodes/evaluation/PredictionMetrics_2/energy_df.csv
+    - nodes/evaluation/PredictionMetrics_2/forces_df.csv
+    - nodes/evaluation/PredictionMetrics_2/plots
+    - nodes/evaluation/PredictionMetrics_2/stress_deviatoric_df.csv
+    - nodes/evaluation/PredictionMetrics_2/stress_df.csv
+    - nodes/evaluation/PredictionMetrics_2/stress_hydrostatic_df.csv
+  evaluation_PredictionMetrics_3:
+    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name evaluation_PredictionMetrics_3
+    deps:
+    - nodes/evaluation/Prediction_3/atoms.h5
+    - nodes/evaluation/Prediction_3/node-meta.json
+    metrics:
+    - nodes/evaluation/PredictionMetrics_3/deviat_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_3/energy.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_3/forces.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_3/hydro_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_3/node-meta.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_3/stress.json:
+        cache: false
+    outs:
+    - nodes/evaluation/PredictionMetrics_3/energy_df.csv
+    - nodes/evaluation/PredictionMetrics_3/forces_df.csv
+    - nodes/evaluation/PredictionMetrics_3/plots
+    - nodes/evaluation/PredictionMetrics_3/stress_deviatoric_df.csv
+    - nodes/evaluation/PredictionMetrics_3/stress_df.csv
+    - nodes/evaluation/PredictionMetrics_3/stress_hydrostatic_df.csv
+  evaluation_PredictionMetrics_4:
+    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name evaluation_PredictionMetrics_4
+    deps:
+    - nodes/evaluation/Prediction_4/atoms.h5
+    - nodes/evaluation/Prediction_4/node-meta.json
+    metrics:
+    - nodes/evaluation/PredictionMetrics_4/deviat_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_4/energy.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_4/forces.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_4/hydro_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_4/node-meta.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_4/stress.json:
+        cache: false
+    outs:
+    - nodes/evaluation/PredictionMetrics_4/energy_df.csv
+    - nodes/evaluation/PredictionMetrics_4/forces_df.csv
+    - nodes/evaluation/PredictionMetrics_4/plots
+    - nodes/evaluation/PredictionMetrics_4/stress_deviatoric_df.csv
+    - nodes/evaluation/PredictionMetrics_4/stress_df.csv
+    - nodes/evaluation/PredictionMetrics_4/stress_hydrostatic_df.csv
+  evaluation_PredictionMetrics_5:
+    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name evaluation_PredictionMetrics_5
+    deps:
+    - nodes/evaluation/Prediction_5/atoms.h5
+    - nodes/evaluation/Prediction_5/node-meta.json
+    metrics:
+    - nodes/evaluation/PredictionMetrics_5/deviat_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_5/energy.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_5/forces.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_5/hydro_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_5/node-meta.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_5/stress.json:
+        cache: false
+    outs:
+    - nodes/evaluation/PredictionMetrics_5/energy_df.csv
+    - nodes/evaluation/PredictionMetrics_5/forces_df.csv
+    - nodes/evaluation/PredictionMetrics_5/plots
+    - nodes/evaluation/PredictionMetrics_5/stress_deviatoric_df.csv
+    - nodes/evaluation/PredictionMetrics_5/stress_df.csv
+    - nodes/evaluation/PredictionMetrics_5/stress_hydrostatic_df.csv
+  evaluation_PredictionMetrics_6:
+    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name evaluation_PredictionMetrics_6
+    deps:
+    - nodes/evaluation/Prediction_6/atoms.h5
+    - nodes/evaluation/Prediction_6/node-meta.json
+    metrics:
+    - nodes/evaluation/PredictionMetrics_6/deviat_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_6/energy.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_6/forces.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_6/hydro_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_6/node-meta.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_6/stress.json:
+        cache: false
+    outs:
+    - nodes/evaluation/PredictionMetrics_6/energy_df.csv
+    - nodes/evaluation/PredictionMetrics_6/forces_df.csv
+    - nodes/evaluation/PredictionMetrics_6/plots
+    - nodes/evaluation/PredictionMetrics_6/stress_deviatoric_df.csv
+    - nodes/evaluation/PredictionMetrics_6/stress_df.csv
+    - nodes/evaluation/PredictionMetrics_6/stress_hydrostatic_df.csv
+  evaluation_PredictionMetrics_7:
+    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name evaluation_PredictionMetrics_7
+    deps:
+    - nodes/evaluation/Prediction_7/atoms.h5
+    - nodes/evaluation/Prediction_7/node-meta.json
+    metrics:
+    - nodes/evaluation/PredictionMetrics_7/deviat_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_7/energy.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_7/forces.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_7/hydro_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_7/node-meta.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_7/stress.json:
+        cache: false
+    outs:
+    - nodes/evaluation/PredictionMetrics_7/energy_df.csv
+    - nodes/evaluation/PredictionMetrics_7/forces_df.csv
+    - nodes/evaluation/PredictionMetrics_7/plots
+    - nodes/evaluation/PredictionMetrics_7/stress_deviatoric_df.csv
+    - nodes/evaluation/PredictionMetrics_7/stress_df.csv
+    - nodes/evaluation/PredictionMetrics_7/stress_hydrostatic_df.csv
+  evaluation_PredictionMetrics_8:
+    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name evaluation_PredictionMetrics_8
+    deps:
+    - nodes/evaluation/Prediction_8/atoms.h5
+    - nodes/evaluation/Prediction_8/node-meta.json
+    metrics:
+    - nodes/evaluation/PredictionMetrics_8/deviat_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_8/energy.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_8/forces.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_8/hydro_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_8/node-meta.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_8/stress.json:
+        cache: false
+    outs:
+    - nodes/evaluation/PredictionMetrics_8/energy_df.csv
+    - nodes/evaluation/PredictionMetrics_8/forces_df.csv
+    - nodes/evaluation/PredictionMetrics_8/plots
+    - nodes/evaluation/PredictionMetrics_8/stress_deviatoric_df.csv
+    - nodes/evaluation/PredictionMetrics_8/stress_df.csv
+    - nodes/evaluation/PredictionMetrics_8/stress_hydrostatic_df.csv
+  evaluation_PredictionMetrics_9:
+    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name evaluation_PredictionMetrics_9
+    deps:
+    - nodes/evaluation/Prediction_9/atoms.h5
+    - nodes/evaluation/Prediction_9/node-meta.json
+    metrics:
+    - nodes/evaluation/PredictionMetrics_9/deviat_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_9/energy.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_9/forces.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_9/hydro_stress.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_9/node-meta.json:
+        cache: false
+    - nodes/evaluation/PredictionMetrics_9/stress.json:
+        cache: false
+    outs:
+    - nodes/evaluation/PredictionMetrics_9/energy_df.csv
+    - nodes/evaluation/PredictionMetrics_9/forces_df.csv
+    - nodes/evaluation/PredictionMetrics_9/plots
+    - nodes/evaluation/PredictionMetrics_9/stress_deviatoric_df.csv
+    - nodes/evaluation/PredictionMetrics_9/stress_df.csv
+    - nodes/evaluation/PredictionMetrics_9/stress_hydrostatic_df.csv
+  evaluation_Prediction_1:
+    cmd: zntrack run ipsuite.nodes.Prediction --name evaluation_Prediction_1
+    deps:
+    - nodes/AL2_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/selected_configurations.json
+    - nodes/AL2_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL_1/EnsembleModel/node-meta.json
+    - nodes/AL_1/EnsembleModel/uuid.json
+    metrics:
+    - nodes/evaluation/Prediction_1/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/Prediction_1/atoms.h5
+  evaluation_Prediction_10:
+    cmd: zntrack run ipsuite.nodes.Prediction --name evaluation_Prediction_10
+    deps:
+    - nodes/AL2_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/selected_configurations.json
+    - nodes/AL2_3/ApaxEnsemble/node-meta.json
+    - nodes/AL2_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_2/node-meta.json
+    metrics:
+    - nodes/evaluation/Prediction_10/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/Prediction_10/atoms.h5
+  evaluation_Prediction_2:
+    cmd: zntrack run ipsuite.nodes.Prediction --name evaluation_Prediction_2
+    deps:
+    - nodes/AL2_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/selected_configurations.json
+    - nodes/AL2_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL_2/EnsembleModel/node-meta.json
+    - nodes/AL_2/EnsembleModel/uuid.json
+    metrics:
+    - nodes/evaluation/Prediction_2/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/Prediction_2/atoms.h5
+  evaluation_Prediction_3:
+    cmd: zntrack run ipsuite.nodes.Prediction --name evaluation_Prediction_3
+    deps:
+    - nodes/AL2_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/selected_configurations.json
+    - nodes/AL2_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL_3/EnsembleModel/node-meta.json
+    - nodes/AL_3/EnsembleModel/uuid.json
+    metrics:
+    - nodes/evaluation/Prediction_3/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/Prediction_3/atoms.h5
+  evaluation_Prediction_4:
+    cmd: zntrack run ipsuite.nodes.Prediction --name evaluation_Prediction_4
+    deps:
+    - nodes/AL2_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/selected_configurations.json
+    - nodes/AL2_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL_4/EnsembleModel/node-meta.json
+    - nodes/AL_4/EnsembleModel/uuid.json
+    metrics:
+    - nodes/evaluation/Prediction_4/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/Prediction_4/atoms.h5
+  evaluation_Prediction_5:
+    cmd: zntrack run ipsuite.nodes.Prediction --name evaluation_Prediction_5
+    deps:
+    - nodes/AL2_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/selected_configurations.json
+    - nodes/AL2_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL_5/EnsembleModel/node-meta.json
+    - nodes/AL_5/EnsembleModel/uuid.json
+    metrics:
+    - nodes/evaluation/Prediction_5/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/Prediction_5/atoms.h5
+  evaluation_Prediction_6:
+    cmd: zntrack run ipsuite.nodes.Prediction --name evaluation_Prediction_6
+    deps:
+    - nodes/AL2_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/selected_configurations.json
+    - nodes/AL2_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_2/node-meta.json
+    - nodes/bootstrap_0/EnsembleModel/node-meta.json
+    - nodes/bootstrap_0/EnsembleModel/uuid.json
+    metrics:
+    - nodes/evaluation/Prediction_6/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/Prediction_6/atoms.h5
+  evaluation_Prediction_7:
+    cmd: zntrack run ipsuite.nodes.Prediction --name evaluation_Prediction_7
+    deps:
+    - nodes/AL2_0/ApaxEnsemble/node-meta.json
+    - nodes/AL2_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/selected_configurations.json
+    - nodes/AL2_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_2/node-meta.json
+    metrics:
+    - nodes/evaluation/Prediction_7/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/Prediction_7/atoms.h5
+  evaluation_Prediction_8:
+    cmd: zntrack run ipsuite.nodes.Prediction --name evaluation_Prediction_8
+    deps:
+    - nodes/AL2_1/ApaxEnsemble/node-meta.json
+    - nodes/AL2_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/selected_configurations.json
+    - nodes/AL2_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_2/node-meta.json
+    metrics:
+    - nodes/evaluation/Prediction_8/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/Prediction_8/atoms.h5
+  evaluation_Prediction_9:
+    cmd: zntrack run ipsuite.nodes.Prediction --name evaluation_Prediction_9
+    deps:
+    - nodes/AL2_2/ApaxEnsemble/node-meta.json
+    - nodes/AL2_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/selected_configurations.json
+    - nodes/AL2_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_2/node-meta.json
+    metrics:
+    - nodes/evaluation/Prediction_9/node-meta.json:
+        cache: false
+    outs:
+    - nodes/evaluation/Prediction_9/atoms.h5
   final_BoxScale:
     cmd: zntrack run ipsuite.nodes.BoxScale --name final_BoxScale
     deps:
@@ -4704,27 +5543,6 @@ stages:
     - final_BoxScale_mapping
     - zntrack.json:
       - final_BoxScale.mapping
-  final_ForceDecomposition:
-    cmd: zntrack run ipsuite.nodes.ForceDecomposition --name final_ForceDecomposition
-    deps:
-    - nodes/final/Prediction/atoms.h5
-    - nodes/final/Prediction/node-meta.json
-    metrics:
-    - nodes/final/ForceDecomposition/node-meta.json:
-        cache: false
-    - nodes/final/ForceDecomposition/rot_forces.json:
-        cache: false
-    - nodes/final/ForceDecomposition/trans_forces.json:
-        cache: false
-    - nodes/final/ForceDecomposition/vib_forces.json:
-        cache: false
-    - nodes/final/ForceDecomposition/wasserstein_distance.json:
-        cache: false
-    outs:
-    - nodes/final/ForceDecomposition/histogram.png
-    - nodes/final/ForceDecomposition/rot_force.png
-    - nodes/final/ForceDecomposition/trans_force.png
-    - nodes/final/ForceDecomposition/vib_force.png
   final_MLModel:
     cmd: zntrack run ipsuite.nodes.Apax --name final_MLModel
     deps:
