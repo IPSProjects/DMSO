@@ -4728,74 +4728,28 @@ stages:
   final_MLModel:
     cmd: zntrack run ipsuite.nodes.Apax --name final_MLModel
     deps:
-    - nodes/AL2_0/ASEGeoOpt_2/model_outs
-    - nodes/AL2_0/ASEGeoOpt_2/node-meta.json
-    - nodes/AL2_0/ASEGeoOpt_2/trajectory.h5
-    - nodes/AL2_0/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL2_0/CP2KSinglePoint_1/cp2k
-    - nodes/AL2_0/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL2_0/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL2_0/CP2KSinglePoint_2/cp2k
-    - nodes/AL2_0/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL2_1/ASEGeoOpt_2/model_outs
-    - nodes/AL2_1/ASEGeoOpt_2/node-meta.json
-    - nodes/AL2_1/ASEGeoOpt_2/trajectory.h5
-    - nodes/AL2_1/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL2_1/CP2KSinglePoint_1/cp2k
-    - nodes/AL2_1/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL2_1/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL2_1/CP2KSinglePoint_2/cp2k
-    - nodes/AL2_1/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_0/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL_0/CP2KSinglePoint_1/cp2k
-    - nodes/AL_0/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL_0/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_0/CP2KSinglePoint_2/cp2k
-    - nodes/AL_0/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_1/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL_1/CP2KSinglePoint_1/cp2k
-    - nodes/AL_1/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL_1/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_1/CP2KSinglePoint_2/cp2k
-    - nodes/AL_1/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_2/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL_2/CP2KSinglePoint_1/cp2k
-    - nodes/AL_2/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL_2/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_2/CP2KSinglePoint_2/cp2k
-    - nodes/AL_2/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_3/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL_3/CP2KSinglePoint_1/cp2k
-    - nodes/AL_3/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL_3/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_3/CP2KSinglePoint_2/cp2k
-    - nodes/AL_3/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_4/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL_4/CP2KSinglePoint_1/cp2k
-    - nodes/AL_4/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL_4/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_4/CP2KSinglePoint_2/cp2k
-    - nodes/AL_4/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_5/CP2KSinglePoint_1/atoms.h5
-    - nodes/AL_5/CP2KSinglePoint_1/cp2k
-    - nodes/AL_5/CP2KSinglePoint_1/node-meta.json
-    - nodes/AL_5/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_5/CP2KSinglePoint_2/cp2k
-    - nodes/AL_5/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/node-meta.json
-    - nodes/ConfigurationSelection/selected_configurations.json
-    - nodes/bootstrap_0/CP2KSinglePoint_1/atoms.h5
-    - nodes/bootstrap_0/CP2KSinglePoint_1/cp2k
-    - nodes/bootstrap_0/CP2KSinglePoint_1/node-meta.json
-    - nodes/bootstrap_0/CP2KSinglePoint_2/atoms.h5
-    - nodes/bootstrap_0/CP2KSinglePoint_2/cp2k
-    - nodes/bootstrap_0/CP2KSinglePoint_2/node-meta.json
-    - nodes/bootstrap_1/CP2KSinglePoint_1/atoms.h5
-    - nodes/bootstrap_1/CP2KSinglePoint_1/cp2k
-    - nodes/bootstrap_1/CP2KSinglePoint_1/node-meta.json
-    - nodes/bootstrap_1/CP2KSinglePoint_2/atoms.h5
-    - nodes/bootstrap_1/CP2KSinglePoint_2/cp2k
-    - nodes/bootstrap_1/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ASEGeoOpt_2/model_outs
+    - nodes/AL2_2/ASEGeoOpt_2/node-meta.json
+    - nodes/AL2_2/ASEGeoOpt_2/trajectory.h5
+    - nodes/AL2_2/CP2KSinglePoint_1/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_1/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_1/node-meta.json
+    - nodes/AL2_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_1/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_1/selected_configurations.json
+    - nodes/AL2_2/ConfigurationSelection_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/selected_configurations.json
+    - nodes/AL2_3/ASEGeoOpt_2/model_outs
+    - nodes/AL2_3/ASEGeoOpt_2/node-meta.json
+    - nodes/AL2_3/ASEGeoOpt_2/trajectory.h5
+    - nodes/AL2_3/CP2KSinglePoint_1/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_1/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_1/node-meta.json
+    - nodes/AL2_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_2/node-meta.json
     metrics:
     - nodes/final/MLModel/metrics.json:
         cache: false
@@ -4813,38 +4767,14 @@ stages:
   final_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name final_Prediction
     deps:
-    - nodes/AL2_0/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL2_0/CP2KSinglePoint_2/cp2k
-    - nodes/AL2_0/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL2_1/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL2_1/CP2KSinglePoint_2/cp2k
-    - nodes/AL2_1/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_0/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_0/CP2KSinglePoint_2/cp2k
-    - nodes/AL_0/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_1/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_1/CP2KSinglePoint_2/cp2k
-    - nodes/AL_1/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_2/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_2/CP2KSinglePoint_2/cp2k
-    - nodes/AL_2/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_3/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_3/CP2KSinglePoint_2/cp2k
-    - nodes/AL_3/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_4/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_4/CP2KSinglePoint_2/cp2k
-    - nodes/AL_4/CP2KSinglePoint_2/node-meta.json
-    - nodes/AL_5/CP2KSinglePoint_2/atoms.h5
-    - nodes/AL_5/CP2KSinglePoint_2/cp2k
-    - nodes/AL_5/CP2KSinglePoint_2/node-meta.json
-    - nodes/ConfigurationSelection/node-meta.json
-    - nodes/ConfigurationSelection/selected_configurations.json
-    - nodes/bootstrap_0/CP2KSinglePoint_2/atoms.h5
-    - nodes/bootstrap_0/CP2KSinglePoint_2/cp2k
-    - nodes/bootstrap_0/CP2KSinglePoint_2/node-meta.json
-    - nodes/bootstrap_1/CP2KSinglePoint_2/atoms.h5
-    - nodes/bootstrap_1/CP2KSinglePoint_2/cp2k
-    - nodes/bootstrap_1/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_2/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_2/CP2KSinglePoint_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/node-meta.json
+    - nodes/AL2_2/ConfigurationSelection_2/selected_configurations.json
+    - nodes/AL2_3/CP2KSinglePoint_2/atoms.h5
+    - nodes/AL2_3/CP2KSinglePoint_2/cp2k
+    - nodes/AL2_3/CP2KSinglePoint_2/node-meta.json
     - nodes/final/MLModel/apax_model
     - nodes/final/MLModel/log.csv
     - nodes/final/MLModel/metrics.json
