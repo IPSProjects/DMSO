@@ -4730,10 +4730,13 @@ stages:
     deps:
     - nodes/AL_0/EnsembleModel/node-meta.json
     - nodes/AL_0/EnsembleModel/uuid.json
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
     - nodes/evaluation/BoxScale_mapping/node-meta.json
+    - nodes/volume_scan/ASEMD/metrics_dict.csv
+    - nodes/volume_scan/ASEMD/model
+    - nodes/volume_scan/ASEMD/node-meta.json
+    - nodes/volume_scan/ASEMD/steps_before_stopping.json
+    - nodes/volume_scan/ASEMD/trajectory.h5
+    - nodes/volume_scan/ASEMD/velocities_cache.json
     metrics:
     - nodes/evaluation/BoxScale/node-meta.json:
         cache: false
@@ -4749,10 +4752,13 @@ stages:
     deps:
     - nodes/AL_1/EnsembleModel/node-meta.json
     - nodes/AL_1/EnsembleModel/uuid.json
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
     - nodes/evaluation/BoxScale_1_mapping/node-meta.json
+    - nodes/volume_scan/ASEMD/metrics_dict.csv
+    - nodes/volume_scan/ASEMD/model
+    - nodes/volume_scan/ASEMD/node-meta.json
+    - nodes/volume_scan/ASEMD/steps_before_stopping.json
+    - nodes/volume_scan/ASEMD/trajectory.h5
+    - nodes/volume_scan/ASEMD/velocities_cache.json
     metrics:
     - nodes/evaluation/BoxScale_1/node-meta.json:
         cache: false
@@ -4767,10 +4773,13 @@ stages:
     cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_10
     deps:
     - nodes/AL2_3/ApaxEnsemble/node-meta.json
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
     - nodes/evaluation/BoxScale_10_mapping/node-meta.json
+    - nodes/volume_scan/ASEMD/metrics_dict.csv
+    - nodes/volume_scan/ASEMD/model
+    - nodes/volume_scan/ASEMD/node-meta.json
+    - nodes/volume_scan/ASEMD/steps_before_stopping.json
+    - nodes/volume_scan/ASEMD/trajectory.h5
+    - nodes/volume_scan/ASEMD/velocities_cache.json
     metrics:
     - nodes/evaluation/BoxScale_10/node-meta.json:
         cache: false
@@ -4806,10 +4815,13 @@ stages:
     deps:
     - nodes/AL_2/EnsembleModel/node-meta.json
     - nodes/AL_2/EnsembleModel/uuid.json
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
     - nodes/evaluation/BoxScale_2_mapping/node-meta.json
+    - nodes/volume_scan/ASEMD/metrics_dict.csv
+    - nodes/volume_scan/ASEMD/model
+    - nodes/volume_scan/ASEMD/node-meta.json
+    - nodes/volume_scan/ASEMD/steps_before_stopping.json
+    - nodes/volume_scan/ASEMD/trajectory.h5
+    - nodes/volume_scan/ASEMD/velocities_cache.json
     metrics:
     - nodes/evaluation/BoxScale_2/node-meta.json:
         cache: false
@@ -4835,10 +4847,13 @@ stages:
     deps:
     - nodes/AL_3/EnsembleModel/node-meta.json
     - nodes/AL_3/EnsembleModel/uuid.json
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
     - nodes/evaluation/BoxScale_3_mapping/node-meta.json
+    - nodes/volume_scan/ASEMD/metrics_dict.csv
+    - nodes/volume_scan/ASEMD/model
+    - nodes/volume_scan/ASEMD/node-meta.json
+    - nodes/volume_scan/ASEMD/steps_before_stopping.json
+    - nodes/volume_scan/ASEMD/trajectory.h5
+    - nodes/volume_scan/ASEMD/velocities_cache.json
     metrics:
     - nodes/evaluation/BoxScale_3/node-meta.json:
         cache: false
@@ -4864,10 +4879,13 @@ stages:
     deps:
     - nodes/AL_4/EnsembleModel/node-meta.json
     - nodes/AL_4/EnsembleModel/uuid.json
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
     - nodes/evaluation/BoxScale_4_mapping/node-meta.json
+    - nodes/volume_scan/ASEMD/metrics_dict.csv
+    - nodes/volume_scan/ASEMD/model
+    - nodes/volume_scan/ASEMD/node-meta.json
+    - nodes/volume_scan/ASEMD/steps_before_stopping.json
+    - nodes/volume_scan/ASEMD/trajectory.h5
+    - nodes/volume_scan/ASEMD/velocities_cache.json
     metrics:
     - nodes/evaluation/BoxScale_4/node-meta.json:
         cache: false
@@ -4893,10 +4911,13 @@ stages:
     deps:
     - nodes/AL_5/EnsembleModel/node-meta.json
     - nodes/AL_5/EnsembleModel/uuid.json
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
     - nodes/evaluation/BoxScale_5_mapping/node-meta.json
+    - nodes/volume_scan/ASEMD/metrics_dict.csv
+    - nodes/volume_scan/ASEMD/model
+    - nodes/volume_scan/ASEMD/node-meta.json
+    - nodes/volume_scan/ASEMD/steps_before_stopping.json
+    - nodes/volume_scan/ASEMD/trajectory.h5
+    - nodes/volume_scan/ASEMD/velocities_cache.json
     metrics:
     - nodes/evaluation/BoxScale_5/node-meta.json:
         cache: false
@@ -4920,12 +4941,15 @@ stages:
   evaluation_BoxScale_6:
     cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_6
     deps:
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
     - nodes/bootstrap_0/EnsembleModel/node-meta.json
     - nodes/bootstrap_0/EnsembleModel/uuid.json
     - nodes/evaluation/BoxScale_6_mapping/node-meta.json
+    - nodes/volume_scan/ASEMD/metrics_dict.csv
+    - nodes/volume_scan/ASEMD/model
+    - nodes/volume_scan/ASEMD/node-meta.json
+    - nodes/volume_scan/ASEMD/steps_before_stopping.json
+    - nodes/volume_scan/ASEMD/trajectory.h5
+    - nodes/volume_scan/ASEMD/velocities_cache.json
     metrics:
     - nodes/evaluation/BoxScale_6/node-meta.json:
         cache: false
@@ -4950,10 +4974,13 @@ stages:
     cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_7
     deps:
     - nodes/AL2_0/ApaxEnsemble/node-meta.json
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
     - nodes/evaluation/BoxScale_7_mapping/node-meta.json
+    - nodes/volume_scan/ASEMD/metrics_dict.csv
+    - nodes/volume_scan/ASEMD/model
+    - nodes/volume_scan/ASEMD/node-meta.json
+    - nodes/volume_scan/ASEMD/steps_before_stopping.json
+    - nodes/volume_scan/ASEMD/trajectory.h5
+    - nodes/volume_scan/ASEMD/velocities_cache.json
     metrics:
     - nodes/evaluation/BoxScale_7/node-meta.json:
         cache: false
@@ -4978,10 +5005,13 @@ stages:
     cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_8
     deps:
     - nodes/AL2_1/ApaxEnsemble/node-meta.json
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
     - nodes/evaluation/BoxScale_8_mapping/node-meta.json
+    - nodes/volume_scan/ASEMD/metrics_dict.csv
+    - nodes/volume_scan/ASEMD/model
+    - nodes/volume_scan/ASEMD/node-meta.json
+    - nodes/volume_scan/ASEMD/steps_before_stopping.json
+    - nodes/volume_scan/ASEMD/trajectory.h5
+    - nodes/volume_scan/ASEMD/velocities_cache.json
     metrics:
     - nodes/evaluation/BoxScale_8/node-meta.json:
         cache: false
@@ -5006,10 +5036,13 @@ stages:
     cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale_9
     deps:
     - nodes/AL2_2/ApaxEnsemble/node-meta.json
-    - nodes/ASEGeoOpt/model_outs
-    - nodes/ASEGeoOpt/node-meta.json
-    - nodes/ASEGeoOpt/trajectory.h5
     - nodes/evaluation/BoxScale_9_mapping/node-meta.json
+    - nodes/volume_scan/ASEMD/metrics_dict.csv
+    - nodes/volume_scan/ASEMD/model
+    - nodes/volume_scan/ASEMD/node-meta.json
+    - nodes/volume_scan/ASEMD/steps_before_stopping.json
+    - nodes/volume_scan/ASEMD/trajectory.h5
+    - nodes/volume_scan/ASEMD/velocities_cache.json
     metrics:
     - nodes/evaluation/BoxScale_9/node-meta.json:
         cache: false
@@ -5655,3 +5688,99 @@ stages:
     - nodes/isolated_mol/SmilesToConformers/atoms.h5
     params:
     - isolated_mol_SmilesToConformers
+  volume_scan_ASEMD:
+    cmd: zntrack run ipsuite.nodes.ASEMD --name volume_scan_ASEMD
+    deps:
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/bootstrap_0/EnsembleModel/node-meta.json
+    - nodes/bootstrap_0/EnsembleModel/uuid.json
+    - nodes/volume_scan/ASEMD_checker_list_0/node-meta.json
+    - nodes/volume_scan/ASEMD_thermostat/node-meta.json
+    metrics:
+    - nodes/volume_scan/ASEMD/node-meta.json:
+        cache: false
+    - nodes/volume_scan/ASEMD/steps_before_stopping.json:
+        cache: false
+    outs:
+    - nodes/volume_scan/ASEMD/metrics_dict.csv
+    - nodes/volume_scan/ASEMD/model
+    - nodes/volume_scan/ASEMD/trajectory.h5
+    - nodes/volume_scan/ASEMD/velocities_cache.json
+    params:
+    - volume_scan_ASEMD
+  volume_scan_ASEMD_checker_list_0:
+    cmd: zntrack run ipsuite.nodes.ThresholdCheck --name volume_scan_ASEMD_checker_list_0
+      --meta-only
+    metrics:
+    - nodes/volume_scan/ASEMD_checker_list_0/node-meta.json:
+        cache: false
+    params:
+    - volume_scan_ASEMD_checker_list_0
+    - zntrack.json:
+      - volume_scan_ASEMD.checker_list
+  volume_scan_ASEMD_thermostat:
+    cmd: zntrack run ipsuite.nodes.LangevinThermostat --name volume_scan_ASEMD_thermostat
+      --meta-only
+    metrics:
+    - nodes/volume_scan/ASEMD_thermostat/node-meta.json:
+        cache: false
+    params:
+    - volume_scan_ASEMD_thermostat
+    - zntrack.json:
+      - volume_scan_ASEMD.thermostat
+  volume_scan_BoxScale:
+    cmd: zntrack run ipsuite.nodes.BoxScale --name volume_scan_BoxScale
+    deps:
+    - nodes/bootstrap_0/EnsembleModel/node-meta.json
+    - nodes/bootstrap_0/EnsembleModel/uuid.json
+    - nodes/volume_scan/ASEMD/metrics_dict.csv
+    - nodes/volume_scan/ASEMD/model
+    - nodes/volume_scan/ASEMD/node-meta.json
+    - nodes/volume_scan/ASEMD/steps_before_stopping.json
+    - nodes/volume_scan/ASEMD/trajectory.h5
+    - nodes/volume_scan/ASEMD/velocities_cache.json
+    - nodes/volume_scan/BoxScale_mapping/node-meta.json
+    metrics:
+    - nodes/volume_scan/BoxScale/node-meta.json:
+        cache: false
+    outs:
+    - nodes/volume_scan/BoxScale/atoms.h5
+    - nodes/volume_scan/BoxScale/energies.csv
+    - nodes/volume_scan/BoxScale/energy.png
+    - nodes/volume_scan/BoxScale/model
+    params:
+    - volume_scan_BoxScale
+  volume_scan_BoxScale_mapping:
+    cmd: zntrack run ipsuite.nodes.BarycenterMapping --name volume_scan_BoxScale_mapping
+      --meta-only
+    metrics:
+    - nodes/volume_scan/BoxScale_mapping/node-meta.json:
+        cache: false
+    params:
+    - volume_scan_BoxScale_mapping
+    - zntrack.json:
+      - volume_scan_BoxScale.mapping
+  volume_scan_CP2KSinglePoint_1:
+    cmd: zntrack run ipsuite.nodes.CP2KSinglePoint --name volume_scan_CP2KSinglePoint_1
+    deps:
+    - BASIS_MOLOPT
+    - GTH_POTENTIALS
+    - dftd3.dat
+    - nodes/CP2KSinglePoint/atoms.h5
+    - nodes/CP2KSinglePoint/cp2k
+    - nodes/CP2KSinglePoint/node-meta.json
+    - nodes/volume_scan/BoxScale/atoms.h5
+    - nodes/volume_scan/BoxScale/energies.csv
+    - nodes/volume_scan/BoxScale/energy.png
+    - nodes/volume_scan/BoxScale/model
+    - nodes/volume_scan/BoxScale/node-meta.json
+    metrics:
+    - nodes/volume_scan/CP2KSinglePoint_1/node-meta.json:
+        cache: false
+    outs:
+    - nodes/volume_scan/CP2KSinglePoint_1/atoms.h5
+    - nodes/volume_scan/CP2KSinglePoint_1/cp2k
+    params:
+    - cp2k.yaml: null
