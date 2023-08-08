@@ -877,6 +877,13 @@ evaluation_BoxScale_10:
     stop: 1.7
 evaluation_BoxScale_10_mapping:
     frozen: false
+evaluation_BoxScale_11:
+    data_id: -1
+    num: 50
+    start: 0.9
+    stop: 1.7
+evaluation_BoxScale_11_mapping:
+    frozen: false
 evaluation_BoxScale_1_mapping:
     frozen: false
 evaluation_BoxScale_2:
@@ -945,6 +952,19 @@ final_BoxScale:
 final_BoxScale_mapping:
     frozen: false
 final_MLModel:
+    jax_enable_x64: true
+    use_energy: true
+    use_forces: true
+    use_stresses: false
+isolated_mol_ConfigurationSelection_1:
+    n_configurations: 30
+    seed: 1234
+isolated_mol_MLModel:
+    jax_enable_x64: true
+    use_energy: true
+    use_forces: true
+    use_stresses: false
+isolated_mol_MLModel_1:
     jax_enable_x64: true
     use_energy: true
     use_forces: true
