@@ -21445,3 +21445,171 @@ stages:
       hash: md5
       md5: 9ee335c752c4d5577011c881bff26eb5
       size: 469216
+  AL2_5_ASEGeoOpt_2:
+    cmd: zntrack run ipsuite.nodes.ASEGeoOpt --name AL2_5_ASEGeoOpt_2
+    deps:
+    - path: nodes/AL2_5/ASEGeoOpt_1/model_outs
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/AL2_5/ASEGeoOpt_1/node-meta.json
+      hash: md5
+      md5: 7d22bd88111539a4804b15ef8369832b
+      size: 48
+    - path: nodes/AL2_5/ASEGeoOpt_1/trajectory.h5
+      hash: md5
+      md5: 9ee335c752c4d5577011c881bff26eb5
+      size: 469216
+    - path: nodes/CP2KSinglePoint/atoms.h5
+      hash: md5
+      md5: 9697c746c6f69d428bd2f5a5b7979666
+      size: 61928
+    - path: nodes/CP2KSinglePoint/cp2k
+      hash: md5
+      md5: fb7bfe3b3264befe3419725f830a8775.dir
+      size: 21603140
+      nfiles: 3
+    - path: nodes/CP2KSinglePoint/node-meta.json
+      hash: md5
+      md5: 63df96639d4fa5cd5d2b3bf3d4671e3a
+      size: 48
+    params:
+      params.yaml:
+        AL2_5_ASEGeoOpt_2:
+          data_id: -1
+          dump_rate: 1000
+          init_kwargs: {}
+          optimizer: BFGS
+          repeat:
+          - 1
+          - 1
+          - 1
+          run_kwargs:
+            fmax: 2.0
+    outs:
+    - path: nodes/AL2_5/ASEGeoOpt_2/model_outs
+      hash: md5
+      md5: f5fb797183a0cfd3e3d0d2b63e248c42.dir
+      size: 42928374
+      nfiles: 5
+    - path: nodes/AL2_5/ASEGeoOpt_2/node-meta.json
+      hash: md5
+      md5: e4c3eb82d0437e73051ee8742c6afdca
+      size: 48
+    - path: nodes/AL2_5/ASEGeoOpt_2/trajectory.h5
+      hash: md5
+      md5: d5ac6e11c149a6788591c20f928cb95a
+      size: 106432
+  AL2_5_ASEMD_checker_list_0:
+    cmd: zntrack run ipsuite.nodes.ThresholdCheck --name AL2_5_ASEMD_checker_list_0
+      --meta-only
+    params:
+      params.yaml:
+        AL2_5_ASEMD_checker_list_0:
+          larger_only: true
+          max_std:
+          max_value: 2.0
+          minimum_window_size: 1
+          value: energy_uncertainty
+          window_size: 500
+      zntrack.json:
+        AL2_5_ASEMD.checker_list:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: ThresholdCheck
+            name: AL2_5_ASEMD_checker_list_0
+            remote:
+            rev:
+    outs:
+    - path: nodes/AL2_5/ASEMD_checker_list_0/node-meta.json
+      hash: md5
+      md5: 4cc38296465ef1585c4d8689bb0ef0b5
+      size: 48
+  AL2_5_ASEMD_modifier_0:
+    cmd: zntrack run ipsuite.nodes.TemperatureOscillatingRampModifier --name AL2_5_ASEMD_modifier_0
+      --meta-only
+    params:
+      params.yaml:
+        AL2_5_ASEMD_modifier_0:
+          end_temperature: 450
+          interval: 1
+          num_oscillations: 10
+          start_temperature: 270
+          temperature_amplitude: 150
+      zntrack.json:
+        AL2_5_ASEMD.modifier:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: TemperatureOscillatingRampModifier
+            name: AL2_5_ASEMD_modifier_0
+            remote:
+            rev:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: BoxOscillatingRampModifier
+            name: AL2_5_ASEMD_modifier_1
+            remote:
+            rev:
+    outs:
+    - path: nodes/AL2_5/ASEMD_modifier_0/node-meta.json
+      hash: md5
+      md5: ba25af6f66221b20d4a5ddcffecf05ec
+      size: 48
+  AL2_5_ASEMD_modifier_1:
+    cmd: zntrack run ipsuite.nodes.BoxOscillatingRampModifier --name AL2_5_ASEMD_modifier_1
+      --meta-only
+    params:
+      params.yaml:
+        AL2_5_ASEMD_modifier_1:
+          cell_amplitude: 1
+          end_cell: 16.511
+          interval: 1
+          num_oscillations: 3
+      zntrack.json:
+        AL2_5_ASEMD.modifier:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: TemperatureOscillatingRampModifier
+            name: AL2_5_ASEMD_modifier_0
+            remote:
+            rev:
+        - _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: BoxOscillatingRampModifier
+            name: AL2_5_ASEMD_modifier_1
+            remote:
+            rev:
+    outs:
+    - path: nodes/AL2_5/ASEMD_modifier_1/node-meta.json
+      hash: md5
+      md5: b26beec173b15b838c727ab8b82829de
+      size: 48
+  AL2_5_ASEMD_thermostat:
+    cmd: zntrack run ipsuite.nodes.LangevinThermostat --name AL2_5_ASEMD_thermostat
+      --meta-only
+    params:
+      params.yaml:
+        AL2_5_ASEMD_thermostat:
+          friction: 0.01
+          temperature: 298.15
+          time_step: 0.5
+      zntrack.json:
+        AL2_5_ASEMD.thermostat:
+          _type: zntrack.Node
+          value:
+            module: ipsuite.nodes
+            cls: LangevinThermostat
+            name: AL2_5_ASEMD_thermostat
+            remote:
+            rev:
+    outs:
+    - path: nodes/AL2_5/ASEMD_thermostat/node-meta.json
+      hash: md5
+      md5: 83d94fe4e016e78cee0dbf3ed4e9215e
+      size: 48
