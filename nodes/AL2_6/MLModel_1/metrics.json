@@ -1,0 +1,12 @@
+{
+    "epoch": 1958.0,
+    "epoch_time": 2.6674067974090576,
+    "train_energy_mae": 0.554592451662202,
+    "train_forces_mae": 0.0367597780333856,
+    "train_loss": 0.0635603582828789,
+    "train_stress_mae": 5.869785167440332,
+    "val_energy_mae": 0.4683523280471127,
+    "val_forces_mae": 0.0412728852900536,
+    "val_loss": 0.0822620763025616,
+    "val_stress_mae": 5.317317793468823
+}
