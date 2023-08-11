@@ -178,6 +178,11 @@ plots:
     x_label: Scale factor of the initial cell
     y: y
     y_label: predicted energy
+- nodes/final/BoxScale/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
 stages:
   AL2_0_ASEGeoOpt_1:
     cmd: zntrack run ipsuite.nodes.ASEGeoOpt --name AL2_0_ASEGeoOpt_1
