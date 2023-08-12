@@ -10986,6 +10986,610 @@
             "value": "nodes/isolated_mol/CP2KSinglePoint_1"
         }
     },
+    "isolated_mol_ConfigurationSelection_1": {
+        "data": {
+            "CP2KSinglePoint_1": {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "CP2KSinglePoint",
+                            "name": "isolated_mol_CP2KSinglePoint_1",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": "atoms",
+                    "item": null
+                }
+            }
+        },
+        "data_file": null,
+        "exclude": null,
+        "exclude_configurations": null,
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/isolated_mol/ConfigurationSelection_1"
+        }
+    },
+    "isolated_mol_MLModel": {
+        "config": "config/apax_al2_1.yaml",
+        "data": {
+            "_type": "znflow.CombinedConnections",
+            "value": {
+                "connections": [
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "IndexSelection",
+                                "name": "AL2_2_ConfigurationSelection_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "ASEGeoOpt",
+                                "name": "AL2_2_ASEGeoOpt_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_2_CP2KSinglePoint_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "ASEGeoOpt",
+                                "name": "AL2_3_ASEGeoOpt_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_3_CP2KSinglePoint_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "ASEGeoOpt",
+                                "name": "AL2_4_ASEGeoOpt_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_4_CP2KSinglePoint_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "ASEGeoOpt",
+                                "name": "AL2_5_ASEGeoOpt_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_5_CP2KSinglePoint_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "RandomSelection",
+                                "name": "isolated_mol_ConfigurationSelection_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "excluded_atoms",
+                        "item": null
+                    }
+                ],
+                "item": null
+            }
+        },
+        "metrics_epoch": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/log.csv"
+        },
+        "model_directory": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/apax_model"
+        },
+        "train_data_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/train_atoms.extxyz"
+        },
+        "train_log_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/train.log"
+        },
+        "validation_data": {
+            "_type": "znflow.CombinedConnections",
+            "value": {
+                "connections": [
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "IndexSelection",
+                                "name": "AL2_2_ConfigurationSelection_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_2_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_3_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_4_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_5_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "RandomSelection",
+                                "name": "isolated_mol_ConfigurationSelection_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    }
+                ],
+                "item": null
+            }
+        },
+        "validation_data_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/val_atoms.extxyz"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/isolated_mol/MLModel"
+        }
+    },
+    "isolated_mol_MLModel_1": {
+        "config": "config/apax_al2_2.yaml",
+        "data": {
+            "_type": "znflow.CombinedConnections",
+            "value": {
+                "connections": [
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "IndexSelection",
+                                "name": "AL2_2_ConfigurationSelection_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "ASEGeoOpt",
+                                "name": "AL2_2_ASEGeoOpt_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_2_CP2KSinglePoint_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "ASEGeoOpt",
+                                "name": "AL2_3_ASEGeoOpt_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_3_CP2KSinglePoint_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "ASEGeoOpt",
+                                "name": "AL2_4_ASEGeoOpt_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_4_CP2KSinglePoint_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "ASEGeoOpt",
+                                "name": "AL2_5_ASEGeoOpt_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_5_CP2KSinglePoint_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "RandomSelection",
+                                "name": "isolated_mol_ConfigurationSelection_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "excluded_atoms",
+                        "item": null
+                    }
+                ],
+                "item": null
+            }
+        },
+        "metrics_epoch": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/log.csv"
+        },
+        "model_directory": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/apax_model"
+        },
+        "train_data_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/train_atoms.extxyz"
+        },
+        "train_log_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/train.log"
+        },
+        "validation_data": {
+            "_type": "znflow.CombinedConnections",
+            "value": {
+                "connections": [
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "IndexSelection",
+                                "name": "AL2_2_ConfigurationSelection_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_2_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_3_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_4_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_5_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "RandomSelection",
+                                "name": "isolated_mol_ConfigurationSelection_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    }
+                ],
+                "item": null
+            }
+        },
+        "validation_data_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/val_atoms.extxyz"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/isolated_mol/MLModel_1"
+        }
+    },
+    "isolated_mol_ApaxEnsemble": {
+        "models": [
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "Apax",
+                            "name": "isolated_mol_MLModel",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            },
+            {
+                "_type": "znflow.Connection",
+                "value": {
+                    "instance": {
+                        "_type": "zntrack.Node",
+                        "value": {
+                            "module": "ipsuite.nodes",
+                            "cls": "Apax",
+                            "name": "isolated_mol_MLModel_1",
+                            "remote": null,
+                            "rev": null
+                        }
+                    },
+                    "attribute": null,
+                    "item": null
+                }
+            }
+        ],
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/isolated_mol/ApaxEnsemble"
+        }
+    },
     "evaluation_Prediction": {
         "data": {
             "_type": "znflow.CombinedConnections",
@@ -11133,6 +11737,45 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/evaluation/PredictionMetrics"
+        }
+    },
+    "evaluation_ForceDecomposition": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition"
         }
     },
     "evaluation_BoxScale": {
@@ -11351,6 +11994,45 @@
             "value": "nodes/evaluation/PredictionMetrics_1"
         }
     },
+    "evaluation_ForceDecomposition_1": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_1",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition_1"
+        }
+    },
     "evaluation_BoxScale_1": {
         "data": {
             "_type": "znflow.Connection",
@@ -11565,6 +12247,45 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/evaluation/PredictionMetrics_2"
+        }
+    },
+    "evaluation_ForceDecomposition_2": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_2",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition_2"
         }
     },
     "evaluation_BoxScale_2": {
@@ -11783,6 +12504,45 @@
             "value": "nodes/evaluation/PredictionMetrics_3"
         }
     },
+    "evaluation_ForceDecomposition_3": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_3",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition_3"
+        }
+    },
     "evaluation_BoxScale_3": {
         "data": {
             "_type": "znflow.Connection",
@@ -11997,6 +12757,45 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/evaluation/PredictionMetrics_4"
+        }
+    },
+    "evaluation_ForceDecomposition_4": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_4",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition_4"
         }
     },
     "evaluation_BoxScale_4": {
@@ -12215,6 +13014,45 @@
             "value": "nodes/evaluation/PredictionMetrics_5"
         }
     },
+    "evaluation_ForceDecomposition_5": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_5",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition_5"
+        }
+    },
     "evaluation_BoxScale_5": {
         "data": {
             "_type": "znflow.Connection",
@@ -12429,6 +13267,45 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/evaluation/PredictionMetrics_6"
+        }
+    },
+    "evaluation_ForceDecomposition_6": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_6",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition_6"
         }
     },
     "evaluation_BoxScale_6": {
@@ -12647,6 +13524,45 @@
             "value": "nodes/evaluation/PredictionMetrics_7"
         }
     },
+    "evaluation_ForceDecomposition_7": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_7",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition_7"
+        }
+    },
     "evaluation_BoxScale_7": {
         "data": {
             "_type": "znflow.Connection",
@@ -12861,6 +13777,45 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/evaluation/PredictionMetrics_8"
+        }
+    },
+    "evaluation_ForceDecomposition_8": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_8",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition_8"
         }
     },
     "evaluation_BoxScale_8": {
@@ -13079,6 +14034,45 @@
             "value": "nodes/evaluation/PredictionMetrics_9"
         }
     },
+    "evaluation_ForceDecomposition_9": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_9",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition_9"
+        }
+    },
     "evaluation_BoxScale_9": {
         "data": {
             "_type": "znflow.Connection",
@@ -13293,6 +14287,45 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/evaluation/PredictionMetrics_10"
+        }
+    },
+    "evaluation_ForceDecomposition_10": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_10",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition_10"
         }
     },
     "evaluation_BoxScale_10": {
@@ -13511,6 +14544,45 @@
             "value": "nodes/evaluation/PredictionMetrics_11"
         }
     },
+    "evaluation_ForceDecomposition_11": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_11",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition_11"
+        }
+    },
     "evaluation_BoxScale_11": {
         "data": {
             "_type": "znflow.Connection",
@@ -13727,6 +14799,45 @@
             "value": "nodes/evaluation/PredictionMetrics_12"
         }
     },
+    "evaluation_ForceDecomposition_12": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_12",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition_12"
+        }
+    },
     "evaluation_BoxScale_12": {
         "data": {
             "_type": "znflow.Connection",
@@ -13792,6 +14903,261 @@
         "nwd": {
             "_type": "pathlib.Path",
             "value": "nodes/evaluation/BoxScale_12_mapping"
+        }
+    },
+    "evaluation_Prediction_13": {
+        "data": {
+            "_type": "znflow.CombinedConnections",
+            "value": {
+                "connections": [
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "IndexSelection",
+                                "name": "AL2_2_ConfigurationSelection_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_2_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_3_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_4_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "CP2KSinglePoint",
+                                "name": "AL2_5_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    }
+                ],
+                "item": null
+            }
+        },
+        "data_file": null,
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ApaxEnsemble",
+                        "name": "isolated_mol_ApaxEnsemble",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/Prediction_13"
+        }
+    },
+    "evaluation_PredictionMetrics_13": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_13",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "energy_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy_df.csv"
+        },
+        "forces_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/forces_df.csv"
+        },
+        "plots_dir": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/plots"
+        },
+        "stress_deviatoric_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_deviatoric_df.csv"
+        },
+        "stress_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_df.csv"
+        },
+        "stress_hydrostatic_df_file": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/stress_hydrostatic_df.csv"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/PredictionMetrics_13"
+        }
+    },
+    "evaluation_ForceDecomposition_13": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "Prediction",
+                        "name": "evaluation_Prediction_13",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "histogram_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/histogram.png"
+        },
+        "rot_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/rot_force.png"
+        },
+        "trans_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/trans_force.png"
+        },
+        "vib_force_plt": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/vib_force.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/ForceDecomposition_13"
+        }
+    },
+    "evaluation_BoxScale_13": {
+        "data": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ASEMD",
+                        "name": "volume_scan_ASEMD",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": "atoms",
+                "item": null
+            }
+        },
+        "data_file": null,
+        "mapping": {
+            "_type": "zntrack.Node",
+            "value": {
+                "module": "ipsuite.nodes",
+                "cls": "BarycenterMapping",
+                "name": "evaluation_BoxScale_13_mapping",
+                "remote": null,
+                "rev": null
+            }
+        },
+        "model": {
+            "_type": "znflow.Connection",
+            "value": {
+                "instance": {
+                    "_type": "zntrack.Node",
+                    "value": {
+                        "module": "ipsuite.nodes",
+                        "cls": "ApaxEnsemble",
+                        "name": "isolated_mol_ApaxEnsemble",
+                        "remote": null,
+                        "rev": null
+                    }
+                },
+                "attribute": null,
+                "item": null
+            }
+        },
+        "model_outs": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/model"
+        },
+        "plot": {
+            "_type": "pathlib.Path",
+            "value": "$nwd$/energy.png"
+        },
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/BoxScale_13"
+        }
+    },
+    "evaluation_BoxScale_13_mapping": {
+        "data": null,
+        "data_file": null,
+        "nwd": {
+            "_type": "pathlib.Path",
+            "value": "nodes/evaluation/BoxScale_13_mapping"
         }
     },
     "final_MLModel": {
@@ -13925,6 +15291,20 @@
                         },
                         "attribute": "atoms",
                         "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "RandomSelection",
+                                "name": "isolated_mol_ConfigurationSelection_1",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "excluded_atoms",
+                        "item": null
                     }
                 ],
                 "item": null
@@ -14013,6 +15393,20 @@
                                 "module": "ipsuite.nodes",
                                 "cls": "CP2KSinglePoint",
                                 "name": "AL2_5_CP2KSinglePoint_2",
+                                "remote": null,
+                                "rev": null
+                            }
+                        },
+                        "attribute": "atoms",
+                        "item": null
+                    },
+                    {
+                        "instance": {
+                            "_type": "zntrack.Node",
+                            "value": {
+                                "module": "ipsuite.nodes",
+                                "cls": "RandomSelection",
+                                "name": "isolated_mol_ConfigurationSelection_1",
                                 "remote": null,
                                 "rev": null
                             }
