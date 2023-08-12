@@ -11664,20 +11664,6 @@
                         },
                         "attribute": "atoms",
                         "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
                     }
                 ],
                 "item": null
@@ -11927,20 +11913,6 @@
                                 "module": "ipsuite.nodes",
                                 "cls": "CP2KSinglePoint",
                                 "name": "AL2_5_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
                                 "remote": null,
                                 "rev": null
                             }
@@ -12202,20 +12174,6 @@
                         },
                         "attribute": "atoms",
                         "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
                     }
                 ],
                 "item": null
@@ -12465,20 +12423,6 @@
                                 "module": "ipsuite.nodes",
                                 "cls": "CP2KSinglePoint",
                                 "name": "AL2_5_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
                                 "remote": null,
                                 "rev": null
                             }
@@ -12740,20 +12684,6 @@
                         },
                         "attribute": "atoms",
                         "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
                     }
                 ],
                 "item": null
@@ -13003,20 +12933,6 @@
                                 "module": "ipsuite.nodes",
                                 "cls": "CP2KSinglePoint",
                                 "name": "AL2_5_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
                                 "remote": null,
                                 "rev": null
                             }
@@ -13278,20 +13194,6 @@
                         },
                         "attribute": "atoms",
                         "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
                     }
                 ],
                 "item": null
@@ -13541,20 +13443,6 @@
                                 "module": "ipsuite.nodes",
                                 "cls": "CP2KSinglePoint",
                                 "name": "AL2_5_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
                                 "remote": null,
                                 "rev": null
                             }
@@ -13816,20 +13704,6 @@
                         },
                         "attribute": "atoms",
                         "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
                     }
                 ],
                 "item": null
@@ -14079,20 +13953,6 @@
                                 "module": "ipsuite.nodes",
                                 "cls": "CP2KSinglePoint",
                                 "name": "AL2_5_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
                                 "remote": null,
                                 "rev": null
                             }
@@ -14354,20 +14214,6 @@
                         },
                         "attribute": "atoms",
                         "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
                     }
                 ],
                 "item": null
@@ -14617,20 +14463,6 @@
                                 "module": "ipsuite.nodes",
                                 "cls": "CP2KSinglePoint",
                                 "name": "AL2_5_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
                                 "remote": null,
                                 "rev": null
                             }
@@ -14892,20 +14724,6 @@
                         },
                         "attribute": "atoms",
                         "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
                     }
                 ],
                 "item": null
@@ -15155,20 +14973,6 @@
                                 "module": "ipsuite.nodes",
                                 "cls": "CP2KSinglePoint",
                                 "name": "AL2_5_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
                                 "remote": null,
                                 "rev": null
                             }
@@ -15691,20 +15495,6 @@
                                 "module": "ipsuite.nodes",
                                 "cls": "CP2KSinglePoint",
                                 "name": "AL2_5_CP2KSinglePoint_2",
-                                "remote": null,
-                                "rev": null
-                            }
-                        },
-                        "attribute": "atoms",
-                        "item": null
-                    },
-                    {
-                        "instance": {
-                            "_type": "zntrack.Node",
-                            "value": {
-                                "module": "ipsuite.nodes",
-                                "cls": "RandomSelection",
-                                "name": "isolated_mol_ConfigurationSelection_1",
                                 "remote": null,
                                 "rev": null
                             }
