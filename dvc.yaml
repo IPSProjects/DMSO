@@ -5478,8 +5478,6 @@ stages:
     - nodes/AL2_5/CP2KSinglePoint_2/atoms.h5
     - nodes/AL2_5/CP2KSinglePoint_2/cp2k
     - nodes/AL2_5/CP2KSinglePoint_2/node-meta.json
-    - nodes/isolated_mol/ConfigurationSelection_1/node-meta.json
-    - nodes/isolated_mol/ConfigurationSelection_1/selected_configurations.json
     metrics:
     - nodes/final/MLModel/metrics.json:
         cache: false
