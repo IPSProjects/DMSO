@@ -898,6 +898,42 @@ bootstrap_1_ConfigurationSelection_2:
 bootstrap_1_ConfigurationSelection_3:
     n_configurations: 20
     seed: 1234
+deployment_ASEGeoOpt_1:
+    data_id: -1
+    dump_rate: 1000
+    init_kwargs: {}
+    optimizer: FIRE
+    repeat:
+    - 8
+    - 8
+    - 8
+    run_kwargs:
+        fmax: 0.05
+deployment_ASEMD:
+    data_id: -1
+    dump_rate: 1000
+    init_temperature: null
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 100
+    steps: 100000
+deployment_ASEMD_modifier_0:
+    interval: 1
+    start_temperature: null
+    temperature: 450
+deployment_ASEMD_thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
+deployment_Packmol_1:
+    box: null
+    count:
+    - 2
+    data_ids: null
+    density: 1095.2
+    tolerance: 2.0
 evaluation_BoxScale:
     data_id: -1
     num: 50
