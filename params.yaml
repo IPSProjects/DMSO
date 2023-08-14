@@ -927,6 +927,10 @@ deployment_ASEMD_thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
+deployment_ApaxJaxMD:
+    data_id: -1
+    md_parameter: null
+    repeat: null
 deployment_Packmol_1:
     box: null
     count:

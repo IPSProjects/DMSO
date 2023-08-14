@@ -25268,3 +25268,87 @@ stages:
       hash: md5
       md5: 3c57ddb3cdf2b8b8fe7ea92c78290433
       size: 327902
+  deployment_ApaxJaxMD:
+    cmd: zntrack run ipsuite.nodes.ApaxJaxMD --name deployment_ApaxJaxMD
+    deps:
+    - path: nodes/deployment/ASEMD/metrics_dict.csv
+      hash: md5
+      md5: d81193a3ab4a85ef78ce4389252e2ef5
+      size: 42133
+    - path: nodes/deployment/ASEMD/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/deployment/ASEMD/node-meta.json
+      hash: md5
+      md5: 04b535af4f5165f7d0863ed4fbee9c5d
+      size: 48
+    - path: nodes/deployment/ASEMD/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/deployment/ASEMD/trajectory.h5
+      hash: md5
+      md5: 12a5d06f241f0a66de2f5e518643af6f
+      size: 839641608
+    - path: nodes/deployment/ASEMD/velocities_cache.json
+      hash: md5
+      md5: 3c57ddb3cdf2b8b8fe7ea92c78290433
+      size: 327902
+    - path: nodes/final/MLModel/apax_model
+      hash: md5
+      md5: 269ff9452048248bb6986652bd3cea24.dir
+      size: 42276241
+      nfiles: 5
+    - path: nodes/final/MLModel/log.csv
+      hash: md5
+      md5: b0417cd3909a728df55ba219d0200450
+      size: 365042
+    - path: nodes/final/MLModel/metrics.json
+      hash: md5
+      md5: 36fee5127436c3fdfdcb4b5f036d0652
+      size: 391
+    - path: nodes/final/MLModel/node-meta.json
+      hash: md5
+      md5: e4913174c46be18939a0271a3b768c75
+      size: 48
+    - path: nodes/final/MLModel/train.log
+      hash: md5
+      md5: 30b0a7c6fe3e4413f4a25a824acec52d
+      size: 19
+    - path: nodes/final/MLModel/train_atoms.extxyz
+      hash: md5
+      md5: 62aefae4f1f98b786fd0043520826f43
+      size: 18864393
+    - path: nodes/final/MLModel/val_atoms.extxyz
+      hash: md5
+      md5: a8f3d00578a4b86fc83b048a1d86dbfb
+      size: 5762003
+    params:
+      params.yaml:
+        deployment_ApaxJaxMD:
+          data_id: -1
+          md_parameter:
+          repeat:
+      config/jax_md.yaml:
+        dr_threshold: 0.5
+        dt: 0.5
+        duration: 500000
+        n_inner: 1000
+        sampling_rate: 100
+        temperature: 300
+    outs:
+    - path: nodes/deployment/ApaxJaxMD/initial_structure.extxyz
+      hash: md5
+      md5: 47e80c3735a9a658b19d5d883c2fc461
+      size: 1075349
+    - path: nodes/deployment/ApaxJaxMD/md
+      hash: md5
+      md5: 6732c6ef0660bc5d8d6a3989393697d8.dir
+      size: 8214983600
+      nfiles: 1
+    - path: nodes/deployment/ApaxJaxMD/node-meta.json
+      hash: md5
+      md5: 823acb5063291cb9bd8c72d0c83c9437
+      size: 48
