@@ -10560,19 +10560,6 @@ stages:
   final_BoxScale:
     cmd: zntrack run ipsuite.nodes.BoxScale --name final_BoxScale
     deps:
-    - path: nodes/ASEGeoOpt/model_outs
-      hash: md5
-      md5: 55a17d4cf10898236beac4f2d757f2b4.dir
-      size: 89601466
-      nfiles: 7
-    - path: nodes/ASEGeoOpt/node-meta.json
-      hash: md5
-      md5: 336193404ed866dfebe5a4c56f8ef2f8
-      size: 48
-    - path: nodes/ASEGeoOpt/trajectory.h5
-      hash: md5
-      md5: ea5b960f96c3f1f8cd9328fb1ea918f5
-      size: 1410008
     - path: nodes/final/BoxScale_mapping/node-meta.json
       hash: md5
       md5: 9ffafdbcab2c5aea9b5712e3144dd2fc
@@ -10606,26 +10593,51 @@ stages:
       hash: md5
       md5: a8f3d00578a4b86fc83b048a1d86dbfb
       size: 5762003
+    - path: nodes/volume_scan/ASEMD/metrics_dict.csv
+      hash: md5
+      md5: 84d946abeae8d6397139cd9fca245913
+      size: 10527
+    - path: nodes/volume_scan/ASEMD/model
+      hash: md5
+      md5: 64586897446153f477c052dd0e2579ad.dir
+      size: 11
+      nfiles: 1
+    - path: nodes/volume_scan/ASEMD/node-meta.json
+      hash: md5
+      md5: 02523d5bf4b9e243cccec0f905c6bd37
+      size: 48
+    - path: nodes/volume_scan/ASEMD/steps_before_stopping.json
+      hash: md5
+      md5: 6bb61e3b7bce0931da574d19d1d82c88
+      size: 2
+    - path: nodes/volume_scan/ASEMD/trajectory.h5
+      hash: md5
+      md5: d89e91d7c8372f173b0297fb5e2d6cf2
+      size: 10251752
+    - path: nodes/volume_scan/ASEMD/velocities_cache.json
+      hash: md5
+      md5: 899fb4c51d0d5a1f6794680c0815d7e9
+      size: 6
     params:
       params.yaml:
         final_BoxScale:
           data_id: -1
-          num: 100
+          num: 50
           start: 0.9
-          stop: 2.0
+          stop: 1.7
     outs:
     - path: nodes/final/BoxScale/atoms.h5
       hash: md5
-      md5: 82dd1d9292e5696b92542af343a698f1
-      size: 2193848
+      md5: 289cab053a5a9eb72e55eba6c44f577c
+      size: 1633472
     - path: nodes/final/BoxScale/energies.csv
       hash: md5
-      md5: db31a2faa126bc8210fe0d023e323d7b
-      size: 3938
+      md5: 114ef29364c2dd3fe8082ff3a75ba991
+      size: 2022
     - path: nodes/final/BoxScale/energy.png
       hash: md5
-      md5: b258fff21ddb113698506cd7e86dd73d
-      size: 24319
+      md5: 1310c235e90d99ad67ad4e66bc8668b4
+      size: 26394
     - path: nodes/final/BoxScale/model
       hash: md5
       md5: 64586897446153f477c052dd0e2579ad.dir
@@ -10633,7 +10645,7 @@ stages:
       nfiles: 1
     - path: nodes/final/BoxScale/node-meta.json
       hash: md5
-      md5: 19fd726a415d6675005d78401aaf988d
+      md5: 0707a8cb404d1e428a12f9a02a666e3e
       size: 48
   final_Prediction:
     cmd: zntrack run ipsuite.nodes.Prediction --name final_Prediction

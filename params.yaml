@@ -1038,9 +1038,9 @@ evaluation_BoxScale_mapping:
     frozen: false
 final_BoxScale:
     data_id: -1
-    num: 100
+    num: 50
     start: 0.9
-    stop: 2.0
+    stop: 1.7
 final_BoxScale_mapping:
     frozen: false
 final_MLModel:
