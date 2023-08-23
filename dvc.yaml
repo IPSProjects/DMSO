@@ -184,6 +184,71 @@ plots:
     y: y
     y_label: predicted energy
 - nodes/deployment/ASEMD/metrics_dict.csv: {}
+- nodes/evaluation/BoxScale/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_1/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_10/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_11/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_12/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_2/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_3/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_4/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_5/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_6/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_7/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_8/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
+- nodes/evaluation/BoxScale_9/energies.csv:
+    x: x
+    x_label: Scale factor of the initial cell
+    y: y
+    y_label: predicted energy
 stages:
   AL2_0_ASEGeoOpt_1:
     cmd: zntrack run ipsuite.nodes.ASEGeoOpt --name AL2_0_ASEGeoOpt_1
