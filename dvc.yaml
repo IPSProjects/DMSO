@@ -57,3 +57,17 @@ stages:
     metrics:
     - nodes/ASEGeoOpt/node-meta.json:
         cache: false
+  CP2KYaml:
+    cmd: zntrack run ipsuite.nodes.CP2KYaml --name CP2KYaml
+    deps:
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    params:
+    - CP2KYaml
+    - cp2k_md.yaml:
+    outs:
+    - nodes/CP2KYaml/cp2k
+    metrics:
+    - nodes/CP2KYaml/node-meta.json:
+        cache: false

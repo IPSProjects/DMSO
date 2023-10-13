@@ -9,6 +9,8 @@ ASEGeoOpt:
     - 1
     run_kwargs:
         fmax: 0.5
+CP2KYaml:
+    data_id: 0
 Packmol:
     box: null
     count:

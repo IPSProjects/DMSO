@@ -25029,3 +25029,110 @@ stages:
       hash: md5
       md5: bf2e9cc956893dd0d1eda9eb70864bed
       size: 4875
+  CP2KYaml:
+    cmd: zntrack run ipsuite.nodes.CP2KYaml --name CP2KYaml
+    deps:
+    - path: nodes/ASEGeoOpt/model_outs
+      hash: md5
+      md5: 55a17d4cf10898236beac4f2d757f2b4.dir
+      size: 89601466
+      nfiles: 7
+    - path: nodes/ASEGeoOpt/node-meta.json
+      hash: md5
+      md5: 336193404ed866dfebe5a4c56f8ef2f8
+      size: 48
+    - path: nodes/ASEGeoOpt/trajectory.h5
+      hash: md5
+      md5: ea5b960f96c3f1f8cd9328fb1ea918f5
+      size: 1410008
+    params:
+      params.yaml:
+        CP2KYaml:
+          data_id: 0
+      cp2k_md.yaml:
+        force_eval:
+          method: quickstep
+          DFT:
+            mgrid:
+              cutoff: 600.0
+              rel_cutoff: 80.0
+              ngrids: 5
+            QS:
+              eps_filter_matrix: 0.0
+              eps_pgf_orb: 0.0001
+            SCF:
+              scf_guess: restart
+              max_scf: 100
+              eps_scf: 1e-06
+              OT:
+                minimizer: diis
+                preconditioner: full_single_inverse
+              outer_scf:
+                max_scf: 100
+                eps_scf: 1e-06
+              print:
+                restart:
+                  each:
+                    QS_SCF: 0
+            XC:
+              xc_functional:
+                _: BLYP
+              vdw_potential:
+                pair_potential:
+                  type: DFTD3
+                  parameter_file_name: dftd3.dat
+                  reference_functional: BLYP
+                  r_cutoff: 18
+                potential_type: pair_potential
+            basis_set_file_name: BASIS_MOLOPT
+            potential_file_name: GTH_POTENTIALS
+          subsys:
+            kind:
+              O:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+              C:
+                basis_set: TZV2P-MOLOPT-GTH-q4
+                potential: GTH-BLYP-q4
+              H:
+                basis_set: TZV2P-MOLOPT-GTH-q1
+                potential: GTH-BLYP-q1
+              S:
+                basis_set: TZV2P-MOLOPT-GTH-q6
+                potential: GTH-BLYP-q6
+        global:
+          run_type: md
+        motion:
+          print:
+            trajectory:
+              each:
+                md: 1
+            forces:
+              each:
+                md: 1
+            stress:
+              each:
+                md: 1
+            restart:
+              each:
+                md: 1
+          md:
+            ensemble: nvt
+            temperature: 298.15
+            timestep: 0.5
+            steps: 4859
+            thermostat:
+              type: nose
+              region: massive
+              nose:
+                timecon: 100
+    outs:
+    - path: nodes/CP2KYaml/cp2k
+      hash: md5
+      md5: b2aca696e59934fdb490079dfddd314b.dir
+      size: 651354638
+      nfiles: 23
+    - path: nodes/CP2KYaml/node-meta.json
+      hash: md5
+      md5: fcc81438039781de714de541e7b3dc39
+      size: 14
