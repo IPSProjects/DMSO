@@ -25118,7 +25118,7 @@ stages:
                 md: 1
           md:
             ensemble: nvt
-            temperature: 298.15
+            temperature: 360
             timestep: 0.5
             steps: 4859
             thermostat:
@@ -25129,10 +25129,10 @@ stages:
     outs:
     - path: nodes/CP2KYaml/cp2k
       hash: md5
-      md5: b2aca696e59934fdb490079dfddd314b.dir
-      size: 651354638
+      md5: 90242e14d382ba2c3a5de397e9ccc0c8.dir
+      size: 657002449
       nfiles: 23
     - path: nodes/CP2KYaml/node-meta.json
       hash: md5
-      md5: fcc81438039781de714de541e7b3dc39
-      size: 14
+      md5: 7093583822b5e732d3fd1832bda1d474
+      size: 48
