@@ -25048,7 +25048,7 @@ stages:
     params:
       params.yaml:
         CP2KYaml:
-          data_id: 0
+          data_id: -1
       cp2k_md.yaml:
         force_eval:
           method: quickstep
@@ -25129,10 +25129,10 @@ stages:
     outs:
     - path: nodes/CP2KYaml/cp2k
       hash: md5
-      md5: 90242e14d382ba2c3a5de397e9ccc0c8.dir
-      size: 657002449
+      md5: 36c379310766aa8c61c75e54ab578a5b.dir
+      size: 652585017
       nfiles: 23
     - path: nodes/CP2KYaml/node-meta.json
       hash: md5
-      md5: 7093583822b5e732d3fd1832bda1d474
+      md5: 0a3cc4c0b1097922c832650e608936c0
       size: 48
