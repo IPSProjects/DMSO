@@ -1,4 +1,4 @@
-AL2_0_ASEGeoOpt_1:
+AL2_0_ASEGeoOpt:
     data_id: -1
     dump_rate: 1000
     init_kwargs: {}
@@ -9,7 +9,7 @@ AL2_0_ASEGeoOpt_1:
     - 1
     run_kwargs:
         fmax: 0.5
-AL2_0_ASEGeoOpt_2:
+AL2_0_ASEGeoOpt_1:
     data_id: -1
     dump_rate: 1000
     init_kwargs: {}
@@ -23,42 +23,43 @@ AL2_0_ASEGeoOpt_2:
 AL2_0_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 100
     steps: 1000000
-AL2_0_ASEMD_checker_list_0:
+    use_momenta: false
+AL2_0_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL2_0_ASEMD_modifier_0:
+AL2_0_ASEMD+modifier+0:
     end_temperature: 450
     interval: 1
     num_oscillations: 10
     start_temperature: 270
     temperature_amplitude: 150
-AL2_0_ASEMD_modifier_1:
+AL2_0_ASEMD+modifier+1:
     cell_amplitude: 1
     end_cell: null
     interval: 1
     num_oscillations: 3
-AL2_0_ASEMD_thermostat:
+AL2_0_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-AL2_0_ConfigurationSelection_1:
+AL2_0_ConfigurationSelection:
     key: energy_uncertainty
     min_distance: 20
     n_configurations: 20
     reference: energy
     threshold: null
-AL2_0_ConfigurationSelection_2:
+AL2_0_ConfigurationSelection_1:
     n_configurations: 5
     seed: 1234
 AL2_0_MLModel:
@@ -71,7 +72,7 @@ AL2_0_MLModel_1:
     use_energy: true
     use_forces: true
     use_stresses: false
-AL2_1_ASEGeoOpt_1:
+AL2_1_ASEGeoOpt:
     data_id: -1
     dump_rate: 1000
     init_kwargs: {}
@@ -82,7 +83,7 @@ AL2_1_ASEGeoOpt_1:
     - 1
     run_kwargs:
         fmax: 0.5
-AL2_1_ASEGeoOpt_2:
+AL2_1_ASEGeoOpt_1:
     data_id: -1
     dump_rate: 1000
     init_kwargs: {}
@@ -96,42 +97,43 @@ AL2_1_ASEGeoOpt_2:
 AL2_1_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 100
     steps: 1000000
-AL2_1_ASEMD_checker_list_0:
+    use_momenta: false
+AL2_1_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL2_1_ASEMD_modifier_0:
+AL2_1_ASEMD+modifier+0:
     end_temperature: 450
     interval: 1
     num_oscillations: 10
     start_temperature: 270
     temperature_amplitude: 150
-AL2_1_ASEMD_modifier_1:
+AL2_1_ASEMD+modifier+1:
     cell_amplitude: 1
     end_cell: null
     interval: 1
     num_oscillations: 3
-AL2_1_ASEMD_thermostat:
+AL2_1_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-AL2_1_ConfigurationSelection_1:
+AL2_1_ConfigurationSelection:
     key: energy_uncertainty
     min_distance: 20
     n_configurations: 20
     reference: energy
     threshold: null
-AL2_1_ConfigurationSelection_2:
+AL2_1_ConfigurationSelection_1:
     n_configurations: 5
     seed: 1234
 AL2_1_MLModel:
@@ -144,7 +146,7 @@ AL2_1_MLModel_1:
     use_energy: true
     use_forces: true
     use_stresses: false
-AL2_2_ASEGeoOpt_1:
+AL2_2_ASEGeoOpt:
     data_id: -5
     dump_rate: 1000
     init_kwargs: {}
@@ -155,14 +157,14 @@ AL2_2_ASEGeoOpt_1:
     - 1
     run_kwargs:
         fmax: 1.0
-AL2_2_ASEGeoOpt_1_checker_list_0:
+AL2_2_ASEGeoOpt+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL2_2_ASEGeoOpt_2:
+AL2_2_ASEGeoOpt_1:
     data_id: -1
     dump_rate: 1000
     init_kwargs: {}
@@ -176,63 +178,64 @@ AL2_2_ASEGeoOpt_2:
 AL2_2_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 40
     steps: 1000000
-AL2_2_ASEMD_checker_list_0:
+    use_momenta: false
+AL2_2_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL2_2_ASEMD_modifier_0:
+AL2_2_ASEMD+modifier+0:
     end_temperature: 450
     interval: 1
     num_oscillations: 10
     start_temperature: 270
     temperature_amplitude: 150
-AL2_2_ASEMD_modifier_1:
+AL2_2_ASEMD+modifier+1:
     cell_amplitude: 1
     end_cell: 16.511
     interval: 1
     num_oscillations: 3
-AL2_2_ASEMD_thermostat:
+AL2_2_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-AL2_2_ConfigurationSelection_1:
+AL2_2_ConfigurationSelection:
     indices:
         _type: slice
         value:
             start: 10
             step: null
             stop: -1
-AL2_2_ConfigurationSelection_2:
+AL2_2_ConfigurationSelection_1:
     indices:
         _type: slice
         value:
             start: 4
             step: null
             stop: -1
-AL2_2_ConfigurationSelection_3:
+AL2_2_ConfigurationSelection_2:
     indices:
         _type: slice
         value:
             start: 0
             step: null
             stop: -1
-AL2_2_ConfigurationSelection_4:
+AL2_2_ConfigurationSelection_3:
     key: energy_uncertainty
     min_distance: 20
     n_configurations: 20
     reference: energy
     threshold: null
-AL2_2_ConfigurationSelection_5:
+AL2_2_ConfigurationSelection_4:
     n_configurations: 5
     seed: 1234
 AL2_2_MLModel:
@@ -245,7 +248,7 @@ AL2_2_MLModel_1:
     use_energy: true
     use_forces: true
     use_stresses: false
-AL2_3_ASEGeoOpt_1:
+AL2_3_ASEGeoOpt:
     data_id: -5
     dump_rate: 1000
     init_kwargs: {}
@@ -256,14 +259,14 @@ AL2_3_ASEGeoOpt_1:
     - 1
     run_kwargs:
         fmax: 1.0
-AL2_3_ASEGeoOpt_1_checker_list_0:
+AL2_3_ASEGeoOpt+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL2_3_ASEGeoOpt_2:
+AL2_3_ASEGeoOpt_1:
     data_id: -1
     dump_rate: 1000
     init_kwargs: {}
@@ -277,49 +280,50 @@ AL2_3_ASEGeoOpt_2:
 AL2_3_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 40
     steps: 1000000
-AL2_3_ASEMD_checker_list_0:
+    use_momenta: false
+AL2_3_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL2_3_ASEMD_modifier_0:
+AL2_3_ASEMD+modifier+0:
     end_temperature: 450
     interval: 1
     num_oscillations: 10
     start_temperature: 270
     temperature_amplitude: 150
-AL2_3_ASEMD_modifier_1:
+AL2_3_ASEMD+modifier+1:
     cell_amplitude: 1
     end_cell: 16.511
     interval: 1
     num_oscillations: 3
-AL2_3_ASEMD_thermostat:
+AL2_3_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-AL2_3_ConfigurationSelection_1:
+AL2_3_ConfigurationSelection:
     indices:
         _type: slice
         value:
             start: 0
             step: null
             stop: -1
-AL2_3_ConfigurationSelection_2:
+AL2_3_ConfigurationSelection_1:
     key: energy_uncertainty
     min_distance: 20
     n_configurations: 20
     reference: energy
     threshold: null
-AL2_3_ConfigurationSelection_3:
+AL2_3_ConfigurationSelection_2:
     n_configurations: 5
     seed: 1234
 AL2_3_MLModel:
@@ -332,7 +336,7 @@ AL2_3_MLModel_1:
     use_energy: true
     use_forces: true
     use_stresses: false
-AL2_4_ASEGeoOpt_1:
+AL2_4_ASEGeoOpt:
     data_id: -5
     dump_rate: 1000
     init_kwargs: {}
@@ -343,14 +347,14 @@ AL2_4_ASEGeoOpt_1:
     - 1
     run_kwargs:
         fmax: 1.0
-AL2_4_ASEGeoOpt_1_checker_list_0:
+AL2_4_ASEGeoOpt+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL2_4_ASEGeoOpt_2:
+AL2_4_ASEGeoOpt_1:
     data_id: -1
     dump_rate: 1000
     init_kwargs: {}
@@ -364,49 +368,50 @@ AL2_4_ASEGeoOpt_2:
 AL2_4_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 40
     steps: 1000000
-AL2_4_ASEMD_checker_list_0:
+    use_momenta: false
+AL2_4_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL2_4_ASEMD_modifier_0:
+AL2_4_ASEMD+modifier+0:
     end_temperature: 450
     interval: 1
     num_oscillations: 10
     start_temperature: 270
     temperature_amplitude: 150
-AL2_4_ASEMD_modifier_1:
+AL2_4_ASEMD+modifier+1:
     cell_amplitude: 1
     end_cell: 16.511
     interval: 1
     num_oscillations: 3
-AL2_4_ASEMD_thermostat:
+AL2_4_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-AL2_4_ConfigurationSelection_1:
+AL2_4_ConfigurationSelection:
     indices:
         _type: slice
         value:
             start: 0
             step: null
             stop: -1
-AL2_4_ConfigurationSelection_2:
+AL2_4_ConfigurationSelection_1:
     key: energy_uncertainty
     min_distance: 20
     n_configurations: 20
     reference: energy
     threshold: null
-AL2_4_ConfigurationSelection_3:
+AL2_4_ConfigurationSelection_2:
     n_configurations: 5
     seed: 1234
 AL2_4_MLModel:
@@ -419,7 +424,7 @@ AL2_4_MLModel_1:
     use_energy: true
     use_forces: true
     use_stresses: false
-AL2_5_ASEGeoOpt_1:
+AL2_5_ASEGeoOpt:
     data_id: -5
     dump_rate: 1000
     init_kwargs: {}
@@ -430,14 +435,14 @@ AL2_5_ASEGeoOpt_1:
     - 1
     run_kwargs:
         fmax: 1.0
-AL2_5_ASEGeoOpt_1_checker_list_0:
+AL2_5_ASEGeoOpt+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL2_5_ASEGeoOpt_2:
+AL2_5_ASEGeoOpt_1:
     data_id: -1
     dump_rate: 1000
     init_kwargs: {}
@@ -451,49 +456,50 @@ AL2_5_ASEGeoOpt_2:
 AL2_5_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 40
     steps: 1000000
-AL2_5_ASEMD_checker_list_0:
+    use_momenta: false
+AL2_5_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL2_5_ASEMD_modifier_0:
+AL2_5_ASEMD+modifier+0:
     end_temperature: 450
     interval: 1
     num_oscillations: 10
     start_temperature: 270
     temperature_amplitude: 150
-AL2_5_ASEMD_modifier_1:
+AL2_5_ASEMD+modifier+1:
     cell_amplitude: 1
     end_cell: 16.511
     interval: 1
     num_oscillations: 3
-AL2_5_ASEMD_thermostat:
+AL2_5_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-AL2_5_ConfigurationSelection_1:
+AL2_5_ConfigurationSelection:
     indices:
         _type: slice
         value:
             start: 0
             step: null
             stop: -1
-AL2_5_ConfigurationSelection_2:
+AL2_5_ConfigurationSelection_1:
     key: energy_uncertainty
     min_distance: 20
     n_configurations: 20
     reference: energy
     threshold: null
-AL2_5_ConfigurationSelection_3:
+AL2_5_ConfigurationSelection_2:
     n_configurations: 5
     seed: 1234
 AL2_5_MLModel:
@@ -509,31 +515,32 @@ AL2_5_MLModel_1:
 AL_0_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 1
     steps: 50000
-AL_0_ASEMD_checker_list_0:
+    use_momenta: false
+AL_0_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL_0_ASEMD_thermostat:
+AL_0_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-AL_0_ConfigurationSelection_1:
+AL_0_ConfigurationSelection:
     key: energy_uncertainty
     min_distance: 10
     n_configurations: 10
     reference: energy
     threshold: null
-AL_0_ConfigurationSelection_2:
+AL_0_ConfigurationSelection_1:
     n_configurations: 5
     seed: 1234
 AL_0_EnergyUncertaintyHistogram:
@@ -557,31 +564,32 @@ AL_0_MLModel_1:
 AL_1_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 1
     steps: 50000
-AL_1_ASEMD_checker_list_0:
+    use_momenta: false
+AL_1_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL_1_ASEMD_thermostat:
+AL_1_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-AL_1_ConfigurationSelection_1:
+AL_1_ConfigurationSelection:
     key: energy_uncertainty
     min_distance: 10
     n_configurations: 10
     reference: energy
     threshold: null
-AL_1_ConfigurationSelection_2:
+AL_1_ConfigurationSelection_1:
     n_configurations: 5
     seed: 1234
 AL_1_EnergyUncertaintyHistogram:
@@ -605,31 +613,32 @@ AL_1_MLModel_1:
 AL_2_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 1
     steps: 50000
-AL_2_ASEMD_checker_list_0:
+    use_momenta: false
+AL_2_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL_2_ASEMD_thermostat:
+AL_2_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-AL_2_ConfigurationSelection_1:
+AL_2_ConfigurationSelection:
     key: energy_uncertainty
     min_distance: 10
     n_configurations: 10
     reference: energy
     threshold: null
-AL_2_ConfigurationSelection_2:
+AL_2_ConfigurationSelection_1:
     n_configurations: 5
     seed: 1234
 AL_2_EnergyUncertaintyHistogram:
@@ -653,31 +662,32 @@ AL_2_MLModel_1:
 AL_3_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 1
     steps: 50000
-AL_3_ASEMD_checker_list_0:
+    use_momenta: false
+AL_3_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL_3_ASEMD_thermostat:
+AL_3_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-AL_3_ConfigurationSelection_1:
+AL_3_ConfigurationSelection:
     key: energy_uncertainty
     min_distance: 10
     n_configurations: 10
     reference: energy
     threshold: null
-AL_3_ConfigurationSelection_2:
+AL_3_ConfigurationSelection_1:
     n_configurations: 5
     seed: 1234
 AL_3_EnergyUncertaintyHistogram:
@@ -701,31 +711,32 @@ AL_3_MLModel_1:
 AL_4_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 1
     steps: 50000
-AL_4_ASEMD_checker_list_0:
+    use_momenta: false
+AL_4_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL_4_ASEMD_thermostat:
+AL_4_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-AL_4_ConfigurationSelection_1:
+AL_4_ConfigurationSelection:
     key: energy_uncertainty
     min_distance: 10
     n_configurations: 10
     reference: energy
     threshold: null
-AL_4_ConfigurationSelection_2:
+AL_4_ConfigurationSelection_1:
     n_configurations: 5
     seed: 1234
 AL_4_EnergyUncertaintyHistogram:
@@ -749,31 +760,32 @@ AL_4_MLModel_1:
 AL_5_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 1
     steps: 50000
-AL_5_ASEMD_checker_list_0:
+    use_momenta: false
+AL_5_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-AL_5_ASEMD_thermostat:
+AL_5_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-AL_5_ConfigurationSelection_1:
+AL_5_ConfigurationSelection:
     key: energy_uncertainty
     min_distance: 10
     n_configurations: 10
     reference: energy
     threshold: null
-AL_5_ConfigurationSelection_2:
+AL_5_ConfigurationSelection_1:
     n_configurations: 5
     seed: 1234
 AL_5_EnergyUncertaintyHistogram:
@@ -857,234 +869,158 @@ bootstrap_0_TranslateMolecules_test:
 bootstrap_1_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 100
     steps: 10000
-bootstrap_1_ASEMD_checker_list_0:
+    use_momenta: false
+bootstrap_1_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-bootstrap_1_ASEMD_modifier_0:
+bootstrap_1_ASEMD+modifier+0:
     end_temperature: 450
     interval: 1
     num_oscillations: 10
     start_temperature: 270
     temperature_amplitude: 150
-bootstrap_1_ASEMD_modifier_1:
+bootstrap_1_ASEMD+modifier+1:
     cell_amplitude: 1
     end_cell: null
     interval: 1
     num_oscillations: 3
-bootstrap_1_ASEMD_thermostat:
+bootstrap_1_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
-bootstrap_1_ConfigurationSelection_1:
+bootstrap_1_ConfigurationSelection:
     key: energy_uncertainty
     min_distance: 10
     n_configurations: 20
     reference: energy
     threshold: null
-bootstrap_1_ConfigurationSelection_2:
+bootstrap_1_ConfigurationSelection_1:
     n_configurations: 80
     seed: 1234
-bootstrap_1_ConfigurationSelection_3:
+bootstrap_1_ConfigurationSelection_2:
     n_configurations: 20
     seed: 1234
-deployment_ASEGeoOpt_1:
-    data_id: -1
-    dump_rate: 1000
-    init_kwargs: {}
-    optimizer: FIRE
-    repeat:
-    - 8
-    - 8
-    - 8
-    run_kwargs:
-        fmax: 0.05
-deployment_ASEMD:
-    data_id: -1
-    dump_rate: 1000
-    init_temperature: null
-    repeat:
-    - 1
-    - 1
-    - 1
-    sampling_rate: 100
-    steps: 100000
-deployment_ASEMD_modifier_0:
-    interval: 1
-    start_temperature: null
-    temperature: 450
-deployment_ASEMD_thermostat:
-    friction: 0.01
-    temperature: 298.15
-    time_step: 0.5
-deployment_ApaxJaxMD:
-    data_id: -1
-    md_parameter: null
-    repeat: null
-deployment_Packmol_1:
-    box: null
-    count:
-    - 2
-    data_ids: null
-    density: 1095.2
-    tolerance: 2.0
 evaluation_BoxScale:
     data_id: -1
     num: 50
     start: 0.9
     stop: 1.7
+evaluation_BoxScale+mapping:
+    frozen: false
 evaluation_BoxScale_1:
     data_id: -1
     num: 50
     start: 0.9
     stop: 1.7
+evaluation_BoxScale_1+mapping:
+    frozen: false
 evaluation_BoxScale_10:
     data_id: -1
     num: 50
     start: 0.9
     stop: 1.7
-evaluation_BoxScale_10_mapping:
+evaluation_BoxScale_10+mapping:
     frozen: false
 evaluation_BoxScale_11:
     data_id: -1
     num: 50
     start: 0.9
     stop: 1.7
-evaluation_BoxScale_11_mapping:
+evaluation_BoxScale_11+mapping:
     frozen: false
 evaluation_BoxScale_12:
     data_id: -1
     num: 50
     start: 0.9
     stop: 1.7
-evaluation_BoxScale_12_mapping:
-    frozen: false
-evaluation_BoxScale_13:
-    data_id: -1
-    num: 50
-    start: 0.9
-    stop: 1.7
-evaluation_BoxScale_13_mapping:
-    frozen: false
-evaluation_BoxScale_1_mapping:
+evaluation_BoxScale_12+mapping:
     frozen: false
 evaluation_BoxScale_2:
     data_id: -1
     num: 50
     start: 0.9
     stop: 1.7
-evaluation_BoxScale_2_mapping:
+evaluation_BoxScale_2+mapping:
     frozen: false
 evaluation_BoxScale_3:
     data_id: -1
     num: 50
     start: 0.9
     stop: 1.7
-evaluation_BoxScale_3_mapping:
+evaluation_BoxScale_3+mapping:
     frozen: false
 evaluation_BoxScale_4:
     data_id: -1
     num: 50
     start: 0.9
     stop: 1.7
-evaluation_BoxScale_4_mapping:
+evaluation_BoxScale_4+mapping:
     frozen: false
 evaluation_BoxScale_5:
     data_id: -1
     num: 50
     start: 0.9
     stop: 1.7
-evaluation_BoxScale_5_mapping:
+evaluation_BoxScale_5+mapping:
     frozen: false
 evaluation_BoxScale_6:
     data_id: -1
     num: 50
     start: 0.9
     stop: 1.7
-evaluation_BoxScale_6_mapping:
+evaluation_BoxScale_6+mapping:
     frozen: false
 evaluation_BoxScale_7:
     data_id: -1
     num: 50
     start: 0.9
     stop: 1.7
-evaluation_BoxScale_7_mapping:
+evaluation_BoxScale_7+mapping:
     frozen: false
 evaluation_BoxScale_8:
     data_id: -1
     num: 50
     start: 0.9
     stop: 1.7
-evaluation_BoxScale_8_mapping:
+evaluation_BoxScale_8+mapping:
     frozen: false
 evaluation_BoxScale_9:
     data_id: -1
     num: 50
     start: 0.9
     stop: 1.7
-evaluation_BoxScale_9_mapping:
+evaluation_BoxScale_9+mapping:
     frozen: false
-evaluation_BoxScale_mapping:
-    frozen: false
-final_BoxScale:
-    data_id: -1
-    num: 50
-    start: 0.9
-    stop: 1.7
-final_BoxScale_mapping:
-    frozen: false
-final_MLModel:
-    jax_enable_x64: true
-    use_energy: true
-    use_forces: true
-    use_stresses: false
-isolated_mol_ConfigurationSelection_1:
-    n_configurations: 40
-    seed: 1234
-isolated_mol_MLModel:
-    jax_enable_x64: true
-    use_energy: true
-    use_forces: true
-    use_stresses: false
-isolated_mol_MLModel_1:
-    jax_enable_x64: true
-    use_energy: true
-    use_forces: true
-    use_stresses: false
-isolated_mol_SmilesToConformers:
-    cell: 100
-    maxAttempts: 1000
-    numConfs: 200
-    seed: 42
-    smiles: CS(=O)C
 volume_scan_ASEMD:
     data_id: -1
     dump_rate: 1000
-    init_temperature: null
+    pop_last: false
     repeat:
     - 1
     - 1
     - 1
     sampling_rate: 10
     steps: 250
-volume_scan_ASEMD_checker_list_0:
+    use_momenta: false
+volume_scan_ASEMD+checker_list+0:
     larger_only: true
     max_std: null
     max_value: 2.0
     minimum_window_size: 1
     value: energy_uncertainty
     window_size: 500
-volume_scan_ASEMD_thermostat:
+volume_scan_ASEMD+thermostat:
     friction: 0.01
     temperature: 298.15
     time_step: 0.5
@@ -1093,5 +1029,5 @@ volume_scan_BoxScale:
     num: 50
     start: 0.9
     stop: 1.7
-volume_scan_BoxScale_mapping:
+volume_scan_BoxScale+mapping:
     frozen: false

@@ -2,3 +2,10 @@
 /log.csv
 /val_atoms.extxyz
 /apax_model
+/metrics_batch_train.csv
+/deployed_model.pth
+/validation.extxyz
+/metrics_batch_val.csv
+/metrics_epoch.csv
+/model
+/train.extxyz
