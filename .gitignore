@@ -162,3 +162,4 @@ cython_debug/
 /dftd3.dat
 /GTH_POTENTIALS
 slurm-*
+mdsuite/
