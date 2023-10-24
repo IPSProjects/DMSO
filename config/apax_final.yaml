@@ -10,6 +10,7 @@ data:
   valid_batch_size: 100
 loss:
 - name: energy
+  weight: 2.0
 - name: forces
   weight: 4.0
 - name: stress
