@@ -1002,6 +1002,18 @@ evaluation_BoxScale_9:
     stop: 1.7
 evaluation_BoxScale_9+mapping:
     frozen: false
+final_BoxScale:
+    data_id: -1
+    num: 100
+    start: 0.9
+    stop: 2.0
+final_BoxScale+mapping:
+    frozen: false
+final_MLModel:
+    jax_enable_x64: true
+    use_energy: true
+    use_forces: true
+    use_stresses: false
 volume_scan_ASEMD:
     data_id: -1
     dump_rate: 1000
