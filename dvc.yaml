@@ -166,6 +166,7 @@ plots:
     x_label: Scale factor of the initial cell
     y: y
     y_label: predicted energy
+- nodes/deployment/ASEMD/metrics_dict.csv: {}
 stages:
   AL2_0_ASEGeoOpt:
     cmd: zntrack run ipsuite.nodes.ASEGeoOpt --name AL2_0_ASEGeoOpt
@@ -3466,6 +3467,31 @@ stages:
     - nodes/bootstrap_1/ConfigurationSelection_2/selected_configurations.json
     params:
     - bootstrap_1_ConfigurationSelection_2
+  deployment_ASEMD:
+    cmd: zntrack run ipsuite.nodes.ASEMD --name deployment_ASEMD
+    deps:
+    - nodes/ASEGeoOpt/model_outs
+    - nodes/ASEGeoOpt/node-meta.json
+    - nodes/ASEGeoOpt/trajectory.h5
+    - nodes/final/MLModel/apax_model
+    - nodes/final/MLModel/log.csv
+    - nodes/final/MLModel/metrics.json
+    - nodes/final/MLModel/node-meta.json
+    - nodes/final/MLModel/train.log
+    - nodes/final/MLModel/train_atoms.extxyz
+    - nodes/final/MLModel/val_atoms.extxyz
+    metrics:
+    - nodes/deployment/ASEMD/node-meta.json:
+        cache: false
+    - nodes/deployment/ASEMD/steps_before_stopping.json:
+        cache: false
+    outs:
+    - nodes/deployment/ASEMD/metrics_dict.csv
+    - nodes/deployment/ASEMD/model
+    - nodes/deployment/ASEMD/trajectory.h5
+    params:
+    - deployment_ASEMD
+    - deployment_ASEMD+thermostat
   evaluation_BoxScale:
     cmd: zntrack run ipsuite.nodes.BoxScale --name evaluation_BoxScale
     deps:

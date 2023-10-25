@@ -24852,43 +24852,35 @@ stages:
   deployment_ASEMD:
     cmd: zntrack run ipsuite.nodes.ASEMD --name deployment_ASEMD
     deps:
-    - path: nodes/deployment/ASEGeoOpt_1/model_outs
+    - path: nodes/ASEGeoOpt/model_outs
       hash: md5
-      md5: 64586897446153f477c052dd0e2579ad.dir
-      size: 11
-      nfiles: 1
-    - path: nodes/deployment/ASEGeoOpt_1/node-meta.json
+      md5: 55a17d4cf10898236beac4f2d757f2b4.dir
+      size: 89601466
+      nfiles: 7
+    - path: nodes/ASEGeoOpt/node-meta.json
       hash: md5
-      md5: 54dd4504d292044119e2c79c406e733a
+      md5: 336193404ed866dfebe5a4c56f8ef2f8
       size: 48
-    - path: nodes/deployment/ASEGeoOpt_1/trajectory.h5
+    - path: nodes/ASEGeoOpt/trajectory.h5
       hash: md5
-      md5: e4085d4154e8332a3b657f797db78084
-      size: 320328320
-    - path: nodes/deployment/ASEMD_modifier_0/node-meta.json
-      hash: md5
-      md5: 7264caa634a50f37def33182dcffd544
-      size: 48
-    - path: nodes/deployment/ASEMD_thermostat/node-meta.json
-      hash: md5
-      md5: 346b6344b61cb34e47fdcfa1ac9af9ce
-      size: 48
+      md5: ea5b960f96c3f1f8cd9328fb1ea918f5
+      size: 1410008
     - path: nodes/final/MLModel/apax_model
       hash: md5
-      md5: 269ff9452048248bb6986652bd3cea24.dir
-      size: 42276241
+      md5: fc6478724baae5511444ef19ba52046d.dir
+      size: 42263349
       nfiles: 5
     - path: nodes/final/MLModel/log.csv
       hash: md5
-      md5: b0417cd3909a728df55ba219d0200450
-      size: 365042
+      md5: ba8606c8e6433646cb6f41d01cd48c20
+      size: 365212
     - path: nodes/final/MLModel/metrics.json
       hash: md5
-      md5: 36fee5127436c3fdfdcb4b5f036d0652
-      size: 391
+      md5: b3a954129b7758dd2c948ca0bb851ead
+      size: 389
     - path: nodes/final/MLModel/node-meta.json
       hash: md5
-      md5: e4913174c46be18939a0271a3b768c75
+      md5: f94a40cd83088e14a67145d927f7576c
       size: 48
     - path: nodes/final/MLModel/train.log
       hash: md5
@@ -24906,19 +24898,24 @@ stages:
       params.yaml:
         deployment_ASEMD:
           data_id: -1
-          dump_rate: 1000
-          init_temperature:
+          dump_rate: 10000
+          pop_last: false
           repeat:
           - 1
           - 1
           - 1
-          sampling_rate: 100
-          steps: 100000
+          sampling_rate: 1
+          steps: 10000
+          use_momenta: false
+        deployment_ASEMD+thermostat:
+          friction: 0.01
+          temperature: 298.15
+          time_step: 0.5
     outs:
     - path: nodes/deployment/ASEMD/metrics_dict.csv
       hash: md5
-      md5: d81193a3ab4a85ef78ce4389252e2ef5
-      size: 42133
+      md5: 81025a7d6d239ccd80c321af39441615
+      size: 431440
     - path: nodes/deployment/ASEMD/model
       hash: md5
       md5: 64586897446153f477c052dd0e2579ad.dir
@@ -24926,7 +24923,7 @@ stages:
       nfiles: 1
     - path: nodes/deployment/ASEMD/node-meta.json
       hash: md5
-      md5: 04b535af4f5165f7d0863ed4fbee9c5d
+      md5: a045ef8aac35143ecafa3efabba6fab3
       size: 48
     - path: nodes/deployment/ASEMD/steps_before_stopping.json
       hash: md5
@@ -24934,12 +24931,8 @@ stages:
       size: 2
     - path: nodes/deployment/ASEMD/trajectory.h5
       hash: md5
-      md5: 12a5d06f241f0a66de2f5e518643af6f
-      size: 839641608
-    - path: nodes/deployment/ASEMD/velocities_cache.json
-      hash: md5
-      md5: 3c57ddb3cdf2b8b8fe7ea92c78290433
-      size: 327902
+      md5: c42ff8c94a2fe88d813557d5a7606192
+      size: 309281360
   deployment_ApaxJaxMD:
     cmd: zntrack run ipsuite.nodes.ApaxJaxMD --name deployment_ApaxJaxMD
     deps:
