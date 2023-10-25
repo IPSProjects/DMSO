@@ -10,7 +10,7 @@ batch_size: 4
 num_channels: 16
 max_L: 1
 correlation: 3
-r_max: 4.5
+r_max: 5.0
 forces_weight: 100
 stress_weight: 1.0
 
@@ -31,6 +31,6 @@ valid_batch_size: 6
 eval_interval: 1
 
 num_cutoff_basis: 5
-num_interactions: 2
+num_interactions: 1
 num_radial_basis: 8
 seed: 42
