@@ -9,3 +9,6 @@
 /metrics_epoch.csv
 /model
 /train.extxyz
+/training.csv
+/test-data.extxyz
+/train-data.extxyz
