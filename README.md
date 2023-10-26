@@ -1,6 +1,7 @@
 [![DagsHub](https://bit.ly/33Q1Dv9)](https://dagshub.com/PythonFZ/SDR)
 [![ZnTrack](https://img.shields.io/badge/Powered%20by-ZnTrack-%23007CB0)](https://zntrack.readthedocs.io/en/latest/)
 [![zincware](https://img.shields.io/badge/Powered%20by-zincware-darkcyan)](https://github.com/zincware)
+[![DOI](https://zenodo.org/badge/670075090.svg)](https://zenodo.org/doi/10.5281/zenodo.10044921)
 
 # Collaboration on Machine Learned Potentials with IPSuite: A Modular Framework for Learning-on-the-Fly
 This repository contains the workflows for machine learned potentials for DMSO.
