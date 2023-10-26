@@ -2,22 +2,38 @@
 [![ZnTrack](https://img.shields.io/badge/Powered%20by-ZnTrack-%23007CB0)](https://zntrack.readthedocs.io/en/latest/)
 [![zincware](https://img.shields.io/badge/Powered%20by-zincware-darkcyan)](https://github.com/zincware)
 
-# Structure Database Repository
+# Collaboration on Machine Learned Potentials with IPSuite: A Modular Framework for Learning-on-the-Fly
+This repository contains the workflows for machine learned potentials for DMSO.
 
-This repository contains simulation data that can be loaded via [ZnTrack](https://zntrack.readthedocs.io).
-In addition to [ZnTrack](https://zntrack.readthedocs.io) an [IPSuite](https://github.com/zincware/IPSuite) installation and [DVC-S3](https://dvc.org/doc/command-reference/remote/add) support are also required.
+To use this repository make sure, you've installed the correct versions of [IPSuite](https://github.com/zincware/IPSuite), [apax](https://github.com/apax-hub/apax), [MACE](https://github.com/ACEsuit/mace) and [NequIP](https://github.com/mir-group/nequip).
+Furthermore, to access the data you need to `pip install dvc-s3`.
 
+To get started, clone this repository:
 ```bash
-pip install ipsuite zntrack dvc[s3]
+git clone https://github.com/IPSProjects/DMSO
+cd DMSO
 ```
 
-The following example provides a list of [ase.Atoms](https://wiki.fysik.dtu.dk/ase/ase/atoms.html) that were generated during geometry optimization of water using [CP2K](https://www.cp2k.org/).
-For more information have a look at the branch: https://github.com/IPSProjects/SDR/tree/water
+## apax
+```bash
+git checkout apax
+dvc pull -j 1
+```
 
-```python
-import zntrack
-import ase
+## MACE
+```bash
+git checkout mace
+dvc pull -j 1
+```
 
-node = zntrack.from_rev("H2O-x10", remote="https://github.com/IPSProjects/SDR", rev="water")
-node.atoms: list[ase.Atoms]
+## MACE (small)
+```bash
+git checkout mace_small
+dvc pull -j 1
+```
+
+## NequIP
+```bash
+git checkout nequip
+dvc pull -j 1
 ```
