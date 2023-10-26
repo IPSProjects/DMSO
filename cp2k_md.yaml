@@ -68,7 +68,7 @@ motion:
     ensemble: nvt
     temperature: 360
     timestep: 0.5
-    steps: 4859
+    steps: 12000
     thermostat:
       type: nose
       region: massive

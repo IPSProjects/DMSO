@@ -25120,7 +25120,7 @@ stages:
             ensemble: nvt
             temperature: 360
             timestep: 0.5
-            steps: 4859
+            steps: 12000
             thermostat:
               type: nose
               region: massive
@@ -25129,10 +25129,10 @@ stages:
     outs:
     - path: nodes/CP2KYaml/cp2k
       hash: md5
-      md5: 36c379310766aa8c61c75e54ab578a5b.dir
-      size: 652585017
-      nfiles: 23
+      md5: 3edda8bb305bf54797df5f60d2e2b137.dir
+      size: 1483817170
+      nfiles: 38
     - path: nodes/CP2KYaml/node-meta.json
       hash: md5
-      md5: 0a3cc4c0b1097922c832650e608936c0
+      md5: 262e7d278116ccd0377b3a40b3b4c116
       size: 48
