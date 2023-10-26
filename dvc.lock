@@ -27708,3 +27708,195 @@ stages:
       hash: md5
       md5: 9ee335c752c4d5577011c881bff26eb5
       size: 469216
+  final_AddData:
+    cmd: zntrack run ipsuite.nodes.AddData --name final_AddData
+    deps:
+    - path: data/aimd_360K.extxyz
+      hash: md5
+      md5: 381d0eed5fb9a93d07c2100df9f58c76
+      size: 481107836
+    params:
+      params.yaml:
+        final_AddData:
+          lines_to_read:
+    outs:
+    - path: nodes/final/AddData/atoms.h5
+      hash: md5
+      md5: 7326ed23cf6839c1d672dbb367af54be
+      size: 259998432
+    - path: nodes/final/AddData/node-meta.json
+      hash: md5
+      md5: ec9d185b8e804fd00984421b23a4173a
+      size: 48
+  final_ConfigurationSelection:
+    cmd: zntrack run ipsuite.nodes.IndexSelection --name final_ConfigurationSelection
+    deps:
+    - path: nodes/final/AddData/atoms.h5
+      hash: md5
+      md5: 7326ed23cf6839c1d672dbb367af54be
+      size: 259998432
+    - path: nodes/final/AddData/node-meta.json
+      hash: md5
+      md5: ec9d185b8e804fd00984421b23a4173a
+      size: 48
+    params:
+      params.yaml:
+        final_ConfigurationSelection:
+          indices:
+            _type: slice
+            value:
+              start: 2000
+              step: 1
+              stop:
+    outs:
+    - path: nodes/final/ConfigurationSelection/node-meta.json
+      hash: md5
+      md5: f5f0853a8339091ba6981784e32847cf
+      size: 48
+    - path: nodes/final/ConfigurationSelection/selected_configurations.json
+      hash: md5
+      md5: dac85c4754f4d96d05cd4a409413701e
+      size: 142046
+  final_ConfigurationSelection_1:
+    cmd: zntrack run ipsuite.nodes.RandomSelection --name final_ConfigurationSelection_1
+    deps:
+    - path: nodes/final/ConfigurationSelection/node-meta.json
+      hash: md5
+      md5: f5f0853a8339091ba6981784e32847cf
+      size: 48
+    - path: nodes/final/ConfigurationSelection/selected_configurations.json
+      hash: md5
+      md5: dac85c4754f4d96d05cd4a409413701e
+      size: 142046
+    params:
+      params.yaml:
+        final_ConfigurationSelection_1:
+          n_configurations: 100
+          seed: 1234
+    outs:
+    - path: nodes/final/ConfigurationSelection_1/node-meta.json
+      hash: md5
+      md5: 35ffa5b767dab20caee6373082e5fbc6
+      size: 48
+    - path: nodes/final/ConfigurationSelection_1/selected_configurations.json
+      hash: md5
+      md5: 8fadc160ffc2750e0c9f5b4eec0efbdd
+      size: 1439
+  final_Prediction_1:
+    cmd: zntrack run ipsuite.nodes.Prediction --name final_Prediction_1
+    deps:
+    - path: nodes/final/ConfigurationSelection_1/node-meta.json
+      hash: md5
+      md5: 35ffa5b767dab20caee6373082e5fbc6
+      size: 48
+    - path: nodes/final/ConfigurationSelection_1/selected_configurations.json
+      hash: md5
+      md5: 8fadc160ffc2750e0c9f5b4eec0efbdd
+      size: 1439
+    - path: nodes/final/MLModel/deployed_model.pth
+      hash: md5
+      md5: 0d1aa29f6dbf313c7a607ff12090f180
+      size: 3878783
+    - path: nodes/final/MLModel/metrics.json
+      hash: md5
+      md5: cd8c42061986c4db3c64fd7d0321441d
+      size: 1202
+    - path: nodes/final/MLModel/metrics_batch_train.csv
+      hash: md5
+      md5: 5385f6c8312fc1098632e3405842a086
+      size: 2947729
+    - path: nodes/final/MLModel/metrics_batch_val.csv
+      hash: md5
+      md5: b5c7f733095a765acb3ddcc2819495e3
+      size: 637531
+    - path: nodes/final/MLModel/metrics_epoch.csv
+      hash: md5
+      md5: 3cc3a3891c74481517c95574d4049b31
+      size: 59044
+    - path: nodes/final/MLModel/model
+      hash: md5
+      md5: bddd1093abcb9b998d16fb6e0d0f2042.dir
+      size: 254740801
+      nfiles: 15
+    - path: nodes/final/MLModel/node-meta.json
+      hash: md5
+      md5: 56730ea155e0f21c663626a1bd25db64
+      size: 48
+    - path: nodes/final/MLModel/train.extxyz
+      hash: md5
+      md5: 62aefae4f1f98b786fd0043520826f43
+      size: 18864393
+    - path: nodes/final/MLModel/validation.extxyz
+      hash: md5
+      md5: a8f3d00578a4b86fc83b048a1d86dbfb
+      size: 5762003
+    outs:
+    - path: nodes/final/Prediction_1/atoms.h5
+      hash: md5
+      md5: d09d03deb3ae0b35339d428e2fa1ac2a
+      size: 2519936
+    - path: nodes/final/Prediction_1/node-meta.json
+      hash: md5
+      md5: 3349db7ccd94d50e51a8cae97f22cfbf
+      size: 48
+  final_PredictionMetrics_1:
+    cmd: zntrack run ipsuite.nodes.PredictionMetrics --name final_PredictionMetrics_1
+    deps:
+    - path: nodes/final/Prediction_1/atoms.h5
+      hash: md5
+      md5: d09d03deb3ae0b35339d428e2fa1ac2a
+      size: 2519936
+    - path: nodes/final/Prediction_1/node-meta.json
+      hash: md5
+      md5: 3349db7ccd94d50e51a8cae97f22cfbf
+      size: 48
+    outs:
+    - path: nodes/final/PredictionMetrics_1/deviat_stress.json
+      hash: md5
+      md5: 99914b932bd37a50b983c5e7c90ae93b
+      size: 2
+    - path: nodes/final/PredictionMetrics_1/energy.json
+      hash: md5
+      md5: c14f2a783cc957f4397e9c0fb7ad9aca
+      size: 187
+    - path: nodes/final/PredictionMetrics_1/energy_df.csv
+      hash: md5
+      md5: ed013b89551c97c478b52ddd9b82147d
+      size: 4243
+    - path: nodes/final/PredictionMetrics_1/forces.json
+      hash: md5
+      md5: 8ded4ed3ca54fc0c035ead4533a4f234
+      size: 190
+    - path: nodes/final/PredictionMetrics_1/forces_df.csv
+      hash: md5
+      md5: d3393db777b569808ed76ed00135ebf1
+      size: 5206870
+    - path: nodes/final/PredictionMetrics_1/hydro_stress.json
+      hash: md5
+      md5: 99914b932bd37a50b983c5e7c90ae93b
+      size: 2
+    - path: nodes/final/PredictionMetrics_1/node-meta.json
+      hash: md5
+      md5: d12e3f182527522353ce9fa62d0cf9e7
+      size: 48
+    - path: nodes/final/PredictionMetrics_1/plots
+      hash: md5
+      md5: bb1652ab2b3c4d8a3a23eb7e76e6e491.dir
+      size: 165124
+      nfiles: 2
+    - path: nodes/final/PredictionMetrics_1/stress.json
+      hash: md5
+      md5: 99914b932bd37a50b983c5e7c90ae93b
+      size: 2
+    - path: nodes/final/PredictionMetrics_1/stress_deviatoric_df.csv
+      hash: md5
+      md5: a227d42afbcc590b4e949075cde4a5b6
+      size: 3
+    - path: nodes/final/PredictionMetrics_1/stress_df.csv
+      hash: md5
+      md5: a227d42afbcc590b4e949075cde4a5b6
+      size: 3
+    - path: nodes/final/PredictionMetrics_1/stress_hydrostatic_df.csv
+      hash: md5
+      md5: a227d42afbcc590b4e949075cde4a5b6
+      size: 3

@@ -1017,6 +1017,8 @@ evaluation_BoxScale_9:
     stop: 1.7
 evaluation_BoxScale_9+mapping:
     frozen: false
+final_AddData:
+    lines_to_read: null
 final_BoxScale:
     data_id: -1
     num: 50
@@ -1024,6 +1026,16 @@ final_BoxScale:
     stop: 1.7
 final_BoxScale+mapping:
     frozen: false
+final_ConfigurationSelection:
+    indices:
+        _type: slice
+        value:
+            start: 2000
+            step: 1
+            stop: null
+final_ConfigurationSelection_1:
+    n_configurations: 100
+    seed: 1234
 final_MLModel:
     use_energy: true
     use_forces: true
