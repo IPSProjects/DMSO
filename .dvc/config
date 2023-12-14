@@ -1,8 +1,7 @@
 [core]
     remote = origin
 ['remote "origin"']
-    url = s3://dvc/IPS-DMSO
-    endpointurl = https://minio.pythonf.net
-    access_key_id = DMSOgzb6NSeJZRIb
-    secret_access_key = qSZqFqYtR98hs1nS8avAZZ9xDHrNWD3z
-
+    url = s3://public/paper/dmso2023/
+    endpointurl = https://minio.icp.uni-stuttgart.de
+    access_key_id = public_eip8waishae6ies
+    secret_access_key = OoCiedah9aw9Pui8mie7phahlatie7oi
