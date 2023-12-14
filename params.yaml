@@ -911,6 +911,21 @@ bootstrap_1_ConfigurationSelection_1:
 bootstrap_1_ConfigurationSelection_2:
     n_configurations: 20
     seed: 1234
+deployment_ASEMD:
+    data_id: -1
+    dump_rate: 10000
+    pop_last: false
+    repeat:
+    - 1
+    - 1
+    - 1
+    sampling_rate: 1
+    steps: 10000
+    use_momenta: false
+deployment_ASEMD+thermostat:
+    friction: 0.01
+    temperature: 298.15
+    time_step: 0.5
 evaluation_BoxScale:
     data_id: -1
     num: 50
@@ -1002,6 +1017,29 @@ evaluation_BoxScale_9:
     stop: 1.7
 evaluation_BoxScale_9+mapping:
     frozen: false
+final_AddData:
+    lines_to_read: null
+final_BoxScale:
+    data_id: -1
+    num: 50
+    start: 0.9
+    stop: 1.7
+final_BoxScale+mapping:
+    frozen: false
+final_ConfigurationSelection:
+    indices:
+        _type: slice
+        value:
+            start: 2000
+            step: 1
+            stop: null
+final_ConfigurationSelection_1:
+    n_configurations: 100
+    seed: 1234
+final_MLModel:
+    use_energy: true
+    use_forces: true
+    use_stresses: false
 volume_scan_ASEMD:
     data_id: -1
     dump_rate: 1000
