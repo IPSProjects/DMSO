@@ -163,3 +163,4 @@ cython_debug/
 /GTH_POTENTIALS
 slurm-*
 mdsuite/
+/data
